@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { PropertyCard } from "@/components/PropertyCard";
 import { FilterBar } from "@/components/FilterBar";
-import { AdvancedFilters } from "@/components/AdvancedFilters";
+import { FilterSidebar } from "@/components/FilterSidebar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import TopBar from "@/components/TopBar";
@@ -54,7 +54,6 @@ const Allvillas = () => {
   const [sortBy, setSortBy] = useState("newest");
   const [displayCount, setDisplayCount] = useState(12);
   const [searchQuery, setSearchQuery] = useState("");
-  const [advancedFiltersOpen, setAdvancedFiltersOpen] = useState(false);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 20000]);
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
   const [minRating, setMinRating] = useState(0);
@@ -95,10 +94,6 @@ const Allvillas = () => {
     setPriceRange([0, 20000]);
     setSelectedAmenities([]);
     setMinRating(0);
-  };
-
-  const handleAdvanced = () => {
-    setAdvancedFiltersOpen(true);
   };
 
   // Filter properties
@@ -256,7 +251,7 @@ const Allvillas = () => {
         </section>
 
         {/* Filter Bar */}
-        <section className="container mx-auto px-4 max-w-6xl">
+        <section className="container mx-auto px-4 max-w-7xl">
           <FilterBar
             collection={collection}
             destination={destination}
@@ -267,7 +262,6 @@ const Allvillas = () => {
             onBedroomsChange={setBedrooms}
             onGuestsChange={setGuests}
             onClear={handleClear}
-            onAdvanced={handleAdvanced}
           />
         </section>
 
@@ -391,63 +385,68 @@ const Allvillas = () => {
         </section>
 
         {/* Results Count */}
-        <section className="container mx-auto px-4 max-w-6xl mb-6">
+        <section className="container mx-auto px-4 max-w-7xl mb-6">
           <h2 className="text-3xl font-bold text-muted-foreground">
             {filteredProperties.length} PROPERTIES FOUND
           </h2>
         </section>
 
-        {/* Property Cards */}
-        <section className="container mx-auto px-4 max-w-6xl mb-12">
-          {displayedProperties.length > 0 ? (
-            <>
-              <div className="space-y-8">
-                {displayedProperties.map((property) => (
-                  <PropertyCard key={property.id} {...property} />
-                ))}
-              </div>
+        {/* Main Content - Sidebar + Properties */}
+        <section className="container mx-auto px-4 max-w-7xl mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
+            {/* Filter Sidebar - Hidden on mobile, shown on desktop */}
+            <aside className="hidden lg:block">
+              <FilterSidebar
+                priceRange={priceRange}
+                onPriceRangeChange={setPriceRange}
+                selectedAmenities={selectedAmenities}
+                onAmenitiesChange={setSelectedAmenities}
+                minRating={minRating}
+                onMinRatingChange={setMinRating}
+                onClear={() => {
+                  setPriceRange([0, 20000]);
+                  setSelectedAmenities([]);
+                  setMinRating(0);
+                }}
+              />
+            </aside>
 
-              {/* Load More Button */}
-              {hasMore && (
-                <div className="flex justify-center mt-12">
-                  <Button
-                    size="lg"
-                    onClick={() => setDisplayCount((prev) => prev + 12)}
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 px-12"
-                  >
-                    LOAD MORE
+            {/* Property Cards */}
+            <div>
+              {displayedProperties.length > 0 ? (
+                <>
+                  <div className="space-y-8">
+                    {displayedProperties.map((property) => (
+                      <PropertyCard key={property.id} {...property} />
+                    ))}
+                  </div>
+
+                  {/* Load More Button */}
+                  {hasMore && (
+                    <div className="flex justify-center mt-12">
+                      <Button
+                        size="lg"
+                        onClick={() => setDisplayCount((prev) => prev + 12)}
+                        className="bg-primary text-primary-foreground hover:bg-primary/90 px-12"
+                      >
+                        LOAD MORE
+                      </Button>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="text-center py-16">
+                  <p className="text-xl text-muted-foreground mb-4">
+                    No properties found matching your criteria
+                  </p>
+                  <Button onClick={handleClear} variant="outline">
+                    Clear All Filters
                   </Button>
                 </div>
               )}
-            </>
-          ) : (
-            <div className="text-center py-16">
-              <p className="text-xl text-muted-foreground mb-4">
-                No properties found matching your criteria
-              </p>
-              <Button onClick={handleClear} variant="outline">
-                Clear All Filters
-              </Button>
             </div>
-          )}
+          </div>
         </section>
-
-        {/* Advanced Filters Dialog */}
-        <AdvancedFilters
-          open={advancedFiltersOpen}
-          onOpenChange={setAdvancedFiltersOpen}
-          priceRange={priceRange}
-          onPriceRangeChange={setPriceRange}
-          selectedAmenities={selectedAmenities}
-          onAmenitiesChange={setSelectedAmenities}
-          minRating={minRating}
-          onMinRatingChange={setMinRating}
-          onClear={() => {
-            setPriceRange([0, 20000]);
-            setSelectedAmenities([]);
-            setMinRating(0);
-          }}
-        />
 
         <Footer />
       </div>

@@ -96,7 +96,7 @@ const PropertyDetail = () => {
             <div className="flex-1 lg:w-2/3">
               {/* Hero Image Gallery */}
               <div className="relative mb-8">
-                <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden bg-muted">
+                <div className="relative w-full h-[250px] md:h-[450px] rounded-lg overflow-hidden bg-muted">
                   <img
                     src={images[currentImageIndex]}
                     alt={property.title}
@@ -296,16 +296,25 @@ const PropertyDetail = () => {
               <div className="mb-8">
                 <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden bg-muted border">
                   {property.coordinates ? (
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      allowFullScreen
-                      referrerPolicy="no-referrer-when-downgrade"
-                      src={`https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}&hl=en&z=15&output=embed`}
-                      title={`Map showing location of ${property.title}`}
-                    ></iframe>
+                    <>
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        allowFullScreen
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src={`https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}&hl=en&z=15&output=embed`}
+                        title={`Map showing location of ${property.title}`}
+                      ></iframe>
+                      <a
+                        href={`https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute inset-0 z-10"
+                        aria-label="View on Google Maps"
+                      />
+                    </>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-muted-foreground">
                       <p>Map location coming soon</p>
@@ -338,26 +347,8 @@ const PropertyDetail = () => {
                       ({property.reviewCount ?? 0} reviews)
                     </span>
                   </div>
-                  {property.checkIn && property.checkOut && (
-                    <div className="mt-4 p-4 bg-muted rounded-lg">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm text-muted-foreground">Check-in:</span>
-                        <span className="font-medium">{property.checkIn}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-muted-foreground">Check-out:</span>
-                        <span className="font-medium">{property.checkOut}</span>
-                      </div>
-                    </div>
-                  )}
-                  {property.cancellationPolicy && (
-                    <div className="mt-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
-                      <p className="text-sm">
-                        <strong className="text-green-700 dark:text-green-400">Cancellation Policy:</strong>{" "}
-                        <span className="text-green-600 dark:text-green-300">{property.cancellationPolicy}</span>
-                      </p>
-                    </div>
-                  )}
+                
+                
                 </div>
               )}
             </div>
@@ -388,12 +379,6 @@ const PropertyDetail = () => {
                     <span className="text-muted-foreground">Guests:</span>
                     <span className="font-medium">{property.guests}</span>
                   </div>
-                  {property.propertySize && (
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Property Size:</span>
-                      <span className="font-medium">{property.propertySize}</span>
-                    </div>
-                  )}
                 </div>
 
                 {/* Check-in/Check-out */}
@@ -465,30 +450,16 @@ const PropertyDetail = () => {
                       </PopoverContent>
                     </Popover>
                   </div>
-
-                  <p className="text-sm text-muted-foreground">
-                    3-Night Stay Minimum
-                  </p>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="px-4 sm:px-6 py-4 space-y-3">
                   <Button
-                    className="w-full bg-[#D4A574] hover:bg-[#C49564] text-white text-sm sm:text-base"
+                    className="w-full bg-black hover:bg-black text-white text-sm sm:text-base"
                     size="lg"
                     onClick={() => setInquiryOpen(true)}
                   >
                     SEND AN INQUIRY
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full bg-foreground text-background hover:bg-foreground/90 text-sm sm:text-base"
-                    size="lg"
-                    onClick={() => {
-                      window.location.href = "/contact-us";
-                    }}
-                  >
-                    ASK OUR SPECIALIST
                   </Button>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { useEffect } from "react";
 import magazineHero from "@/assets/magazine-hero.webp";
 import pondicherry from "@/assets/dest-pondicherry.webp";
 import madurai from "@/assets/dest-madurai.webp";
@@ -16,14 +17,16 @@ import awardBadge from "@/assets/award-badge.webp";
 const MagazinePage = () => {
   const articles = [
     {
+      id: "pondicherry-48-hours",
       date: "November 7, 2025",
       title: "Pondicherry in 48 Hours: Cafés, Culture & Coastal Drives",
       excerpt:
-        "Follow our two-day itinerary through White Town boulevards, artisan studios, and seaside promenades to savour the best of Pondicherry’s French-Tamil charm.",
+        "Follow our two-day itinerary through White Town boulevards, artisan studios, and seaside promenades to savour the best of Pondicherry's French-Tamil charm.",
       category: "PONDICHERRY TRAVEL GUIDE",
       image: pondicherry,
     },
     {
+      id: "madurai-after-dark",
       date: "November 5, 2025",
       title: "Madurai After Dark: Temple Rituals & Night Markets",
       excerpt:
@@ -32,6 +35,7 @@ const MagazinePage = () => {
       image: madurai,
     },
     {
+      id: "trichy-riverfront",
       date: "October 30, 2025",
       title: "Trichy Riverfront Retreats for Slow Travelers",
       excerpt:
@@ -40,22 +44,36 @@ const MagazinePage = () => {
       image: trichy,
     },
     {
+      id: "varkala-cliff-notes",
       date: "October 23, 2025",
       title: "Wellness Weekending in Varkala & Kovalam",
       excerpt:
-        "Plan an indulgent getaway across Kerala’s twin beach towns with Ayurvedic rituals, yoga retreats, and cliffside brunch spots worth lingering over.",
+        "Plan an indulgent getaway across Kerala's twin beach towns with Ayurvedic rituals, yoga retreats, and cliffside brunch spots worth lingering over.",
       category: "KERALA WELLNESS",
       image: varkala,
     },
     {
+      id: "kanyakumari-sunrises",
       date: "October 22, 2025",
-      title: "Chasing Sunrises at India’s Southern Tip",
+      title: "Chasing Sunrises at India's Southern Tip",
       excerpt:
-        "Kanyakumari’s Triveni Sangam, lighthouse sunsets, and coastal cuisine make it an evocative finale to any South India itinerary.",
+        "Kanyakumari's Triveni Sangam, lighthouse sunsets, and coastal cuisine make it an evocative finale to any South India itinerary.",
       category: "KANYAKUMARI TRAVEL GUIDE",
       image: kanyakumari,
     }
   ];
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, []);
 
   const topics = [
     "Pondicherry Travel Guide",
@@ -99,7 +117,7 @@ const MagazinePage = () => {
               <div>
                 <div className="space-y-12">
                   {articles.map((article, index) => (
-                    <article key={index} className="group">
+                    <article key={index} id={article.id} className="group scroll-mt-24">
                       <div className="relative overflow-hidden rounded-lg mb-6 aspect-[16/10]">
                         <img 
                           src={article.image} 

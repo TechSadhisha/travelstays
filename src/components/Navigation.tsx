@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -161,12 +161,16 @@ const Navigation = () => {
             >
               MAGAZINE
             </Link>
-            <Link
-              to="/contact-us"
-              className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
-            >
-              CONTACT US
-            </Link>
+            {/* Contact */}
+            <div className="flex items-center gap-2">
+              <Link
+                to="/contact-us"
+                className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
+              >
+                CONTACT US
+              </Link>
+            </div>
+
           </div>
 
           {/* Spacer for mobile to balance logo */}

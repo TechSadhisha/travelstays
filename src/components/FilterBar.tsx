@@ -17,7 +17,7 @@ interface FilterBarProps {
   onBedroomsChange: (value: string) => void;
   onGuestsChange: (value: string) => void;
   onClear: () => void;
-  onAdvanced: () => void;
+  onAdvanced?: () => void;
 }
 
 export const FilterBar = ({
@@ -116,12 +116,14 @@ export const FilterBar = ({
         >
           CLEAR
         </Button>
-        <Button
-          onClick={onAdvanced}
-          className="min-w-[120px] bg-primary text-primary-foreground hover:bg-primary/90"
-        >
-          ADVANCED
-        </Button>
+        {onAdvanced && (
+          <Button
+            onClick={onAdvanced}
+            className="min-w-[120px] bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            ADVANCED
+          </Button>
+        )}
       </div>
     </div>
   );

@@ -97,7 +97,7 @@ const VillasInFocus = () => {
                   {villa.collection === "premium"
                     ? "PREMIUM COLLECTION"
                     : "SIGNATURE COLLECTION"}
-                </div>
+                </div> 
               </div>
 
               <h3 className="text-xl sm:text-2xl font-light mb-2">
@@ -122,20 +122,22 @@ const VillasInFocus = () => {
         </div>
 
        {/* Pagination Dots */}
-<div className="flex justify-center gap-2">
-  {Array.from({ length: 4 }).map((_, index) => (
-    <button
-      key={index}
-      onClick={() => setCurrentIndex(index * visibleCount)}
-      className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
-        Math.floor(currentIndex / visibleCount) === index
-          ? "bg-primary"
-          : "bg-muted"
-      }`}
-      aria-label={`Go to slide group ${index + 1}`}
-    />
-  ))}
-</div>
+       {featuredVillas.length > visibleCount && (
+         <div className="flex justify-center gap-2">
+           {Array.from({ length: featuredVillas.length }).map((_, index) => (
+             <button
+               key={index}
+               onClick={() => setCurrentIndex(index)}
+               className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
+                 currentIndex === index
+                   ? "bg-primary"
+                   : "bg-muted"
+               }`}
+               aria-label={`Go to slide ${index + 1}`}
+             />
+           ))}
+         </div>
+       )}
       </div>
     </section>
   );

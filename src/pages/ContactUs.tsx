@@ -5,22 +5,16 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { Phone, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
-    subject: "",
-    country: "",
-    communicationChannel: "",
+    city: "",
     message: "",
-    consent: false,
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,8 +62,9 @@ const ContactUs = () => {
             <div className="mb-8 md:mb-12">
               <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed mb-4">
                 For questions and other inquiries regarding our products and services, please complete the form below and submit. One of our villa specialists or team members will attend to your query shortly. For any urgent requests, please call us at{" "}
-                <a href="tel:+85224354898" className="text-primary hover:underline font-medium">
-                  +852 2435 4898
+                <a href="tel:+91 95852 30000" className="text-primary hover:underline font-medium">
+                  +91 95852 30000
+
                 </a>
                 .
               </p>
@@ -81,47 +76,30 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base md:text-lg"
                 >
-                  <span>WhatsApp: +852 5742 8838</span>
+                  <span>WhatsApp: +91 95852 30000</span>
                 </a>
               </div>
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                {/* First Name */}
+              {/* Contact Form */}
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Name */}
                 <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-sm sm:text-base">First Name</Label>
+                  <Label htmlFor="name" className="text-sm sm:text-base">Name</Label>
                   <Input
-                    id="firstName"
+                    id="name"
                     type="text"
-                    placeholder="First Name"
-                    value={formData.firstName}
-                    onChange={(e) => handleChange("firstName", e.target.value)}
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={(e) => handleChange("name", e.target.value)}
                     className="w-full"
                   />
                 </div>
 
-                {/* Last Name */}
-                <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-sm sm:text-base">Last Name</Label>
-                  <Input
-                    id="lastName"
-                    type="text"
-                    placeholder="Last Name"
-                    value={formData.lastName}
-                    onChange={(e) => handleChange("lastName", e.target.value)}
-                    className="w-full"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {/* Email */}
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm sm:text-base">
-                    Email <span className="text-destructive">*</span>
-                  </Label>
+                  <Label htmlFor="email" className="text-sm sm:text-base">Email *</Label>
                   <Input
                     id="email"
                     type="email"
@@ -135,138 +113,55 @@ const ContactUs = () => {
 
                 {/* Phone */}
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-sm sm:text-base">
-                    Phone <span className="text-destructive">*</span>
-                  </Label>
+                  <Label htmlFor="phone" className="text-sm sm:text-base">Phone *</Label>
                   <Input
                     id="phone"
                     type="tel"
-                    placeholder="+66 000 00000000"
+                    placeholder="95852 30000"
                     required
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
                     className="w-full"
                   />
                 </div>
-              </div>
 
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                {/* Subject/Name of villa or chalet */}
+                {/* City */}
                 <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-sm sm:text-base">Subject/Name of villa or chalet:</Label>
+                  <Label htmlFor="city" className="text-sm sm:text-base">City</Label>
                   <Input
-                    id="subject"
+                    id="city"
                     type="text"
-                    placeholder="Enter subject or villa name"
-                    value={formData.subject}
-                    onChange={(e) => handleChange("subject", e.target.value)}
+                    placeholder="Your City"
+                    value={formData.city}
+                    onChange={(e) => handleChange("city", e.target.value)}
                     className="w-full"
                   />
                 </div>
 
-                {/* Country of Residence */}
+                {/* Message */}
                 <div className="space-y-2">
-                  <Label htmlFor="country" className="text-sm sm:text-base">
-                    Country of Residence <span className="text-destructive">*</span>
-                  </Label>
-                  <Select
-                    value={formData.country}
-                    onValueChange={(value) => handleChange("country", value)}
-                    required
-                  >
-                    <SelectTrigger id="country" className="w-full">
-                      <SelectValue placeholder="-Select-" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="hongkong">Hong Kong</SelectItem>
-                      <SelectItem value="singapore">Singapore</SelectItem>
-                      <SelectItem value="thailand">Thailand</SelectItem>
-                      <SelectItem value="indonesia">Indonesia</SelectItem>
-                      <SelectItem value="malaysia">Malaysia</SelectItem>
-                      <SelectItem value="japan">Japan</SelectItem>
-                      <SelectItem value="south-korea">South Korea</SelectItem>
-                      <SelectItem value="china">China</SelectItem>
-                      <SelectItem value="taiwan">Taiwan</SelectItem>
-                      <SelectItem value="philippines">Philippines</SelectItem>
-                      <SelectItem value="vietnam">Vietnam</SelectItem>
-                      <SelectItem value="australia">Australia</SelectItem>
-                      <SelectItem value="new-zealand">New Zealand</SelectItem>
-                      <SelectItem value="uk">United Kingdom</SelectItem>
-                      <SelectItem value="usa">United States</SelectItem>
-                      <SelectItem value="canada">Canada</SelectItem>
-                      <SelectItem value="france">France</SelectItem>
-                      <SelectItem value="switzerland">Switzerland</SelectItem>
-                      <SelectItem value="germany">Germany</SelectItem>
-                      <SelectItem value="italy">Italy</SelectItem>
-                      <SelectItem value="spain">Spain</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <Label htmlFor="message" className="text-sm sm:text-base">Message</Label>
+                  <Textarea
+                    id="message"
+                    placeholder="Type your message or additional comments here..."
+                    rows={6}
+                    value={formData.message}
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    className="w-full resize-none min-h-[120px]"
+                  />
                 </div>
-              </div>
 
-              {/* Preferred Communication Channel */}
-              <div className="space-y-2">
-                <Label htmlFor="communicationChannel" className="text-sm sm:text-base">
-                  Preferred Communication Channel <span className="text-destructive">*</span>
-                </Label>
-                <Select
-                  value={formData.communicationChannel}
-                  onValueChange={(value) => handleChange("communicationChannel", value)}
-                  required
-                >
-                  <SelectTrigger id="communicationChannel" className="w-full">
-                    <SelectValue placeholder="-Select-" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="email">Email</SelectItem>
-                    <SelectItem value="phone">Phone</SelectItem>
-                    <SelectItem value="whatsapp">WhatsApp</SelectItem>
-                    <SelectItem value="sms">SMS</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Additional Message/Comments */}
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm sm:text-base">Additional Message/Comments:</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Type your message or additional comments here..."
-                  rows={6}
-                  value={formData.message}
-                  onChange={(e) => handleChange("message", e.target.value)}
-                  className="w-full resize-none min-h-[120px]"
-                />
-              </div>
-
-              {/* Consent Checkbox */}
-              <div className="flex items-start space-x-3 pt-2">
-                <Checkbox
-                  id="consent"
-                  checked={formData.consent}
-                  onCheckedChange={(checked) => handleChange("consent", checked as boolean)}
-                  className="mt-1 flex-shrink-0"
-                />
-                <Label
-                  htmlFor="consent"
-                  className="text-xs sm:text-sm leading-relaxed cursor-pointer text-foreground/80"
-                >
-                  I agree to receive exclusive offers, newsletters, and WhatsApp updates from The Luxury Signature. I understand I can unsubscribe at any time.
-                </Label>
-              </div>
-
-              {/* Submit Button */}
-              <div className="pt-4">
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full sm:w-auto min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base"
-                >
-                  SUBMIT
-                </Button>
-              </div>
-            </form>
+                {/* Submit Button */}
+                <div className="pt-4">
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full sm:w-auto min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base"
+                  >
+                    SUBMIT
+                  </Button>
+                </div>
+              </form>
           </div>
         </section>
       </main>

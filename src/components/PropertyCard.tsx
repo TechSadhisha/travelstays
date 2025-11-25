@@ -110,8 +110,6 @@ export const PropertyCard = (property: PropertyCardProps) => {
           
           <div className="flex justify-between items-center pt-4 border-t">
             <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
-              <Checkbox id={`compare-${id}`} />
-              <label htmlFor={`compare-${id}`} className="text-sm cursor-pointer">COMPARE</label>
             </div>
             {!price ? (
               <Button variant="outline" size="sm" onClick={(e) => {
