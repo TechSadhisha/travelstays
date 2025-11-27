@@ -34,6 +34,8 @@ export const InquiryForm = ({
     email: "",
     phone: "",
     message: "",
+    numberOfRooms: "",
+    numberOfGuests: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -41,16 +43,70 @@ export const InquiryForm = ({
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    // Basic validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       toast({
-        title: "Inquiry Sent Successfully!",
+        title: "Validation Error",
+        description: "Please fill in all required fields (Name, Email, Phone).",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Validation Error",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001'}/api/inquiry`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          propertyId: property.id,
+          propertyName: property.title,
+          propertyLocation: property.location,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          checkIn: checkIn ? checkIn.toISOString().split('T')[0] : null,
+          checkOut: checkOut ? checkOut.toISOString().split('T')[0] : null,
+          numberOfRooms: formData.numberOfRooms ? parseInt(formData.numberOfRooms) : null,
+          numberOfGuests: formData.numberOfGuests ? parseInt(formData.numberOfGuests) : null,
+        }),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || 'Failed to submit inquiry');
+      }
+
+      toast({
+        title: 'Inquiry Sent Successfully!',
         description: `We've received your inquiry for ${property.title}. Our team will contact you shortly.`,
       });
-      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFormData({ name: '', email: '', phone: '', message: '', numberOfRooms: '', numberOfGuests: '' });
       onOpenChange(false);
-    }, 1500);
+    } catch (error: any) {
+      toast({
+        title: 'Submission Failed',
+        description: error.message || 'Could not connect to the server. Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -141,6 +197,31 @@ export const InquiryForm = ({
               onChange={(e) => handleChange("phone", e.target.value)}
               placeholder="+91 1234567890"
             />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <Label htmlFor="numberOfRooms">Number of Rooms</Label>
+              <Input
+                id="numberOfRooms"
+                type="number"
+                min="1"
+                value={formData.numberOfRooms}
+                onChange={(e) => handleChange("numberOfRooms", e.target.value)}
+                placeholder="e.g., 2"
+              />
+            </div>
+            <div>
+              <Label htmlFor="numberOfGuests">Number of Guests</Label>
+              <Input
+                id="numberOfGuests"
+                type="number"
+                min="1"
+                value={formData.numberOfGuests}
+                onChange={(e) => handleChange("numberOfGuests", e.target.value)}
+                placeholder="e.g., 4"
+              />
+            </div>
           </div>
 
           <div>

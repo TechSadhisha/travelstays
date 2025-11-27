@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logo from "@/assets/logo_final.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navigation = () => {
               to="/allvillas"
               className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
             >
-              ALL VILLAS
+              ALL STAYS
             </Link>
             <Link
               to="/map"
@@ -68,82 +69,18 @@ const Navigation = () => {
             </Sheet>
           </div>
 
+
+
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center mx-auto lg:mx-0">
             <div className="w-10 h-10 sm:w-12 sm:h-12 mb-1">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <rect
-                  x="20"
-                  y="20"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="20"
-                  y="40"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="40"
-                  y="20"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="40"
-                  y="40"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="65"
-                  y="20"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="65"
-                  y="40"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="20"
-                  y="65"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="40"
-                  y="65"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-                <rect
-                  x="65"
-                  y="65"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                />
-              </svg>
+              <img src={logo} alt="Travel Stays" className="w-full h-full object-contain" />
             </div>
             <div className="text-center">
-              <div className="text-[9px] sm:text-[10px] tracking-[0.2em] mb-0.5">
-                TRAVEL
+              <div className="text-[9px] sm:text-[10px] tracking-[0.2em] mb-0.5 font-bold">
+                TRAVEL STAYS
               </div>
-              <div className="text-xs sm:text-sm tracking-[0.3em] font-light">
-                STAYS
-              </div>
+
             </div>
           </Link>
 

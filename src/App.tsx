@@ -12,6 +12,11 @@ import MagazinePage from "./pages/MagazinePage";
 import NotFound from "./pages/NotFound";
 import Map from "./pages/Map";
 import PropertyDetail from "./pages/PropertyDetail";
+import OwnersManagers from "./pages/OwnersManagers";
+import TermsConditions from "./pages/TermsConditions";
+import VillaRentalsFAQ from "./pages/VillaRentalsFAQ";
+import AgentsResources from "./pages/AgentsResources";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +35,11 @@ const App = () => (
           <Route path="/map" element={<Map />} />
           <Route path="/allvillas" element={<Allvillas />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
+          <Route path="/owners-managers" element={<OwnersManagers />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="/villa-rentals-faq" element={<VillaRentalsFAQ />} />
+          <Route path="/agents-resources" element={<AgentsResources />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

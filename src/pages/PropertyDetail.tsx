@@ -209,7 +209,7 @@ const PropertyDetail = () => {
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="bedrooms">
                     <AccordionTrigger className="text-left">
-                      All Bedrooms (Sleeping Arrangement)
+                      All Rooms (Sleeping Arrangement)
                     </AccordionTrigger>
                     <AccordionContent>
                       <div className="space-y-4">
@@ -368,12 +368,8 @@ const PropertyDetail = () => {
                     <span className="font-medium">{destinationName}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Bedrooms:</span>
+                    <span className="text-muted-foreground">Rooms:</span>
                     <span className="font-medium">{property.bedrooms}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Bathrooms:</span>
-                    <span className="font-medium">{property.bathrooms}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Guests:</span>
@@ -459,7 +455,7 @@ const PropertyDetail = () => {
                     size="lg"
                     onClick={() => setInquiryOpen(true)}
                   >
-                    SEND AN INQUIRY
+                    SEND AN BOOKING INQUIRY
                   </Button>
                 </div>
               </div>

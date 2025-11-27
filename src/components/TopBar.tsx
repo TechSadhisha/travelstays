@@ -4,7 +4,7 @@ const TopBar = () => {
   return (
     <div className="bg-primary text-primary-foreground py-2">
       <div className="container mx-auto px-4 flex justify-between items-center text-xs sm:text-sm">
-        <span className="tracking-wide hidden sm:inline">Luxury Holiday Villas & Chalets Rental</span>
+        <span className="tracking-wide hidden sm:inline">Luxury Travel Stays</span>
         <span className="tracking-wide sm:hidden">Luxury Villas & Chalets</span>
         <div className="flex gap-2 sm:gap-4">
           <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">

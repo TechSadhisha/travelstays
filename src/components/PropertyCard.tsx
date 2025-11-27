@@ -93,7 +93,7 @@ export const PropertyCard = (property: PropertyCardProps) => {
             </div>
             
             <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3 text-sm">
-              <span><strong>Bedrooms:</strong> {bedrooms}</span>
+              <span><strong>Rooms:</strong> {bedrooms}</span>
               <span><strong>Bathrooms:</strong> {bathrooms}</span>
               <span><strong>Guests:</strong> {guests}</span>
             </div>

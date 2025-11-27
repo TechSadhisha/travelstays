@@ -73,18 +73,18 @@ export const FilterBar = ({
 
         <div>
           <label className="block text-sm font-bold mb-2 uppercase">
-            Bedrooms
+            Rooms
           </label>
           <Select value={bedrooms} onValueChange={onBedroomsChange}>
             <SelectTrigger className="bg-background">
-              <SelectValue placeholder="Bedrooms" />
+              <SelectValue placeholder="Rooms" />
             </SelectTrigger>
             <SelectContent className="bg-popover z-50">
-              <SelectItem value="all">All Bedrooms</SelectItem>
-              <SelectItem value="2">2+ Bedrooms</SelectItem>
-              <SelectItem value="3">3+ Bedrooms</SelectItem>
-              <SelectItem value="4">4+ Bedrooms</SelectItem>
-              <SelectItem value="5">5+ Bedrooms</SelectItem>
+              <SelectItem value="all">All Rooms</SelectItem>
+              <SelectItem value="2">2+ Rooms</SelectItem>
+              <SelectItem value="3">3+ Rooms</SelectItem>
+              <SelectItem value="4">4+ Rooms</SelectItem>
+              <SelectItem value="5">5+ Rooms</SelectItem>
             </SelectContent>
           </Select>
         </div>

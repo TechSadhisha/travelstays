@@ -8,14 +8,13 @@ const FeaturedIn = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 opacity-70">
-          <div className="text-lg sm:text-xl md:text-2xl font-serif tracking-wider">HONG KONG<br/><span className="text-base sm:text-lg md:text-xl">TATLER</span></div>
-          <div className="text-lg sm:text-xl md:text-2xl font-serif italic">Luxury<br/><span className="text-xs sm:text-sm">LIFESTYLE AWARDS</span></div>
+          <div className="text-lg sm:text-xl md:text-2xl font-serif tracking-wider">TRAVEL<br/><span className="text-base sm:text-lg md:text-xl">MART</span></div>
+          <div className="text-lg sm:text-xl md:text-2xl font-serif italic">INDIA<br/><span className="text-xs sm:text-sm">TRAVEL AWARDS</span></div>
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary-foreground"></div>
-            <div className="text-lg sm:text-xl font-bold">USA<br/>TODAY</div>
+            <div className="text-lg sm:text-xl font-bold">PUDUCHERRY<br/>CHAMBRE OF COMMERCE</div>
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl font-serif">Robb Report</div>
-          <div className="text-2xl sm:text-3xl md:text-4xl font-serif italic tracking-wider">VOGUE</div>
+          <div className="text-lg sm:text-xl md:text-2xl font-serif">TOURISM <br /> AWARDS</div>
         </div>
       </div>
     </section>

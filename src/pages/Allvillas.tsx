@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { PropertyCard } from "@/components/PropertyCard";
-import { FilterBar } from "@/components/FilterBar";
+import { SearchBar } from "@/components/SearchBar";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -46,7 +46,7 @@ const destinationMap: Record<string, { name: string; image: string }> = {
 };
 
 const Allvillas = () => {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [collection, setCollection] = useState("all");
   const [destination, setDestination] = useState("all");
   const [bedrooms, setBedrooms] = useState("all");
@@ -64,13 +64,29 @@ const Allvillas = () => {
     const destinationParam = searchParams.get("destination");
     const bedroomsParam = searchParams.get("bedrooms");
     const searchParam = searchParams.get("search");
+    const adultsParam = searchParams.get("adults");
+    const childrenParam = searchParams.get("children");
+    const roomsParam = searchParams.get("rooms");
 
     if (destinationParam) {
       setDestination(destinationParam);
     }
-    if (bedroomsParam) {
+    
+    // Map rooms param to bedrooms filter
+    if (roomsParam) {
+      setBedrooms(roomsParam);
+    } else if (bedroomsParam) {
       setBedrooms(bedroomsParam);
     }
+
+    // Map adults + children to guests filter
+    if (adultsParam || childrenParam) {
+      const totalGuests = (parseInt(adultsParam || "0") + parseInt(childrenParam || "0"));
+      if (totalGuests > 0) setGuests(totalGuests.toString());
+    } else if (searchParams.get("guests")) {
+      setGuests(searchParams.get("guests")!);
+    }
+
     if (searchParam) {
       setSearchQuery(searchParam);
     }
@@ -78,7 +94,7 @@ const Allvillas = () => {
     // Scroll to top on initial mount if query parameters are present
     if (
       isInitialMount.current &&
-      (destinationParam || bedroomsParam || searchParam)
+      (destinationParam || bedroomsParam || searchParam || adultsParam || roomsParam)
     ) {
       window.scrollTo(0, 0);
       isInitialMount.current = false;
@@ -240,7 +256,7 @@ const Allvillas = () => {
         </section>
 
         {/* Description Section */}
-        <section className="container mx-auto px-4 py-12 max-w-6xl">
+        {/* <section className="container mx-auto px-4 py-12 max-w-6xl">
           <p className="text-foreground leading-relaxed">
             Browse our curated selection of luxury hotels and villas across
             India using our <em>Advanced Filtering System</em>. Search
@@ -248,20 +264,53 @@ const Allvillas = () => {
             find your perfect stay. Every property in our portfolio has been
             personally inspected for service, style, and authenticity.
           </p>
-        </section>
+        </section> */}
 
-        {/* Filter Bar */}
-        <section className="container mx-auto px-4 max-w-7xl">
-          <FilterBar
-            collection={collection}
-            destination={destination}
-            bedrooms={bedrooms}
-            guests={guests}
-            onCollectionChange={setCollection}
-            onDestinationChange={setDestination}
-            onBedroomsChange={setBedrooms}
-            onGuestsChange={setGuests}
-            onClear={handleClear}
+        {/* Search Bar */}
+        <section className="container mx-auto px-4 max-w-7xl -mt-8 relative z-20">
+          <SearchBar
+            initialLocation={searchQuery}
+            initialDate={
+              searchParams.get("from") && searchParams.get("to")
+                ? {
+                    from: new Date(searchParams.get("from")!),
+                    to: new Date(searchParams.get("to")!),
+                  }
+                : undefined
+            }
+            initialGuests={{
+              adults: parseInt(searchParams.get("adults") || "2"),
+              children: parseInt(searchParams.get("children") || "0"),
+              rooms: parseInt(searchParams.get("rooms") || "1"),
+            }}
+            onSearch={({ location, date, guests }) => {
+              const params = new URLSearchParams(searchParams);
+              
+              // Update search query
+              if (location) {
+                params.set("search", location);
+                setSearchQuery(location);
+              } else {
+                params.delete("search");
+                setSearchQuery("");
+              }
+
+              // Update dates
+              if (date?.from) params.set("from", date.from.toISOString());
+              else params.delete("from");
+              
+              if (date?.to) params.set("to", date.to.toISOString());
+              else params.delete("to");
+
+              // Update guests
+              params.set("adults", guests.adults.toString());
+              params.set("children", guests.children.toString());
+              params.set("rooms", guests.rooms.toString());
+
+              // Update URL
+              setSearchParams(params);
+            }}
+            className="shadow-lg"
           />
         </section>
 
@@ -326,7 +375,7 @@ const Allvillas = () => {
         )}
 
         {/* Sort Options */}
-        <section className="container mx-auto px-4 max-w-6xl mb-8">
+        {/* <section className="container mx-auto px-4 max-w-6xl mb-8">
           <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm">
             <span className="text-muted-foreground w-full sm:w-auto">
               Sort by:
@@ -382,7 +431,7 @@ const Allvillas = () => {
               PRICE (LOW TO HIGH)
             </button>
           </div>
-        </section>
+        </section> */}
 
         {/* Results Count */}
         <section className="container mx-auto px-4 max-w-7xl mb-6">
