@@ -62,8 +62,8 @@ const ContactUs = () => {
             <div className="mb-8 md:mb-12">
               <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed mb-4">
                 For questions and other inquiries regarding our products and services, please complete the form below and submit. One of our villa specialists or team members will attend to your query shortly. For any urgent requests, please call us at{" "}
-                <a href="tel:+91 95852 30000" className="text-primary hover:underline font-medium">
-                  +91 95852 30000
+                <a href="tel:+91 9087776509" className="text-primary hover:underline font-medium">
+                  +91 9087776509
 
                 </a>
                 .
@@ -76,7 +76,7 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base md:text-lg"
                 >
-                  <span>WhatsApp: +91 95852 30000</span>
+                  <span>WhatsApp: +91 9087776509</span>
                 </a>
               </div>
             </div>

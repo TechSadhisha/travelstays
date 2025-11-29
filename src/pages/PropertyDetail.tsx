@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -29,9 +29,21 @@ import { cn } from "@/lib/utils";
 
 const PropertyDetail = () => {
   const { id } = useParams<{ id: string }>();
+  const [searchParams] = useSearchParams();
   const property = id ? getPropertyById(parseInt(id)) : undefined;
-  const [checkIn, setCheckIn] = useState<Date>();
-  const [checkOut, setCheckOut] = useState<Date>();
+  
+  // Initialize state from URL params
+  const [checkIn, setCheckIn] = useState<Date | undefined>(
+    searchParams.get("from") ? new Date(searchParams.get("from")!) : undefined
+  );
+  const [checkOut, setCheckOut] = useState<Date | undefined>(
+    searchParams.get("to") ? new Date(searchParams.get("to")!) : undefined
+  );
+  
+  const adults = parseInt(searchParams.get("adults") || "0");
+  const initialGuests = adults > 0 ? adults : property?.guests;
+  const initialRooms = searchParams.get("rooms") ? parseInt(searchParams.get("rooms")!) : property?.bedrooms;
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [inquiryOpen, setInquiryOpen] = useState(false);
 
@@ -369,11 +381,11 @@ const PropertyDetail = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Rooms:</span>
-                    <span className="font-medium">{property.bedrooms}</span>
+                    <span className="font-medium">{initialRooms || property.bedrooms}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Guests:</span>
-                    <span className="font-medium">{property.guests}</span>
+                    <span className="text-muted-foreground">Adults:</span>
+                    <span className="font-medium">{adults || property.guests}</span>
                   </div>
                 </div>
 
@@ -474,6 +486,8 @@ const PropertyDetail = () => {
           property={property}
           checkIn={checkIn}
           checkOut={checkOut}
+          initialGuests={initialGuests}
+          initialRooms={initialRooms}
         />
       )}
     </div>

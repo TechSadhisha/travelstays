@@ -120,9 +120,9 @@ const Allvillas = () => {
         return false;
       if (destination !== "all" && property.destination !== destination)
         return false;
-      if (bedrooms !== "all" && property.bedrooms < parseInt(bedrooms))
-        return false;
-      if (guests !== "all" && property.guests < parseInt(guests)) return false;
+      // if (bedrooms !== "all" && property.bedrooms < parseInt(bedrooms))
+      //   return false;
+      // if (guests !== "all" && property.guests < parseInt(guests)) return false;
 
       // Search query
       if (searchQuery) {

@@ -48,10 +48,12 @@ export interface SearchBarProps {
   className?: string;
 }
 
+const DEFAULT_GUESTS = { adults: 2, children: 0, rooms: 1 };
+
 export const SearchBar = ({
   initialLocation = "",
   initialDate,
-  initialGuests = { adults: 2, children: 0, rooms: 1 },
+  initialGuests = DEFAULT_GUESTS,
   onSearch,
   className = "",
 }: SearchBarProps) => {
@@ -266,7 +268,7 @@ export const SearchBar = ({
               <User className="h-5 w-5 text-gray-500" />
               <div className="flex-1 overflow-hidden">
                 <span className="text-gray-900 font-medium truncate block">
-                  {guests.adults} adults · {guests.children} children · {guests.rooms} room
+                  {guests.adults} Adults · {guests.rooms} Rooms
                 </span>
               </div>
             </button>
@@ -281,18 +283,6 @@ export const SearchBar = ({
                   </Button>
                   <span className="w-8 text-center">{guests.adults}</span>
                   <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => updateGuests("adults", "increment")}>
-                    <Plus className="h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-medium">Children</div>
-                <div className="flex items-center gap-2">
-                  <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => updateGuests("children", "decrement")}>
-                    <Minus className="h-4 w-4" />
-                  </Button>
-                  <span className="w-8 text-center">{guests.children}</span>
-                  <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => updateGuests("children", "increment")}>
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Star, MapPin } from "lucide-react";
 import { Property } from "@/data/properties";
 
@@ -10,6 +10,7 @@ interface PropertyCardProps extends Property {}
 
 export const PropertyCard = (property: PropertyCardProps) => {
   const navigate = useNavigate();
+  const locationState = useLocation();
   const {
     id,
     title,
@@ -26,8 +27,13 @@ export const PropertyCard = (property: PropertyCardProps) => {
     reviewCount,
   } = property;
 
+  const handleNavigate = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    navigate(`/property/${id}${locationState.search}`);
+  };
+
   return (
-    <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow duration-300 cursor-pointer" onClick={() => navigate(`/property/${id}`)}>
+    <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow duration-300 cursor-pointer" onClick={handleNavigate}>
       <div className="flex flex-col md:flex-row">
         {/* Image Section - Left Side */}
         <div className="relative md:w-[45%] flex-shrink-0">
@@ -92,11 +98,10 @@ export const PropertyCard = (property: PropertyCardProps) => {
               )}
             </div>
             
-            <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3 text-sm">
+            {/* <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3 text-sm">
               <span><strong>Rooms:</strong> {bedrooms}</span>
-              <span><strong>Bathrooms:</strong> {bathrooms}</span>
-              <span><strong>Guests:</strong> {guests}</span>
-            </div>
+              <span><strong>Adults:</strong> {guests}</span>
+            </div> */}
             
             <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{description}</p>
             
@@ -112,17 +117,11 @@ export const PropertyCard = (property: PropertyCardProps) => {
             <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
             </div>
             {!price ? (
-              <Button variant="outline" size="sm" onClick={(e) => {
-                e.stopPropagation();
-                navigate(`/property/${id}`);
-              }}>Request for Quote</Button>
+              <Button variant="outline" size="sm" onClick={handleNavigate}>Request for Quote</Button>
             ) : (
               <Button 
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  navigate(`/property/${id}`);
-                }}
+                onClick={handleNavigate}
               >
                 VIEW DETAILS →
               </Button>
