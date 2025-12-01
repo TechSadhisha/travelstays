@@ -33,7 +33,7 @@ const Navigation = () => {
               to="/allvillas"
               className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
             >
-              ALL STAYS
+              ALL VILLAS
             </Link>
             <Link
               to="/map"
