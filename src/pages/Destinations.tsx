@@ -4,13 +4,13 @@ import TopBar from "@/components/TopBar";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/destinations-hero.webp";
-import pondicherry from "@/assets/dest-pondicherry.webp";
-import madurai from "@/assets/dest-madurai.webp";
-import trichy from "@/assets/dest-trichy.webp";
-import varkala from "@/assets/dest-varkala.webp";
-import kovalam from "@/assets/dest-kovalam.webp";
-import kanyakumari from "@/assets/dest-kanyakumari.webp";
+const heroImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415606/travel_stays_assets/destinations-hero.webp";
+const pondicherry = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const madurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const trichy = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const varkala = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const kovalam = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
+const kanyakumari = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
 
 interface DestinationInfo {
   name: string;

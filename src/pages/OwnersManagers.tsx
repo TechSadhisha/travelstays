@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import TopBar from "@/components/TopBar";
-import heroImage from "@/assets/property_images/kanyakumari/the_coral.webp"; // Using a placeholder, ideally use the uploaded image
+const heroImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415919/travel_stays_assets/property_images/kanyakumari/the_coral.webp"; // Using a placeholder, ideally use the uploaded image
 
 const OwnersManagers = () => {
   return (

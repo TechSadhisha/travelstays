@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import logo from "@/assets/logo_final.png";
+const logo = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
 
 const Footer = () => {
   return (

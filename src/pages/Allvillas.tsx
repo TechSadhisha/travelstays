@@ -10,12 +10,14 @@ import Navigation from "@/components/Navigation";
 import { allProperties, parsePrice } from "@/data/properties";
 import { X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import pondicherryImage from "@/assets/dest-pondicherry.webp";
-import maduraiImage from "@/assets/dest-madurai.webp";
-import trichyImage from "@/assets/dest-trichy.webp";
-import varkalaImage from "@/assets/dest-varkala.webp";
-import kovalamImage from "@/assets/dest-kovalam.webp";
-import kanyakumariImage from "@/assets/dest-kanyakumari.webp";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { SlidersHorizontal } from "lucide-react";
+const pondicherryImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const maduraiImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const trichyImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const varkalaImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const kovalamImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
+const kanyakumariImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
 
 // Destination mapping for dynamic hero section
 const destinationMap: Record<string, { name: string; image: string }> = {
@@ -56,6 +58,7 @@ const Allvillas = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 20000]);
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
+  const [selectedTiers, setSelectedTiers] = useState<string[]>([]);
   const [minRating, setMinRating] = useState(0);
   const isInitialMount = useRef(true);
 
@@ -109,6 +112,7 @@ const Allvillas = () => {
     setSearchQuery("");
     setPriceRange([0, 20000]);
     setSelectedAmenities([]);
+    setSelectedTiers([]);
     setMinRating(0);
   };
 
@@ -168,6 +172,11 @@ const Allvillas = () => {
         if (!hasAllAmenities) return false;
       }
 
+      // Tier
+      if (selectedTiers.length > 0) {
+        if (!property.tier || !selectedTiers.includes(property.tier)) return false;
+      }
+
       return true;
     });
   }, [
@@ -178,6 +187,7 @@ const Allvillas = () => {
     searchQuery,
     priceRange,
     selectedAmenities,
+    selectedTiers,
     minRating,
   ]);
 
@@ -210,7 +220,8 @@ const Allvillas = () => {
     (searchQuery ? 1 : 0) +
     (priceRange[0] > 0 || priceRange[1] < 20000 ? 1 : 0) +
     (minRating > 0 ? 1 : 0) +
-    selectedAmenities.length;
+    selectedAmenities.length +
+    selectedTiers.length;
 
   // Get current destination info
   const currentDestination = useMemo(() => {
@@ -267,7 +278,7 @@ const Allvillas = () => {
         </section> */}
 
         {/* Search Bar */}
-        <section className="container mx-auto px-4 max-w-7xl -mt-8 relative z-20">
+        <section className="container mx-auto px-4 max-w-7xl -mt-12 relative z-20">
           <SearchBar
             initialLocation={searchQuery}
             initialDate={
@@ -370,6 +381,19 @@ const Allvillas = () => {
                   </button>
                 </Badge>
               ))}
+              {selectedTiers.map((tier) => (
+                <Badge key={tier} variant="secondary" className="gap-1">
+                  {tier}
+                  <button
+                    onClick={() =>
+                      setSelectedTiers(selectedTiers.filter((t) => t !== tier))
+                    }
+                    className="ml-1 hover:text-foreground"
+                  >
+                    <X className="h-3 w-3" />
+                  </button>
+                </Badge>
+              ))}
             </div>
           </section>
         )}
@@ -442,9 +466,9 @@ const Allvillas = () => {
 
         {/* Main Content - Sidebar + Properties */}
         <section className="container mx-auto px-4 max-w-7xl mb-12">
-          <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
-            {/* Filter Sidebar - Hidden on mobile, shown on desktop */}
-            <aside className="hidden lg:block">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* Filter Sidebar - Desktop */}
+            <aside className="hidden lg:block w-[300px] flex-shrink-0 sticky top-24">
               <FilterSidebar
                 priceRange={priceRange}
                 onPriceRangeChange={setPriceRange}
@@ -452,16 +476,56 @@ const Allvillas = () => {
                 onAmenitiesChange={setSelectedAmenities}
                 minRating={minRating}
                 onMinRatingChange={setMinRating}
+                selectedTiers={selectedTiers}
+                onTiersChange={setSelectedTiers}
                 onClear={() => {
                   setPriceRange([0, 20000]);
                   setSelectedAmenities([]);
+                  setSelectedTiers([]);
                   setMinRating(0);
                 }}
               />
             </aside>
 
+            {/* Mobile Filter Button */}
+            <div className="lg:hidden mb-4">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline" className="gap-2">
+                    <SlidersHorizontal className="h-4 w-4" />
+                    Filters
+                    {activeFiltersCount > 0 && (
+                      <Badge variant="secondary" className="ml-1 px-1.5 py-0.5 h-5 min-w-[1.25rem]">
+                        {activeFiltersCount}
+                      </Badge>
+                    )}
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto">
+                  <div className="mt-6">
+                    <FilterSidebar
+                      priceRange={priceRange}
+                      onPriceRangeChange={setPriceRange}
+                      selectedAmenities={selectedAmenities}
+                      onAmenitiesChange={setSelectedAmenities}
+                      minRating={minRating}
+                      onMinRatingChange={setMinRating}
+                      selectedTiers={selectedTiers}
+                      onTiersChange={setSelectedTiers}
+                      onClear={() => {
+                        setPriceRange([0, 20000]);
+                        setSelectedAmenities([]);
+                        setSelectedTiers([]);
+                        setMinRating(0);
+                      }}
+                    />
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+
             {/* Property Cards */}
-            <div>
+            <div className="flex-1 w-full">
               {displayedProperties.length > 0 ? (
                 <>
                   <div className="space-y-8">

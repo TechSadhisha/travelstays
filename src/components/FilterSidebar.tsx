@@ -12,6 +12,8 @@ interface FilterSidebarProps {
   onAmenitiesChange: (amenities: string[]) => void;
   minRating: number;
   onMinRatingChange: (rating: number) => void;
+  selectedTiers: string[];
+  onTiersChange: (tiers: string[]) => void;
   onClear: () => void;
 }
 
@@ -35,6 +37,8 @@ export const FilterSidebar = ({
   onAmenitiesChange,
   minRating,
   onMinRatingChange,
+  selectedTiers,
+  onTiersChange,
   onClear,
 }: FilterSidebarProps) => {
   const toggleAmenity = (amenity: string) => {
@@ -45,13 +49,22 @@ export const FilterSidebar = ({
     }
   };
 
+  const toggleTier = (tier: string) => {
+    if (selectedTiers.includes(tier)) {
+      onTiersChange(selectedTiers.filter((t) => t !== tier));
+    } else {
+      onTiersChange([...selectedTiers, tier]);
+    }
+  };
+
   const activeFiltersCount =
     (priceRange[0] > 0 || priceRange[1] < 20000 ? 1 : 0) +
     (minRating > 0 ? 1 : 0) +
-    selectedAmenities.length;
+    selectedAmenities.length +
+    selectedTiers.length;
 
   return (
-    <div className="bg-background border rounded-lg p-6 sticky top-4 h-fit">
+    <div className="bg-background border rounded-lg p-6 sticky top-24 h-fit">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-lg font-semibold">Filter by:</h3>
@@ -83,6 +96,32 @@ export const FilterSidebar = ({
           <div className="flex justify-between text-sm text-muted-foreground">
             <span>₹{priceRange[0].toLocaleString()}</span>
             <span>₹{priceRange[1].toLocaleString()}</span>
+          </div>
+        </div>
+
+        <Separator />
+
+        {/* Hotel Tier */}
+        <div>
+          <Label className="text-base font-semibold mb-4 block">
+            Hotel Tier
+          </Label>
+          <div className="space-y-3">
+            {["Budget", "Premium", "Luxury"].map((tier) => (
+              <div key={tier} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`tier-${tier}`}
+                  checked={selectedTiers.includes(tier)}
+                  onCheckedChange={() => toggleTier(tier)}
+                />
+                <Label
+                  htmlFor={`tier-${tier}`}
+                  className="text-sm font-normal cursor-pointer flex-1"
+                >
+                  {tier}
+                </Label>
+              </div>
+            ))}
           </div>
         </div>
 

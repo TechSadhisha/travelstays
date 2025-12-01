@@ -28,12 +28,17 @@ export const PropertyCard = (property: PropertyCardProps) => {
   } = property;
 
   const handleNavigate = (e: React.MouseEvent) => {
+    // Prevent navigation if user is selecting text
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+      return;
+    }
     e.stopPropagation();
     navigate(`/property/${id}${locationState.search}`);
   };
 
   return (
-    <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow duration-300 cursor-pointer" onClick={handleNavigate}>
+    <Card className="overflow-hidden border-border hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group" onClick={handleNavigate}>
       <div className="flex flex-col md:flex-row">
         {/* Image Section - Left Side */}
         <div className="relative md:w-[45%] flex-shrink-0">
@@ -42,15 +47,6 @@ export const PropertyCard = (property: PropertyCardProps) => {
             alt={title}
             className="w-full h-64 md:h-full object-cover"
           />
-          <Badge 
-            className={`absolute top-4 left-4 ${
-              collection === "premium" 
-                ? "bg-primary text-primary-foreground" 
-                : "bg-gold text-primary"
-            } font-semibold px-4 py-1 uppercase text-xs tracking-wide`}
-          >
-            {collection} COLLECTION
-          </Badge>
           {rating && (
             <Badge className="absolute top-4 right-4 bg-background/90 text-foreground flex items-center gap-1">
               <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />

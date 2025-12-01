@@ -247,7 +247,7 @@ export const SearchBar = ({
               </div>
             </button>
           </PopoverTrigger>
-          <PopoverContent className="w-auto p-0" align="start">
+          <PopoverContent className="w-auto p-0" align="start" side="bottom" avoidCollisions={false}>
             <Calendar
               initialFocus
               mode="range"

@@ -6,7 +6,7 @@ import FeaturedIn from "@/components/FeaturedIn";
 import GuestReviews from "@/components/GuestReviews";
 import { Sparkles, Shield, Users, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import aboutHero from "@/assets/about-hero.webp";
+const aboutHero = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415592/travel_stays_assets/about-hero.webp";
 
 const AboutUs = () => {
   return (

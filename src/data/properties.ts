@@ -1,170 +1,170 @@
-import laVilla from "@/assets/property_images/pondicherry/la_villa.webp";
-import laVilla1 from "@/assets/property_images/pondicherry/la_villa1.webp";
-import laVilla2 from "@/assets/property_images/pondicherry/la_villa2.webp";
-import laVilla3 from "@/assets/property_images/pondicherry/la_villa3.webp";
-import leDuplex from "@/assets/property_images/pondicherry/le_duplex.webp";
-import leDuplex1 from "@/assets/property_images/pondicherry/le_duplex1.webp";
-import leDuplex2 from "@/assets/property_images/pondicherry/le_duplex2.webp";
-import leDuplex3 from "@/assets/property_images/pondicherry/le_duplex3.webp";
-import villaShanti from "@/assets/property_images/pondicherry/villa_shanti.webp";
-import villaShanti1 from "@/assets/property_images/pondicherry/villa_shanti1.webp";
-import villaShanti2 from "@/assets/property_images/pondicherry/villa_shanti2.webp";
-import villaShanti3 from "@/assets/property_images/pondicherry/villa_shanti3.webp";
-import grandMadurai from "@/assets/property_images/madurai/grand_madurai.webp";
-import grandMadurai1 from "@/assets/property_images/madurai/grand_madurai1.webp";
-import grandMadurai2 from "@/assets/property_images/madurai/grand_madurai2.webp";
-import grandMadurai3 from "@/assets/property_images/madurai/grand_madurai3.webp";
-import jcResidency from "@/assets/property_images/madurai/jc_residency.webp";
-import jcResidency1 from "@/assets/property_images/madurai/jc_residency1.webp";
-import jcResidency2 from "@/assets/property_images/madurai/jc_residency2.webp";
-import jcResidency3 from "@/assets/property_images/madurai/jc_residency3.webp";
-import poppysHotel from "@/assets/property_images/madurai/poppys_hotel.webp";
-import poppysHotel1 from "@/assets/property_images/madurai/poppys_hotel1.webp";
-import poppysHotel2 from "@/assets/property_images/madurai/poppys_hotel2.webp";
-import poppysHotel3 from "@/assets/property_images/madurai/poppys_hotel3.webp";
-import hotelBlossom from "@/assets/property_images/trichy/hotel_blossoms.webp";
-import hotelBlossom1 from "@/assets/property_images/trichy/hotel_blossoms1.webp";
-import hotelBlossom2 from "@/assets/property_images/trichy/hotel_blossoms2.webp";
-import hotelBlossom3 from "@/assets/property_images/trichy/hotel_blossoms3.webp";
-import vividBoutiqueHotel from "@/assets/property_images/trichy/vivid_boutique_hotel.webp";
-import vividBoutiqueHotel1 from "@/assets/property_images/trichy/vivid_boutique_hotel1.webp";
-import vividBoutiqueHotel2 from "@/assets/property_images/trichy/vivid_boutique_hotel2.webp";
-import vividBoutiqueHotel3 from "@/assets/property_images/trichy/vivid_boutique_hotel3.webp";
-import hotelShaan from "@/assets/property_images/trichy/hotel_shaan.webp";
-import hotelShaan1 from "@/assets/property_images/trichy/hotel_shaan1.webp";
-import hotelShaan2 from "@/assets/property_images/trichy/hotel_shaan2.webp";
-import hotelShaan3 from "@/assets/property_images/trichy/hotel_shaan3.webp";
-import haiwaBeachResidency from "@/assets/property_images/varkala/haiwa_beach_residency.webp";
-import haiwaBeachResidency1 from "@/assets/property_images/varkala/haiwa_beach_residency1.webp";
-import haiwaBeachResidency2 from "@/assets/property_images/varkala/haiwa_beach_residency2.webp";
-import haiwaBeachResidency3 from "@/assets/property_images/varkala/haiwa_beach_residency3.webp";
-import tamaara from "@/assets/property_images/varkala/tamaara.webp";
-import tamaara1 from "@/assets/property_images/varkala/tamaara1.webp";
-import tamaara2 from "@/assets/property_images/varkala/tamaara2.webp";
-import sajjoys from "@/assets/property_images/varkala/Sajjoys.webp";
-import sajjoys1 from "@/assets/property_images/varkala/Sajjoys1.webp";
-import sajjoys2 from "@/assets/property_images/varkala/Sajjoys2.webp";
-import sajjoys3 from "@/assets/property_images/varkala/Sajjoys3.webp";
-import swagathHolidays from "@/assets/property_images/kovalam/Swagath Holidays.webp";
-import swagathHolidays1 from "@/assets/property_images/kovalam/swagath_holidays1.webp";
-import swagathHolidays2 from "@/assets/property_images/kovalam/swagath_holidays2.webp";
-import swagathHolidays3 from "@/assets/property_images/kovalam/swagath_holidays3.webp";
-import hotelRockNBeach from "@/assets/property_images/kovalam/hotel_rock _n_beach.webp";
-import hotelRockNBeach1 from "@/assets/property_images/kovalam/hotel_rock _n_beach1.webp";
-import hotelRockNBeach2 from "@/assets/property_images/kovalam/hotel_rock _n_beach2.webp";
-import hotelRockNBeach3 from "@/assets/property_images/kovalam/hotel_rock _n_beach3.webp";
-import pappukuttyBeachResort from "@/assets/property_images/kovalam/pappukutty_beach_resort.webp";
-import pappukuttyBeachResort1 from "@/assets/property_images/kovalam/pappukutty_beach_resort1.webp";
-import pappukuttyBeachResort2 from "@/assets/property_images/kovalam/pappukutty_beach_resort2.webp";
-import pappukuttyBeachResort3 from "@/assets/property_images/kovalam/pappukutty_beach_resort3.webp";
-import theCoral from "@/assets/property_images/kanyakumari/the_coral.webp";
-import theCoral1 from "@/assets/property_images/kanyakumari/the_coral1.webp";
-import theCoral2 from "@/assets/property_images/kanyakumari/the_coral2.webp";
-import theCoral3 from "@/assets/property_images/kanyakumari/the_coral3.webp";
-import hotelSingaar from "@/assets/property_images/kanyakumari/hotel-singaar.webp";
-import hotelSingaar1 from "@/assets/property_images/kanyakumari/hotel-singaar1.webp";
-import hotelSingaar2 from "@/assets/property_images/kanyakumari/hotel-singaar2.webp";
-import hotelSingaar3 from "@/assets/property_images/kanyakumari/hotel-singaar3.webp";
-import hotelOceanHeritage from "@/assets/property_images/kanyakumari/hotel_ocean_heritage.webp";
-import hotelOceanHeritage1 from "@/assets/property_images/kanyakumari/hotel_ocean_heritage1.webp";
-import hotelOceanHeritage2 from "@/assets/property_images/kanyakumari/hotel_ocean_heritage2.webp";
-import hotelOceanHeritage3 from "@/assets/property_images/kanyakumari/hotel_ocean_heritage3.webp";
+const laVilla = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416007/travel_stays_assets/property_images/pondicherry/la_villa.webp";
+const laVilla1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416008/travel_stays_assets/property_images/pondicherry/la_villa1.webp";
+const laVilla2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416009/travel_stays_assets/property_images/pondicherry/la_villa2.webp";
+const laVilla3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416010/travel_stays_assets/property_images/pondicherry/la_villa3.webp";
+const leDuplex = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416018/travel_stays_assets/property_images/pondicherry/le_duplex.webp";
+const leDuplex1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416019/travel_stays_assets/property_images/pondicherry/le_duplex1.webp";
+const leDuplex2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416020/travel_stays_assets/property_images/pondicherry/le_duplex2.webp";
+const leDuplex3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416021/travel_stays_assets/property_images/pondicherry/le_duplex3.webp";
+const villaShanti = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416062/travel_stays_assets/property_images/pondicherry/villa_shanti.webp";
+const villaShanti1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416064/travel_stays_assets/property_images/pondicherry/villa_shanti1.webp";
+const villaShanti2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416065/travel_stays_assets/property_images/pondicherry/villa_shanti2.webp";
+const villaShanti3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416066/travel_stays_assets/property_images/pondicherry/villa_shanti3.webp";
+const grandMadurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415937/travel_stays_assets/property_images/madurai/grand_madurai.webp";
+const grandMadurai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415938/travel_stays_assets/property_images/madurai/grand_madurai1.webp";
+const grandMadurai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415940/travel_stays_assets/property_images/madurai/grand_madurai2.webp";
+const grandMadurai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415941/travel_stays_assets/property_images/madurai/grand_madurai3.webp";
+const jcResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415942/travel_stays_assets/property_images/madurai/jc_residency.webp";
+const jcResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415943/travel_stays_assets/property_images/madurai/jc_residency1.webp";
+const jcResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415944/travel_stays_assets/property_images/madurai/jc_residency2.webp";
+const jcResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415945/travel_stays_assets/property_images/madurai/jc_residency3.webp";
+const poppysHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415947/travel_stays_assets/property_images/madurai/poppys_hotel.webp";
+const poppysHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415948/travel_stays_assets/property_images/madurai/poppys_hotel1.webp";
+const poppysHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415950/travel_stays_assets/property_images/madurai/poppys_hotel2.webp";
+const poppysHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415951/travel_stays_assets/property_images/madurai/poppys_hotel3.webp";
+const hotelBlossom = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416076/travel_stays_assets/property_images/trichy/hotel_blossoms.webp";
+const hotelBlossom1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416078/travel_stays_assets/property_images/trichy/hotel_blossoms1.webp";
+const hotelBlossom2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416080/travel_stays_assets/property_images/trichy/hotel_blossoms2.webp";
+const hotelBlossom3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416081/travel_stays_assets/property_images/trichy/hotel_blossoms3.webp";
+const vividBoutiqueHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416087/travel_stays_assets/property_images/trichy/vivid_boutique_hotel.webp";
+const vividBoutiqueHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416088/travel_stays_assets/property_images/trichy/vivid_boutique_hotel1.webp";
+const vividBoutiqueHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416089/travel_stays_assets/property_images/trichy/vivid_boutique_hotel2.webp";
+const vividBoutiqueHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416090/travel_stays_assets/property_images/trichy/vivid_boutique_hotel3.webp";
+const hotelShaan = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416082/travel_stays_assets/property_images/trichy/hotel_shaan.webp";
+const hotelShaan1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416083/travel_stays_assets/property_images/trichy/hotel_shaan1.webp";
+const hotelShaan2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416084/travel_stays_assets/property_images/trichy/hotel_shaan2.webp";
+const hotelShaan3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416085/travel_stays_assets/property_images/trichy/hotel_shaan3.webp";
+const haiwaBeachResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416097/travel_stays_assets/property_images/varkala/haiwa_beach_residency.webp";
+const haiwaBeachResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416098/travel_stays_assets/property_images/varkala/haiwa_beach_residency1.webp";
+const haiwaBeachResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416099/travel_stays_assets/property_images/varkala/haiwa_beach_residency2.webp";
+const haiwaBeachResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416101/travel_stays_assets/property_images/varkala/haiwa_beach_residency3.webp";
+const tamaara = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416102/travel_stays_assets/property_images/varkala/tamaara.webp";
+const tamaara1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416103/travel_stays_assets/property_images/varkala/tamaara1.webp";
+const tamaara2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416104/travel_stays_assets/property_images/varkala/tamaara2.webp";
+const sajjoys = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416091/travel_stays_assets/property_images/varkala/Sajjoys.webp";
+const sajjoys1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416094/travel_stays_assets/property_images/varkala/Sajjoys1.webp";
+const sajjoys2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416095/travel_stays_assets/property_images/varkala/Sajjoys2.webp";
+const sajjoys3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416096/travel_stays_assets/property_images/varkala/Sajjoys3.webp";
+const swagathHolidays = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415923/travel_stays_assets/property_images/kovalam/Swagath_Holidays.webp";
+const swagathHolidays1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415933/travel_stays_assets/property_images/kovalam/swagath_holidays1.webp";
+const swagathHolidays2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415934/travel_stays_assets/property_images/kovalam/swagath_holidays2.webp";
+const swagathHolidays3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415936/travel_stays_assets/property_images/kovalam/swagath_holidays3.webp";
+const hotelRockNBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415924/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach.webp";
+const hotelRockNBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415925/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach1.webp";
+const hotelRockNBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415926/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach2.webp";
+const hotelRockNBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415927/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach3.webp";
+const pappukuttyBeachResort = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415928/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort.webp";
+const pappukuttyBeachResort1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415929/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort1.webp";
+const pappukuttyBeachResort2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415930/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort2.webp";
+const pappukuttyBeachResort3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415932/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort3.webp";
+const theCoral = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415919/travel_stays_assets/property_images/kanyakumari/the_coral.webp";
+const theCoral1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415920/travel_stays_assets/property_images/kanyakumari/the_coral1.webp";
+const theCoral2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415921/travel_stays_assets/property_images/kanyakumari/the_coral2.webp";
+const theCoral3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415922/travel_stays_assets/property_images/kanyakumari/the_coral3.webp";
+const hotelSingaar = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415909/travel_stays_assets/property_images/kanyakumari/hotel-singaar.webp";
+const hotelSingaar1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415911/travel_stays_assets/property_images/kanyakumari/hotel-singaar1.webp";
+const hotelSingaar2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415912/travel_stays_assets/property_images/kanyakumari/hotel-singaar2.webp";
+const hotelSingaar3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415913/travel_stays_assets/property_images/kanyakumari/hotel-singaar3.webp";
+const hotelOceanHeritage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415914/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage.webp";
+const hotelOceanHeritage1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415915/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage1.webp";
+const hotelOceanHeritage2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415916/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage2.webp";
+const hotelOceanHeritage3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415918/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage3.webp";
 
 // Pondicherry New Images
-import grandHotelDEurope from "@/assets/property_images/pondicherry/grand_hotel_d'europe.webp";
-import grandHotelDEurope1 from "@/assets/property_images/pondicherry/grand_hotel_d'europe1.webp";
-import grandHotelDEurope2 from "@/assets/property_images/pondicherry/grand_hotel_d'europe2.webp";
-import grandHotelDEurope3 from "@/assets/property_images/pondicherry/grand_hotel_d'europe3.webp";
+const grandHotelDEurope = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415987/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe.webp";
+const grandHotelDEurope1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415989/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe1.webp";
+const grandHotelDEurope2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415990/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe2.webp";
+const grandHotelDEurope3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415992/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe3.webp";
 
-import laMaisonBitasta from "@/assets/property_images/pondicherry/la_maison_bitasta.webp";
-import laMaisonBitasta1 from "@/assets/property_images/pondicherry/la_maison_bitasta1.webp";
-import laMaisonBitasta2 from "@/assets/property_images/pondicherry/la_maison_bitasta2.webp";
-import laMaisonBitasta3 from "@/assets/property_images/pondicherry/la_maison_bitasta3.webp";
+const laMaisonBitasta = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416003/travel_stays_assets/property_images/pondicherry/la_maison_bitasta.jpg";
+const laMaisonBitasta1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416004/travel_stays_assets/property_images/pondicherry/la_maison_bitasta1.jpg";
+const laMaisonBitasta2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416005/travel_stays_assets/property_images/pondicherry/la_maison_bitasta2.jpg";
+const laMaisonBitasta3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416006/travel_stays_assets/property_images/pondicherry/la_maison_bitasta3.jpg";
 
-import villaRivage from "@/assets/property_images/pondicherry/villa_rivage.webp";
-import villaRivage1 from "@/assets/property_images/pondicherry/villa_rivage1.webp";
-import villaRivage2 from "@/assets/property_images/pondicherry/villa_rivage2.webp";
-import villaRivage3 from "@/assets/property_images/pondicherry/villa_rivage3.webp";
+const villaRivage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416058/travel_stays_assets/property_images/pondicherry/villa_rivage.webp";
+const villaRivage1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416059/travel_stays_assets/property_images/pondicherry/villa_rivage1.webp";
+const villaRivage2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416060/travel_stays_assets/property_images/pondicherry/villa_rivage2.webp";
+const villaRivage3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416061/travel_stays_assets/property_images/pondicherry/villa_rivage3.webp";
 
-import hotelAnnamalai from "@/assets/property_images/pondicherry/hotel_annamalai.webp";
-import hotelAnnamalai1 from "@/assets/property_images/pondicherry/hotel_annamalai1.webp";
-import hotelAnnamalai2 from "@/assets/property_images/pondicherry/hotel_annamalai2.webp";
-import hotelAnnamalai3 from "@/assets/property_images/pondicherry/hotel_annamalai3.webp";
+const hotelAnnamalai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415993/travel_stays_assets/property_images/pondicherry/hotel_annamalai.jpg";
+const hotelAnnamalai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415994/travel_stays_assets/property_images/pondicherry/hotel_annamalai1.webp";
+const hotelAnnamalai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415996/travel_stays_assets/property_images/pondicherry/hotel_annamalai2.webp";
+const hotelAnnamalai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415997/travel_stays_assets/property_images/pondicherry/hotel_annamalai3.webp";
 
-import residencyTowers from "@/assets/property_images/pondicherry/the_residency_towers.webp";
-import residencyTowers1 from "@/assets/property_images/pondicherry/the_residency_towers1.webp";
-import residencyTowers2 from "@/assets/property_images/pondicherry/the_residency_towers2.webp";
-import residencyTowers3 from "@/assets/property_images/pondicherry/the_residency_towers3.webp";
+const residencyTowers = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416049/travel_stays_assets/property_images/pondicherry/the_residency_towers.jpg";
+const residencyTowers1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416050/travel_stays_assets/property_images/pondicherry/the_residency_towers1.webp";
+const residencyTowers2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416051/travel_stays_assets/property_images/pondicherry/the_residency_towers2.jpg";
+const residencyTowers3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416052/travel_stays_assets/property_images/pondicherry/the_residency_towers3.webp";
 
-import lePondyBeach from "@/assets/property_images/pondicherry/le_pondy_beach.webp";
-import lePondyBeach1 from "@/assets/property_images/pondicherry/le_pondy_beach1.webp";
-import lePondyBeach2 from "@/assets/property_images/pondicherry/le_pondy_beach2.webp";
-import lePondyBeach3 from "@/assets/property_images/pondicherry/le_pondy_beach3.webp";
+const lePondyBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416023/travel_stays_assets/property_images/pondicherry/le_pondy_beach.webp";
+const lePondyBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416024/travel_stays_assets/property_images/pondicherry/le_pondy_beach1.webp";
+const lePondyBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416025/travel_stays_assets/property_images/pondicherry/le_pondy_beach2.webp";
+const lePondyBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416026/travel_stays_assets/property_images/pondicherry/le_pondy_beach3.webp";
 
-import villaEcotiva from "@/assets/property_images/pondicherry/villa_ecotiva.webp";
-import villaEcotiva1 from "@/assets/property_images/pondicherry/villa_ecotiva1.webp";
-import villaEcotiva2 from "@/assets/property_images/pondicherry/villa_ecotiva2.webp";
-import villaEcotiva3 from "@/assets/property_images/pondicherry/villa_ecotiva3.webp";
+const villaEcotiva = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416053/travel_stays_assets/property_images/pondicherry/villa_ecotiva.webp";
+const villaEcotiva1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416054/travel_stays_assets/property_images/pondicherry/villa_ecotiva1.jpg";
+const villaEcotiva2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416056/travel_stays_assets/property_images/pondicherry/villa_ecotiva2.jpg";
+const villaEcotiva3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416057/travel_stays_assets/property_images/pondicherry/villa_ecotiva3.webp";
 
-import anandhaInn from "@/assets/property_images/pondicherry/anandha_inn.webp";
-import anandhaInn1 from "@/assets/property_images/pondicherry/anandha_inn1.webp";
-import anandhaInn2 from "@/assets/property_images/pondicherry/anandha_inn2.webp";
-import anandhaInn3 from "@/assets/property_images/pondicherry/anandha_inn3.webp";
+const anandhaInn = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415959/travel_stays_assets/property_images/pondicherry/anandha_inn.webp";
+const anandhaInn1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415960/travel_stays_assets/property_images/pondicherry/anandha_inn1.jpg";
+const anandhaInn2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415961/travel_stays_assets/property_images/pondicherry/anandha_inn2.jpg";
+const anandhaInn3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415963/travel_stays_assets/property_images/pondicherry/anandha_inn3.jpg";
 
-import leRoyalPark from "@/assets/property_images/pondicherry/le_royal_park.webp";
-import leRoyalPark1 from "@/assets/property_images/pondicherry/le_royal_park1.webp";
-import leRoyalPark2 from "@/assets/property_images/pondicherry/le_royal_park2.webp";
-import leRoyalPark3 from "@/assets/property_images/pondicherry/le_royal_park3.webp";
+const leRoyalPark = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416027/travel_stays_assets/property_images/pondicherry/le_royal_park.webp";
+const leRoyalPark1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416028/travel_stays_assets/property_images/pondicherry/le_royal_park1.webp";
+const leRoyalPark2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416030/travel_stays_assets/property_images/pondicherry/le_royal_park2.webp";
+const leRoyalPark3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416031/travel_stays_assets/property_images/pondicherry/le_royal_park3.webp";
 
-import ashokBeachResort from "@/assets/property_images/pondicherry/ashok_beach_resort.webp";
-import ashokBeachResort1 from "@/assets/property_images/pondicherry/ashok_beach_resort1.webp";
-import ashokBeachResort2 from "@/assets/property_images/pondicherry/ashok_beach_resort2.webp";
-import ashokBeachResort3 from "@/assets/property_images/pondicherry/ashok_beach_resort3.webp";
+const ashokBeachResort = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415969/travel_stays_assets/property_images/pondicherry/ashok_beach_resort.webp";
+const ashokBeachResort1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415970/travel_stays_assets/property_images/pondicherry/ashok_beach_resort1.webp";
+const ashokBeachResort2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415973/travel_stays_assets/property_images/pondicherry/ashok_beach_resort2.webp";
+const ashokBeachResort3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415976/travel_stays_assets/property_images/pondicherry/ashok_beach_resort3.webp";
 
-import shenbagaHotel from "@/assets/property_images/pondicherry/shenbaga_hotel.webp";
-import shenbagaHotel1 from "@/assets/property_images/pondicherry/shenbaga_hotel1.webp";
-import shenbagaHotel2 from "@/assets/property_images/pondicherry/shenbaga_hotel2.webp";
-import shenbagaHotel3 from "@/assets/property_images/pondicherry/shenbaga_hotel3.webp";
+const shenbagaHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416037/travel_stays_assets/property_images/pondicherry/shenbaga_hotel.webp";
+const shenbagaHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416038/travel_stays_assets/property_images/pondicherry/shenbaga_hotel1.webp";
+const shenbagaHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416039/travel_stays_assets/property_images/pondicherry/shenbaga_hotel2.webp";
+const shenbagaHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416040/travel_stays_assets/property_images/pondicherry/shenbaga_hotel3.webp";
 
-import laVillaCreole from "@/assets/property_images/pondicherry/la_villa_creole.webp";
-import laVillaCreole1 from "@/assets/property_images/pondicherry/la_villa_creole1.webp";
-import laVillaCreole2 from "@/assets/property_images/pondicherry/la_villa_creole2.webp";
-import laVillaCreole3 from "@/assets/property_images/pondicherry/la_villa_creole3.webp";
+const laVillaCreole = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416012/travel_stays_assets/property_images/pondicherry/la_villa_creole.webp";
+const laVillaCreole1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416013/travel_stays_assets/property_images/pondicherry/la_villa_creole1.webp";
+const laVillaCreole2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416015/travel_stays_assets/property_images/pondicherry/la_villa_creole2.webp";
+const laVillaCreole3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416017/travel_stays_assets/property_images/pondicherry/la_villa_creole3.webp";
 
-import ajanthaBeach from "@/assets/property_images/pondicherry/ajantha_beach.webp";
-import ajanthaBeach1 from "@/assets/property_images/pondicherry/ajantha_beach1.webp";
-import ajanthaBeach2 from "@/assets/property_images/pondicherry/ajantha_beach2.webp";
-import ajanthaBeach3 from "@/assets/property_images/pondicherry/ajantha_beach3.webp";
+const ajanthaBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415952/travel_stays_assets/property_images/pondicherry/ajantha_beach.jpg";
+const ajanthaBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415954/travel_stays_assets/property_images/pondicherry/ajantha_beach1.jpg";
+const ajanthaBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415956/travel_stays_assets/property_images/pondicherry/ajantha_beach2.jpg";
+const ajanthaBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415958/travel_stays_assets/property_images/pondicherry/ajantha_beach3.jpg";
 
-import lotusBay from "@/assets/property_images/pondicherry/lotus_bay.webp";
-import lotusBay1 from "@/assets/property_images/pondicherry/lotus_bay1.webp";
-import lotusBay2 from "@/assets/property_images/pondicherry/lotus_bay2.webp";
-import lotusBay3 from "@/assets/property_images/pondicherry/lotus_bay3.webp";
+const lotusBay = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416033/travel_stays_assets/property_images/pondicherry/lotus_bay.webp";
+const lotusBay1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416034/travel_stays_assets/property_images/pondicherry/lotus_bay1.webp";
+const lotusBay2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416035/travel_stays_assets/property_images/pondicherry/lotus_bay2.webp";
+const lotusBay3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416036/travel_stays_assets/property_images/pondicherry/lotus_bay3.webp";
 
-import cnsResidency from "@/assets/property_images/pondicherry/cns_residency.webp";
-import cnsResidency1 from "@/assets/property_images/pondicherry/cns_residency1.webp";
-import cnsResidency2 from "@/assets/property_images/pondicherry/cns_residency2.webp";
-import cnsResidency3 from "@/assets/property_images/pondicherry/cns_residency3.webp";
+const cnsResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415978/travel_stays_assets/property_images/pondicherry/cns_residency.avif";
+const cnsResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415981/travel_stays_assets/property_images/pondicherry/cns_residency1.avif";
+const cnsResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415984/travel_stays_assets/property_images/pondicherry/cns_residency2.avif";
+const cnsResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415986/travel_stays_assets/property_images/pondicherry/cns_residency3.avif";
 
-import tenStayResidency from "@/assets/property_images/pondicherry/ten_stays_residency.webp";
-import tenStayResidency1 from "@/assets/property_images/pondicherry/ten_stays_residency1.webp";
-import tenStayResidency2 from "@/assets/property_images/pondicherry/ten_stays_residency2.webp";
-import tenStayResidency3 from "@/assets/property_images/pondicherry/ten_stays_residency3.webp";
+const tenStayResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416045/travel_stays_assets/property_images/pondicherry/ten_stays_residency.jpg";
+const tenStayResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416046/travel_stays_assets/property_images/pondicherry/ten_stays_residency1.jpg";
+const tenStayResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416047/travel_stays_assets/property_images/pondicherry/ten_stays_residency2.jpg";
+const tenStayResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416048/travel_stays_assets/property_images/pondicherry/ten_stays_residency3.jpg";
 
-import ashwiniResidency from "@/assets/property_images/pondicherry/ashiwini_residency.webp";
-import ashwiniResidency1 from "@/assets/property_images/pondicherry/ashiwini_residency1.webp";
-import ashwiniResidency2 from "@/assets/property_images/pondicherry/ashiwini_residency2.webp";
-import ashwiniResidency3 from "@/assets/property_images/pondicherry/ashiwini_residency3.webp";
+const ashwiniResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415965/travel_stays_assets/property_images/pondicherry/ashiwini_residency.webp";
+const ashwiniResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415966/travel_stays_assets/property_images/pondicherry/ashiwini_residency1.webp";
+const ashwiniResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415967/travel_stays_assets/property_images/pondicherry/ashiwini_residency2.webp";
+const ashwiniResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415968/travel_stays_assets/property_images/pondicherry/ashiwini_residency3.webp";
 
-import hotelVaigai from "@/assets/property_images/pondicherry/hotel_vaigai.webp";
-import hotelVaigai1 from "@/assets/property_images/pondicherry/hotel_vaigai1.webp";
-import hotelVaigai2 from "@/assets/property_images/pondicherry/hotel_vaigai2.webp";
-import hotelVaigai3 from "@/assets/property_images/pondicherry/hotel_vaigai3.webp";
+const hotelVaigai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415998/travel_stays_assets/property_images/pondicherry/hotel_vaigai.webp";
+const hotelVaigai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415999/travel_stays_assets/property_images/pondicherry/hotel_vaigai1.webp";
+const hotelVaigai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416000/travel_stays_assets/property_images/pondicherry/hotel_vaigai2.webp";
+const hotelVaigai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416001/travel_stays_assets/property_images/pondicherry/hotel_vaigai3.webp";
 
-import skBeachHomestay from "@/assets/property_images/pondicherry/sk_beach_homestay.webp";
-import skBeachHomestay1 from "@/assets/property_images/pondicherry/sk_beach_homestay1.webp";
-import skBeachHomestay2 from "@/assets/property_images/pondicherry/sk_beach_homestay2.webp";
-import skBeachHomestay3 from "@/assets/property_images/pondicherry/sk_beach_homestay3.webp";
+const skBeachHomestay = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416041/travel_stays_assets/property_images/pondicherry/sk_beach_homestay.webp";
+const skBeachHomestay1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416042/travel_stays_assets/property_images/pondicherry/sk_beach_homestay1.webp";
+const skBeachHomestay2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416043/travel_stays_assets/property_images/pondicherry/sk_beach_homestay2.webp";
+const skBeachHomestay3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416044/travel_stays_assets/property_images/pondicherry/sk_beach_homestay3.webp";
 
 export interface Property {
   id: number;
@@ -209,6 +209,7 @@ export interface Property {
   restaurant?: boolean;
   spa?: boolean;
   beachAccess?: boolean;
+  tier?: "Budget" | "Premium" | "Luxury";
 }
 
 const propertiesData: Property[] = [
@@ -1652,6 +1653,16 @@ export const allProperties: Property[] = propertiesData.map(property => {
   const hasSpa = property.features.some(f => f.toLowerCase().includes('spa') || f.toLowerCase().includes('wellness'));
   const hasBeachAccess = property.features.some(f => f.toLowerCase().includes('beach'));
   
+  // Determine tier based on price
+  let tier: "Budget" | "Premium" | "Luxury" = "Budget";
+  if (priceRange?.min) {
+    if (priceRange.min > 8000) {
+      tier = "Luxury";
+    } else if (priceRange.min >= 4000) {
+      tier = "Premium";
+    }
+  }
+
   return {
     ...property,
     priceMin: priceRange?.min,
@@ -1669,6 +1680,7 @@ export const allProperties: Property[] = propertiesData.map(property => {
     spa: property.spa ?? hasSpa ?? false,
     beachAccess: property.beachAccess ?? hasBeachAccess ?? false,
     amenities: property.amenities ?? [...property.features],
+    tier: property.tier ?? tier,
   };
 });
 

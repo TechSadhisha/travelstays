@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { useEffect } from "react";
-import magazineHero from "@/assets/magazine-hero.webp";
-import pondicherry from "@/assets/dest-pondicherry.webp";
-import madurai from "@/assets/dest-madurai.webp";
-import trichy from "@/assets/dest-trichy.webp";
-import varkala from "@/assets/dest-varkala.webp";
-import kanyakumari from "@/assets/dest-kanyakumari.webp";
-import featuredVilla from "@/assets/featured-villa.webp";
-import awardBadge from "@/assets/award-badge.webp";
+const magazineHero = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415613/travel_stays_assets/magazine-hero.webp";
+const pondicherry = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const madurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const trichy = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const varkala = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const kanyakumari = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
+const featuredVilla = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415607/travel_stays_assets/featured-villa.webp";
+const awardBadge = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415597/travel_stays_assets/award-badge.webp";
 
 const MagazinePage = () => {
   const articles = [

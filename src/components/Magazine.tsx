@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
-import pondicherry from "@/assets/dest-pondicherry.webp";
-import madurai from "@/assets/dest-madurai.webp";
-import varkala from "@/assets/dest-varkala.webp";
-import trichy from "@/assets/dest-trichy.webp";
-import kanyakumari from "@/assets/dest-kanyakumari.webp";
+const pondicherry = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const madurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const varkala = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const trichy = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const kanyakumari = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
 
 const Magazine = () => {
   const articles = useMemo(

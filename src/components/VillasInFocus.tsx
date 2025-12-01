@@ -92,12 +92,7 @@ const VillasInFocus = () => {
                   src={villa.image}
                   alt={villa.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-primary text-primary-foreground px-3 py-1 sm:px-4 text-[10px] sm:text-xs tracking-wider font-medium">
-                  {villa.collection === "premium"
-                    ? "PREMIUM COLLECTION"
-                    : "SIGNATURE COLLECTION"}
-                </div> 
+                /> 
               </div>
 
               <h3 className="text-xl sm:text-2xl font-light mb-2">

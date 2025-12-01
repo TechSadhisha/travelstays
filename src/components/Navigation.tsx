@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/logo_final.png";
+const logo = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
