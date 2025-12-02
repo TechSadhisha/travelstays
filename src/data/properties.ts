@@ -1,189 +1,25 @@
-const laVilla = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416007/travel_stays_assets/property_images/pondicherry/la_villa.webp";
-const laVilla1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416008/travel_stays_assets/property_images/pondicherry/la_villa1.webp";
-const laVilla2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416009/travel_stays_assets/property_images/pondicherry/la_villa2.webp";
-const laVilla3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416010/travel_stays_assets/property_images/pondicherry/la_villa3.webp";
-const leDuplex = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416018/travel_stays_assets/property_images/pondicherry/le_duplex.webp";
-const leDuplex1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416019/travel_stays_assets/property_images/pondicherry/le_duplex1.webp";
-const leDuplex2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416020/travel_stays_assets/property_images/pondicherry/le_duplex2.webp";
-const leDuplex3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416021/travel_stays_assets/property_images/pondicherry/le_duplex3.webp";
-const villaShanti = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416062/travel_stays_assets/property_images/pondicherry/villa_shanti.webp";
-const villaShanti1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416064/travel_stays_assets/property_images/pondicherry/villa_shanti1.webp";
-const villaShanti2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416065/travel_stays_assets/property_images/pondicherry/villa_shanti2.webp";
-const villaShanti3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416066/travel_stays_assets/property_images/pondicherry/villa_shanti3.webp";
-const grandMadurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415937/travel_stays_assets/property_images/madurai/grand_madurai.webp";
-const grandMadurai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415938/travel_stays_assets/property_images/madurai/grand_madurai1.webp";
-const grandMadurai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415940/travel_stays_assets/property_images/madurai/grand_madurai2.webp";
-const grandMadurai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415941/travel_stays_assets/property_images/madurai/grand_madurai3.webp";
-const jcResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415942/travel_stays_assets/property_images/madurai/jc_residency.webp";
-const jcResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415943/travel_stays_assets/property_images/madurai/jc_residency1.webp";
-const jcResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415944/travel_stays_assets/property_images/madurai/jc_residency2.webp";
-const jcResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415945/travel_stays_assets/property_images/madurai/jc_residency3.webp";
-const poppysHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415947/travel_stays_assets/property_images/madurai/poppys_hotel.webp";
-const poppysHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415948/travel_stays_assets/property_images/madurai/poppys_hotel1.webp";
-const poppysHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415950/travel_stays_assets/property_images/madurai/poppys_hotel2.webp";
-const poppysHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415951/travel_stays_assets/property_images/madurai/poppys_hotel3.webp";
-const hotelBlossom = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416076/travel_stays_assets/property_images/trichy/hotel_blossoms.webp";
-const hotelBlossom1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416078/travel_stays_assets/property_images/trichy/hotel_blossoms1.webp";
-const hotelBlossom2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416080/travel_stays_assets/property_images/trichy/hotel_blossoms2.webp";
-const hotelBlossom3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416081/travel_stays_assets/property_images/trichy/hotel_blossoms3.webp";
-const vividBoutiqueHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416087/travel_stays_assets/property_images/trichy/vivid_boutique_hotel.webp";
-const vividBoutiqueHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416088/travel_stays_assets/property_images/trichy/vivid_boutique_hotel1.webp";
-const vividBoutiqueHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416089/travel_stays_assets/property_images/trichy/vivid_boutique_hotel2.webp";
-const vividBoutiqueHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416090/travel_stays_assets/property_images/trichy/vivid_boutique_hotel3.webp";
-const hotelShaan = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416082/travel_stays_assets/property_images/trichy/hotel_shaan.webp";
-const hotelShaan1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416083/travel_stays_assets/property_images/trichy/hotel_shaan1.webp";
-const hotelShaan2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416084/travel_stays_assets/property_images/trichy/hotel_shaan2.webp";
-const hotelShaan3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416085/travel_stays_assets/property_images/trichy/hotel_shaan3.webp";
-const haiwaBeachResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416097/travel_stays_assets/property_images/varkala/haiwa_beach_residency.webp";
-const haiwaBeachResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416098/travel_stays_assets/property_images/varkala/haiwa_beach_residency1.webp";
-const haiwaBeachResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416099/travel_stays_assets/property_images/varkala/haiwa_beach_residency2.webp";
-const haiwaBeachResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416101/travel_stays_assets/property_images/varkala/haiwa_beach_residency3.webp";
-const tamaara = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416102/travel_stays_assets/property_images/varkala/tamaara.webp";
-const tamaara1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416103/travel_stays_assets/property_images/varkala/tamaara1.webp";
-const tamaara2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416104/travel_stays_assets/property_images/varkala/tamaara2.webp";
-const sajjoys = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416091/travel_stays_assets/property_images/varkala/Sajjoys.webp";
-const sajjoys1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416094/travel_stays_assets/property_images/varkala/Sajjoys1.webp";
-const sajjoys2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416095/travel_stays_assets/property_images/varkala/Sajjoys2.webp";
-const sajjoys3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416096/travel_stays_assets/property_images/varkala/Sajjoys3.webp";
-const swagathHolidays = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415923/travel_stays_assets/property_images/kovalam/Swagath_Holidays.webp";
-const swagathHolidays1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415933/travel_stays_assets/property_images/kovalam/swagath_holidays1.webp";
-const swagathHolidays2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415934/travel_stays_assets/property_images/kovalam/swagath_holidays2.webp";
-const swagathHolidays3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415936/travel_stays_assets/property_images/kovalam/swagath_holidays3.webp";
-const hotelRockNBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415924/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach.webp";
-const hotelRockNBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415925/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach1.webp";
-const hotelRockNBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415926/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach2.webp";
-const hotelRockNBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415927/travel_stays_assets/property_images/kovalam/hotel_rock__n_beach3.webp";
-const pappukuttyBeachResort = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415928/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort.webp";
-const pappukuttyBeachResort1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415929/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort1.webp";
-const pappukuttyBeachResort2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415930/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort2.webp";
-const pappukuttyBeachResort3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415932/travel_stays_assets/property_images/kovalam/pappukutty_beach_resort3.webp";
-const theCoral = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415919/travel_stays_assets/property_images/kanyakumari/the_coral.webp";
-const theCoral1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415920/travel_stays_assets/property_images/kanyakumari/the_coral1.webp";
-const theCoral2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415921/travel_stays_assets/property_images/kanyakumari/the_coral2.webp";
-const theCoral3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415922/travel_stays_assets/property_images/kanyakumari/the_coral3.webp";
-const hotelSingaar = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415909/travel_stays_assets/property_images/kanyakumari/hotel-singaar.webp";
-const hotelSingaar1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415911/travel_stays_assets/property_images/kanyakumari/hotel-singaar1.webp";
-const hotelSingaar2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415912/travel_stays_assets/property_images/kanyakumari/hotel-singaar2.webp";
-const hotelSingaar3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415913/travel_stays_assets/property_images/kanyakumari/hotel-singaar3.webp";
-const hotelOceanHeritage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415914/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage.webp";
-const hotelOceanHeritage1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415915/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage1.webp";
-const hotelOceanHeritage2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415916/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage2.webp";
-const hotelOceanHeritage3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415918/travel_stays_assets/property_images/kanyakumari/hotel_ocean_heritage3.webp";
-
-// Pondicherry New Images
-const grandHotelDEurope = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415987/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe.webp";
-const grandHotelDEurope1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415989/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe1.webp";
-const grandHotelDEurope2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415990/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe2.webp";
-const grandHotelDEurope3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415992/travel_stays_assets/property_images/pondicherry/grand_hotel_d_europe3.webp";
-
-const laMaisonBitasta = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416003/travel_stays_assets/property_images/pondicherry/la_maison_bitasta.jpg";
-const laMaisonBitasta1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416004/travel_stays_assets/property_images/pondicherry/la_maison_bitasta1.jpg";
-const laMaisonBitasta2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416005/travel_stays_assets/property_images/pondicherry/la_maison_bitasta2.jpg";
-const laMaisonBitasta3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416006/travel_stays_assets/property_images/pondicherry/la_maison_bitasta3.jpg";
-
-const villaRivage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416058/travel_stays_assets/property_images/pondicherry/villa_rivage.webp";
-const villaRivage1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416059/travel_stays_assets/property_images/pondicherry/villa_rivage1.webp";
-const villaRivage2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416060/travel_stays_assets/property_images/pondicherry/villa_rivage2.webp";
-const villaRivage3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416061/travel_stays_assets/property_images/pondicherry/villa_rivage3.webp";
-
-const hotelAnnamalai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415993/travel_stays_assets/property_images/pondicherry/hotel_annamalai.jpg";
-const hotelAnnamalai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415994/travel_stays_assets/property_images/pondicherry/hotel_annamalai1.webp";
-const hotelAnnamalai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415996/travel_stays_assets/property_images/pondicherry/hotel_annamalai2.webp";
-const hotelAnnamalai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415997/travel_stays_assets/property_images/pondicherry/hotel_annamalai3.webp";
-
-const residencyTowers = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416049/travel_stays_assets/property_images/pondicherry/the_residency_towers.jpg";
-const residencyTowers1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416050/travel_stays_assets/property_images/pondicherry/the_residency_towers1.webp";
-const residencyTowers2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416051/travel_stays_assets/property_images/pondicherry/the_residency_towers2.jpg";
-const residencyTowers3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416052/travel_stays_assets/property_images/pondicherry/the_residency_towers3.webp";
-
-const lePondyBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416023/travel_stays_assets/property_images/pondicherry/le_pondy_beach.webp";
-const lePondyBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416024/travel_stays_assets/property_images/pondicherry/le_pondy_beach1.webp";
-const lePondyBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416025/travel_stays_assets/property_images/pondicherry/le_pondy_beach2.webp";
-const lePondyBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416026/travel_stays_assets/property_images/pondicherry/le_pondy_beach3.webp";
-
-const villaEcotiva = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416053/travel_stays_assets/property_images/pondicherry/villa_ecotiva.webp";
-const villaEcotiva1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416054/travel_stays_assets/property_images/pondicherry/villa_ecotiva1.jpg";
-const villaEcotiva2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416056/travel_stays_assets/property_images/pondicherry/villa_ecotiva2.jpg";
-const villaEcotiva3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416057/travel_stays_assets/property_images/pondicherry/villa_ecotiva3.webp";
-
-const anandhaInn = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415959/travel_stays_assets/property_images/pondicherry/anandha_inn.webp";
-const anandhaInn1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415960/travel_stays_assets/property_images/pondicherry/anandha_inn1.jpg";
-const anandhaInn2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415961/travel_stays_assets/property_images/pondicherry/anandha_inn2.jpg";
-const anandhaInn3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415963/travel_stays_assets/property_images/pondicherry/anandha_inn3.jpg";
-
-const leRoyalPark = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416027/travel_stays_assets/property_images/pondicherry/le_royal_park.webp";
-const leRoyalPark1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416028/travel_stays_assets/property_images/pondicherry/le_royal_park1.webp";
-const leRoyalPark2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416030/travel_stays_assets/property_images/pondicherry/le_royal_park2.webp";
-const leRoyalPark3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416031/travel_stays_assets/property_images/pondicherry/le_royal_park3.webp";
-
-const ashokBeachResort = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415969/travel_stays_assets/property_images/pondicherry/ashok_beach_resort.webp";
-const ashokBeachResort1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415970/travel_stays_assets/property_images/pondicherry/ashok_beach_resort1.webp";
-const ashokBeachResort2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415973/travel_stays_assets/property_images/pondicherry/ashok_beach_resort2.webp";
-const ashokBeachResort3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415976/travel_stays_assets/property_images/pondicherry/ashok_beach_resort3.webp";
-
-const shenbagaHotel = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416037/travel_stays_assets/property_images/pondicherry/shenbaga_hotel.webp";
-const shenbagaHotel1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416038/travel_stays_assets/property_images/pondicherry/shenbaga_hotel1.webp";
-const shenbagaHotel2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416039/travel_stays_assets/property_images/pondicherry/shenbaga_hotel2.webp";
-const shenbagaHotel3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416040/travel_stays_assets/property_images/pondicherry/shenbaga_hotel3.webp";
-
-const laVillaCreole = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416012/travel_stays_assets/property_images/pondicherry/la_villa_creole.webp";
-const laVillaCreole1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416013/travel_stays_assets/property_images/pondicherry/la_villa_creole1.webp";
-const laVillaCreole2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416015/travel_stays_assets/property_images/pondicherry/la_villa_creole2.webp";
-const laVillaCreole3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416017/travel_stays_assets/property_images/pondicherry/la_villa_creole3.webp";
-
-const ajanthaBeach = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415952/travel_stays_assets/property_images/pondicherry/ajantha_beach.jpg";
-const ajanthaBeach1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415954/travel_stays_assets/property_images/pondicherry/ajantha_beach1.jpg";
-const ajanthaBeach2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415956/travel_stays_assets/property_images/pondicherry/ajantha_beach2.jpg";
-const ajanthaBeach3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415958/travel_stays_assets/property_images/pondicherry/ajantha_beach3.jpg";
-
-const lotusBay = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416033/travel_stays_assets/property_images/pondicherry/lotus_bay.webp";
-const lotusBay1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416034/travel_stays_assets/property_images/pondicherry/lotus_bay1.webp";
-const lotusBay2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416035/travel_stays_assets/property_images/pondicherry/lotus_bay2.webp";
-const lotusBay3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416036/travel_stays_assets/property_images/pondicherry/lotus_bay3.webp";
-
-const cnsResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415978/travel_stays_assets/property_images/pondicherry/cns_residency.avif";
-const cnsResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415981/travel_stays_assets/property_images/pondicherry/cns_residency1.avif";
-const cnsResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415984/travel_stays_assets/property_images/pondicherry/cns_residency2.avif";
-const cnsResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415986/travel_stays_assets/property_images/pondicherry/cns_residency3.avif";
-
-const tenStayResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416045/travel_stays_assets/property_images/pondicherry/ten_stays_residency.jpg";
-const tenStayResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416046/travel_stays_assets/property_images/pondicherry/ten_stays_residency1.jpg";
-const tenStayResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416047/travel_stays_assets/property_images/pondicherry/ten_stays_residency2.jpg";
-const tenStayResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416048/travel_stays_assets/property_images/pondicherry/ten_stays_residency3.jpg";
-
-const ashwiniResidency = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415965/travel_stays_assets/property_images/pondicherry/ashiwini_residency.webp";
-const ashwiniResidency1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415966/travel_stays_assets/property_images/pondicherry/ashiwini_residency1.webp";
-const ashwiniResidency2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415967/travel_stays_assets/property_images/pondicherry/ashiwini_residency2.webp";
-const ashwiniResidency3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415968/travel_stays_assets/property_images/pondicherry/ashiwini_residency3.webp";
-
-const hotelVaigai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415998/travel_stays_assets/property_images/pondicherry/hotel_vaigai.webp";
-const hotelVaigai1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415999/travel_stays_assets/property_images/pondicherry/hotel_vaigai1.webp";
-const hotelVaigai2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416000/travel_stays_assets/property_images/pondicherry/hotel_vaigai2.webp";
-const hotelVaigai3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416001/travel_stays_assets/property_images/pondicherry/hotel_vaigai3.webp";
-
-const skBeachHomestay = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416041/travel_stays_assets/property_images/pondicherry/sk_beach_homestay.webp";
-const skBeachHomestay1 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416042/travel_stays_assets/property_images/pondicherry/sk_beach_homestay1.webp";
-const skBeachHomestay2 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416043/travel_stays_assets/property_images/pondicherry/sk_beach_homestay2.webp";
-const skBeachHomestay3 = "https://res.cloudinary.com/drauz5jps/image/upload/v1764416044/travel_stays_assets/property_images/pondicherry/sk_beach_homestay3.webp";
+const placeholderImage = "https://placehold.co/600x400";
 
 export interface Property {
+  // Mandatory fields (as per user request)
   id: number;
   title: string;
   location: string;
   bedrooms: number;
-  bathrooms: number;
   guests: number;
   description: string;
-  fullDescription?: string;
   features: string[];
+  image: string;
+  destination: string;
+
+  // Optional fields (required for app functionality but may be missing in some data)
   price?: string;
+  tier?: "Budget" | "Premium" | "Luxury";
+  images: string[];
+
+  // Additional optional fields
   priceMin?: number; // Minimum price for filtering
   priceMax?: number; // Maximum price for filtering
-  image: string;
-  images?: string[];
-  collection: "premium" | "signature";
-  destination: string;
-  propertySize?: string;
   bedroomsDetails?: {
     room: string;
     beds: string;
@@ -191,10 +27,7 @@ export interface Property {
   }[];
   staffServices?: string[];
   termsConditions?: string[];
-  coordinates?: {
-    lat: number;
-    lng: number;
-  };
+
   // New fields for hotel booking
   rating?: number; // 1-5 rating
   reviewCount?: number;
@@ -209,1459 +42,908 @@ export interface Property {
   restaurant?: boolean;
   spa?: boolean;
   beachAccess?: boolean;
-  tier?: "Budget" | "Premium" | "Luxury";
 }
 
 const propertiesData: Property[] = [
   // Pondicherry
+  // Luxury & Heritage (High-End)
   {
     id: 1,
-    title: "La Villa", 
-    location: "Pondicherry, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    title: "Accord Puducherry",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Chic heritage stay in the French Quarter with serene courtyards and refined suites.",
-    fullDescription:
-      "La Villa is an exquisite heritage boutique hotel nestled in the heart of Pondicherry's French Quarter. This beautifully restored colonial mansion features elegant suites surrounding a tranquil courtyard, offering guests an authentic blend of French colonial charm and modern luxury. Each room is thoughtfully designed with period furniture, high ceilings, and contemporary amenities, creating a perfect sanctuary for discerning travelers.",
+      "Modern luxury hotel with spacious rooms and excellent business facilities.",
     features: [
-      "Air Conditioning",
-      "Breakfast Included",
-      "Courtyard Garden",
-      "24/7 Concierge",
-      "Free Wi-Fi",
-      "Daily Housekeeping",
-      "In-room Dining",
-      "Laundry Service",
+      "Swimming Pool",
+      "Fitness Center",
+      "Spa",
+      "Multiple Restaurants",
+      "Bar",
+      "Banquet Facilities",
     ],
-    price: "₹9,000 - ₹14,000",
-    image: laVilla,
-    images: [laVilla1, laVilla2, laVilla3],
-    collection: "premium",
+    price: "₹6,000 - ₹10,000",
+    image: placeholderImage,
+    images: [],
     destination: "pondicherry",
-    coordinates: { lat: 11.9338, lng: 79.8298 },
-    rating: 4.7,
-    reviewCount: 186,
-    propertySize: "1,800 sq ft",
-    bedroomsDetails: [
-      {
-        room: "Master Suite",
-        beds: "1 King Bed",
-        description: "Spacious suite with courtyard view, ensuite bathroom with bathtub",
-      },
-      {
-        room: "Deluxe Room",
-        beds: "1 Queen Bed",
-        description: "Elegant room with colonial decor and modern amenities",
-      },
-    ],
-    staffServices: [
-      "24-hour front desk assistance",
-      "Complimentary breakfast service",
-      "Tour and travel arrangements",
-      "Airport transfer (on request)",
-      "Bicycle rental",
-      "Restaurant reservations",
-    ],
-    termsConditions: [
-      "Check-in: 2:00 PM | Check-out: 11:00 AM",
-      "Early check-in subject to availability",
-      "Valid ID proof required at check-in",
-      "Smoking not permitted indoors",
-      "Pets not allowed",
-      "Cancellation: Free up to 7 days before arrival",
-    ],
-    propertyType: "boutique",
-    wifi: true,
-    parking: true,
-    pool: false,
-    restaurant: false,
-    spa: false,
-    beachAccess: false,
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 152,
   },
   {
     id: 2,
-    title: "Villa Shanthi",
-    location: "Pondicherry, India",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
-    description:
-      "Warm boutique villa blending Tamil charm and modern comfort near Promenade Beach.",
-    fullDescription:
-      "Villa Shanthi is a charming boutique hotel that seamlessly blends traditional Tamil architecture with contemporary comfort. Located just steps from the iconic Promenade Beach, this family-friendly property offers spacious rooms, an excellent on-site restaurant serving fusion cuisine, and warm hospitality that makes every guest feel at home. The property's unique character and central location make it perfect for exploring Pondicherry's vibrant culture.",
+    title: "The Residency Towers",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "Luxury hotel offering premium services and city views.",
     features: [
-      "Free Wi‑Fi",
-      "Air Conditioning",
-      "On-site Restaurant",
-      "Family Rooms",
-      "Rooftop Terrace",
-      "Daily Housekeeping",
-      "Room Service",
-      "Laundry Service",
+      "Rooftop Pool",
+      "Spa",
+      "Fitness Center",
+      "Multiple Dining Options",
+      "Bar",
     ],
-    price: "₹6,500 - ₹10,500",
-    image: villaShanti,
-    images: [villaShanti1, villaShanti2, villaShanti3],
-    collection: "signature",
+    price: "₹7,000 - ₹12,000",
+    image: placeholderImage,
+    images: [],
     destination: "pondicherry",
-    coordinates: { lat: 11.9350, lng: 79.8340 },
-    rating: 4.5,
-    reviewCount: 142,
-    propertySize: "2,400 sq ft",
-    bedroomsDetails: [
-      {
-        room: "Family Suite",
-        beds: "1 King Bed + 2 Single Beds",
-        description: "Spacious suite perfect for families with separate sleeping areas",
-      },
-      {
-        room: "Deluxe Double Room",
-        beds: "1 Queen Bed",
-        description: "Comfortable room with traditional Tamil decor",
-      },
-      {
-        room: "Standard Room",
-        beds: "2 Single Beds",
-        description: "Cozy room with modern amenities",
-      },
-    ],
-    staffServices: [
-      "24-hour reception",
-      "On-site restaurant and bar",
-      "Tour desk and ticket assistance",
-      "Car rental services",
-      "Bicycle rental",
-      "Luggage storage",
-    ],
-    termsConditions: [
-      "Check-in: 2:00 PM | Check-out: 11:00 AM",
-      "Children of all ages welcome",
-      "Extra beds available on request",
-      "Government ID required",
-      "No smoking in rooms",
-      "Free cancellation up to 5 days before check-in",
-    ],
-    propertyType: "boutique",
-    wifi: true,
-    parking: true,
-    pool: false,
-    restaurant: true,
-    spa: false,
-    beachAccess: false,
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 214,
   },
   {
     id: 3,
-    title: "Le Duplex",
-    location: "Pondicherry, India",
+    title: "La Villa",
+    location: "Pondicherry",
     bedrooms: 2,
-    bathrooms: 2,
     guests: 4,
     description:
-      "Elegant colonial residence with spacious rooms and understated luxury.",
-    fullDescription:
-      "Le Duplex is a meticulously restored French colonial mansion offering guests an intimate and luxurious stay in the White Town area. With its high ceilings, antique furnishings, and period architecture, this boutique property transports you to the elegance of colonial-era Pondicherry. Each suite features carefully curated decor, modern bathrooms, and personalized service that ensures a memorable stay.",
+      "Chic heritage stay in the French Quarter with serene courtyards and refined suites.",
     features: [
-      "Colonial Architecture",
-      "Complimentary Breakfast",
-      "Air Conditioning",
-      "Personal Concierge",
-      "Free Wi-Fi",
-      "Garden Courtyard",
-      "In-room Dining",
-      "Daily Housekeeping",
+      "Swimming Pool",
+      "Restaurant",
+      "Library",
+      "Garden",
+      "Massage Services",
     ],
-    price: "₹7,500 - ₹12,500",
-    image: leDuplex,
-    images: [leDuplex1, leDuplex2, leDuplex3],
-    collection: "signature",
+    price: "₹9,000 - ₹14,000",
+    image: placeholderImage,
+    images: [],
     destination: "pondicherry",
-    coordinates: { lat: 11.9309, lng: 79.8337 },
-    rating: 4.6,
-    reviewCount: 128,
-    propertySize: "2,000 sq ft",
-    bedroomsDetails: [
-      {
-        room: "Heritage Suite",
-        beds: "1 King Bed",
-        description: "Luxurious suite with period furniture and garden views",
-      },
-      {
-        room: "Colonial Room",
-        beds: "1 Queen Bed",
-        description: "Elegant room with authentic colonial decor",
-      },
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 186,
+  },
+  {
+    id: 4,
+    title: "Le Pondy Beach Resort",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Resort style stay with direct access to the beach and backwaters.",
+    features: [
+      "Private Beach Area",
+      "Large Swimming Pool",
+      "Ayurvedic Spa",
+      "Multiple Restaurants",
+      "Activity Center",
     ],
-    staffServices: [
-      "Personalized concierge service",
-      "Gourmet breakfast included",
-      "Cultural tour arrangements",
-      "Private car service (on request)",
-      "Laundry and dry cleaning",
-      "Special occasion arrangements",
+    price: "₹8,000 - ₹15,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 176,
+  },
+  {
+    id: 5,
+    title: "Palais de Mahe (CGH Earth)",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A French colonial-style hotel with a distinct character, located in the French Quarter.",
+    features: [
+      "Swimming Pool",
+      "Restaurant",
+      "Bar",
+      "Ayurvedic Spa",
+      "Library",
     ],
-    termsConditions: [
-      "Check-in: 2:00 PM | Check-out: 12:00 PM",
-      "Late check-out available (charges apply)",
-      "Photo ID and credit card required",
-      "No smoking throughout property",
-      "Children above 12 years welcome",
-      "Cancellation: Free up to 7 days prior",
-    ],
-    propertyType: "boutique",
-    wifi: true,
-    parking: false,
-    pool: false,
-    restaurant: false,
-    spa: false,
-    beachAccess: false,
-  },
-  {
-    id: 29,
-    title: "Grand Hotel D'Europe",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Heritage hotel with colonial charm in the White Town.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹4,500 - ₹7,000",
-    image: grandHotelDEurope,
-    images: [grandHotelDEurope1, grandHotelDEurope2, grandHotelDEurope3],
-    collection: "signature",
+    price: "₹12,000 - ₹18,000",
+    image: placeholderImage,
+    images: [],
     destination: "pondicherry",
-    coordinates: { lat: 11.9320, lng: 79.8310 },
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 248,
   },
-  {
-    id: 30,
-    title: "La Maison Bitasta",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Charming French-style guesthouse with a homely atmosphere.",
-    features: ["Air Conditioning", "Wi-Fi", "Breakfast"],
-    price: "₹3,500 - ₹5,500",
-    image: laMaisonBitasta,
-    images: [laMaisonBitasta1, laMaisonBitasta2, laMaisonBitasta3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9345, lng: 79.8325 },
-  },
-  {
-    id: 31,
-    title: "Villa Rivage",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Peaceful stay near the beach with comfortable amenities.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹3,000 - ₹5,000",
-    image: villaRivage,
-    images: [villaRivage1, villaRivage2, villaRivage3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9360, lng: 79.8350 },
-  },
-  {
-    id: 32,
-    title: "Hotel Annamalai",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Modern hotel with excellent facilities for business and leisure.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Pool"],
-    price: "₹4,000 - ₹6,500",
-    image: hotelAnnamalai,
-    images: [hotelAnnamalai1, hotelAnnamalai2, hotelAnnamalai3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9400, lng: 79.8150 },
-  },
-  {
-    id: 33,
-    title: "The Residency Towers",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Luxury hotel offering premium services and city views.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Spa", "Pool"],
-    price: "₹6,000 - ₹9,000",
-    image: residencyTowers,
-    images: [residencyTowers1, residencyTowers2, residencyTowers3],
-    collection: "premium",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9420, lng: 79.8180 },
-  },
-  {
-    id: 34,
-    title: "Le Pondy Beach",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Resort style stay with direct access to the beach and backwaters.",
-    features: ["Air Conditioning", "Wi-Fi", "Pool", "Beach Access"],
-    price: "₹7,000 - ₹10,000",
-    image: lePondyBeach,
-    images: [lePondyBeach1, lePondyBeach2, lePondyBeach3],
-    collection: "premium",
-    destination: "pondicherry",
-    coordinates: { lat: 11.8900, lng: 79.8000 },
-  },
-  {
-    id: 35,
-    title: "Villa Ecotiva",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Eco-friendly villa with lush green surroundings.",
-    features: ["Air Conditioning", "Wi-Fi", "Garden"],
-    price: "₹3,500 - ₹5,500",
-    image: villaEcotiva,
-    images: [villaEcotiva1, villaEcotiva2, villaEcotiva3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9500, lng: 79.8100 },
-  },
-  {
-    id: 36,
-    title: "Anandha Inn",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Well-known hotel with convention center and multiple dining options.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Pool"],
-    price: "₹4,500 - ₹7,000",
-    image: anandhaInn,
-    images: [anandhaInn1, anandhaInn2, anandhaInn3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9450, lng: 79.8200 },
-  },
-  {
-    id: 37,
-    title: "Le Royal Park",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Elegant hotel with spacious rooms and a large swimming pool.",
-    features: ["Air Conditioning", "Wi-Fi", "Pool", "Restaurant"],
-    price: "₹5,000 - ₹8,000",
-    image: leRoyalPark,
-    images: [leRoyalPark1, leRoyalPark2, leRoyalPark3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9380, lng: 79.8250 },
-  },
-  {
-    id: 38,
-    title: "Ashok Beach Resort",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Sprawling beach resort with cottages and ample open space.",
-    features: ["Air Conditioning", "Wi-Fi", "Beach Access", "Garden"],
-    price: "₹4,000 - ₹6,500",
-    image: ashokBeachResort,
-    images: [ashokBeachResort1, ashokBeachResort2, ashokBeachResort3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9600, lng: 79.8500 },
-  },
-  {
-    id: 39,
-    title: "Shenbaga Hotel and Convention",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Contemporary hotel with modern amenities and convention facilities.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Pool"],
-    price: "₹5,500 - ₹8,500",
-    image: shenbagaHotel,
-    images: [shenbagaHotel1, shenbagaHotel2, shenbagaHotel3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9430, lng: 79.8220 },
-  },
-  {
-    id: 40,
-    title: "La Villa Creole",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Homestay offering a cozy and authentic Pondicherry experience.",
-    features: ["Air Conditioning", "Wi-Fi", "Kitchenette"],
-    price: "₹2,500 - ₹4,000",
-    image: laVillaCreole,
-    images: [laVillaCreole1, laVillaCreole2, laVillaCreole3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9310, lng: 79.8300 },
-  },
-  {
-    id: 41,
-    title: "Arabinda Retreat Hostel",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 1,
-    description: "Budget-friendly hostel for backpackers and solo travelers.",
-    features: ["Wi-Fi", "Shared Lounge", "Lockers"],
-    price: "₹800 - ₹1,500",
-    image: laVilla,
-    images: [laVilla1, laVilla2, laVilla3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9355, lng: 79.8330 },
-  },
-  {
-    id: 42,
-    title: "Ajantha Beach",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Simple stay located close to the beach promenade.",
-    features: ["Air Conditioning", "Wi-Fi", "Sea View"],
-    price: "₹3,000 - ₹5,000",
-    image: ajanthaBeach,
-    images: [ajanthaBeach1, ajanthaBeach2, ajanthaBeach3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9370, lng: 79.8360 },
-  },
-  {
-    id: 43,
-    title: "Lotus Bay",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Comfortable rooms with easy access to the city center.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,800 - ₹4,500",
-    image: lotusBay,
-    images: [lotusBay1, lotusBay2, lotusBay3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9390, lng: 79.8280 },
-  },
-  {
-    id: 44,
-    title: "CNS Residency",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Budget residency offering clean rooms and basic amenities.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,000 - ₹3,500",
-    image: cnsResidency,
-    images: [cnsResidency1, cnsResidency2, cnsResidency3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9410, lng: 79.8120 },
-  },
-  {
-    id: 45,
-    title: "Ten Stay Residency",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Modern residency with good connectivity to tourist spots.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,500 - ₹4,000",
-    image: tenStayResidency,
-    images: [tenStayResidency1, tenStayResidency2, tenStayResidency3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9440, lng: 79.8160 },
-  },
-  {
-    id: 46,
-    title: "Ashwini Residency",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Affordable stay with friendly service and clean environment.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹1,800 - ₹3,000",
-    image: ashwiniResidency,
-    images: [ashwiniResidency1, ashwiniResidency2, ashwiniResidency3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9460, lng: 79.8140 },
-  },
-  {
-    id: 47,
-    title: "Hotel Vaigai",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Standard hotel with restaurant and conference hall.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹2,200 - ₹3,800",
-    image: hotelVaigai,
-    images: [hotelVaigai1, hotelVaigai2, hotelVaigai3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9480, lng: 79.8180 },
-  },
-  {
-    id: 48,
-    title: "SK Beach Homestay",
-    location: "Pondicherry, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Homely stay right next to the beach for a relaxing vacation.",
-    features: ["Air Conditioning", "Wi-Fi", "Beach Access"],
-    price: "₹2,500 - ₹4,500",
-    image: skBeachHomestay,
-    images: [skBeachHomestay1, skBeachHomestay2, skBeachHomestay3],
-    collection: "signature",
-    destination: "pondicherry",
-    coordinates: { lat: 11.9520, lng: 79.8400 },
-  },
-
-  // Madurai
   {
     id: 6,
-    title: "Grand Madurai",
-    location: "Madurai, India",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
+    title: "Maison Perumal (CGH Earth)",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Comfortable upscale stay close to Meenakshi Amman Temple and city sights.",
-    features: ["Air Conditioning", "Restaurant", "Room Service", "Parking"],
-    price: "₹4,500 - ₹8,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9174, lng: 78.1196 },
+      "A heritage hotel in the Tamil Quarter, showcasing traditional architecture and culture.",
+    features: ["Courtyard", "Restaurant", "Library", "Cultural Activities"],
+    price: "₹8,000 - ₹12,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.9,
+    reviewCount: 117,
   },
   {
     id: 7,
-    title: "JC Residency",
-    location: "Madurai, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    title: "Radisson Resort Pondicherry Bay",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Popular boutique hotel with warm service, spacious rooms and local cuisine.",
-    features: ["Pool", "Restaurant", "Air Conditioning", "Banquet"],
-    price: "₹4,200 - ₹7,500",
-    image: jcResidency,
-    images: [jcResidency1, jcResidency2, jcResidency3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9372, lng: 78.1200 },
+      "A beachfront resort offering luxurious villas and chalets with world-class amenities.",
+    features: [
+      "Saltwater Pool",
+      "Spa",
+      "Fitness Center",
+      "Restaurants",
+      "Bar",
+      "Kids' Play Area",
+    ],
+    price: "₹10,000 - ₹16,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 126,
   },
   {
     id: 8,
-    title: "Poppys Hotel",
-    location: "Madurai, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    title: "The Promenade",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Relaxed stay with greenery, modern rooms and easy connectivity.",
-    features: ["Garden", "Restaurant", "Air Conditioning", "Free Wi‑Fi"],
+      "A luxury boutique hotel located on the famous Promenade Beach.",
+    features: ["Rooftop Restaurant", "Bar", "Swimming Pool", "Sea View Rooms"],
+    price: "₹7,000 - ₹11,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 291,
+  },
+  {
+    id: 9,
+    title: "Villa Shanthi",
+    location: "Pondicherry",
+    bedrooms: 3,
+    guests: 6,
+    description:
+      "Warm boutique villa blending Tamil charm and modern comfort near Promenade Beach.",
+    features: ["Restaurant", "Bar", "Courtyard", "Shop"],
+    price: "₹6,500 - ₹10,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.5,
+    reviewCount: 142,
+  },
+  {
+    id: 10,
+    title: "Hotel Aura By Woco Stays",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A modern hotel offering comfortable stays with contemporary amenities.",
+    features: ["Restaurant", "Bar", "Banquet Hall"],
     price: "₹4,000 - ₹7,000",
-    image: poppysHotel,
-    images: [poppysHotel1, poppysHotel2, poppysHotel3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9469, lng: 78.1647 },
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 282,
   },
-  {
-    id: 68,
-    title: "Regency Madurai",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Premium hotel with excellent amenities and city views.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Pool"],
-    price: "₹4,500 - ₹7,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9200, lng: 78.1100 },
-  },
-  {
-    id: 69,
-    title: "Hotel Bairav Grand",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Modern hotel suitable for both business and leisure travelers.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,000 - ₹5,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9250, lng: 78.1150 },
-  },
-  {
-    id: 70,
-    title: "The Madurai Residency",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Comfortable residency with a focus on guest hospitality.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,500 - ₹4,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9300, lng: 78.1200 },
-  },
-  {
-    id: 71,
-    title: "Amika Hotel",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Stylish hotel with contemporary design and modern facilities.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,500 - ₹6,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9350, lng: 78.1250 },
-  },
-  {
-    id: 72,
-    title: "Hotel CR Grande",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Spacious rooms and convenient location for city exploration.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,800 - ₹4,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9400, lng: 78.1300 },
-  },
-  {
-    id: 73,
-    title: "Hotel Lotus",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Budget-friendly hotel with clean and cozy accommodations.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹2,000 - ₹3,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9450, lng: 78.1350 },
-  },
-  {
-    id: 74,
-    title: "Hotel The Metropole",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Elegant hotel offering a blend of luxury and comfort.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Bar"],
-    price: "₹4,000 - ₹6,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9500, lng: 78.1400 },
-  },
-  {
-    id: 75,
-    title: "Dwarka Palace",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Traditional hotel with warm service and homely atmosphere.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹2,500 - ₹4,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9550, lng: 78.1450 },
-  },
-  {
-    id: 76,
-    title: "TM Hotel",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Simple and affordable stay for quick stopovers.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹1,800 - ₹3,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9600, lng: 78.1500 },
-  },
-  {
-    id: 77,
-    title: "Hotel The Nook",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Boutique hotel with unique decor and personalized service.",
-    features: ["Air Conditioning", "Wi-Fi", "Cafe"],
-    price: "₹3,500 - ₹5,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9650, lng: 78.1550 },
-  },
-  {
-    id: 78,
-    title: "Le Grace SS Colony",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Quiet residency in a residential area, perfect for families.",
-    features: ["Air Conditioning", "Wi-Fi", "Kitchenette"],
-    price: "₹2,800 - ₹4,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9700, lng: 78.1600 },
-  },
-  {
-    id: 79,
-    title: "Madurai Grands Inn",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Grand inn with banquet halls and comfortable rooms.",
-    features: ["Air Conditioning", "Wi-Fi", "Banquet"],
-    price: "₹3,000 - ₹5,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9750, lng: 78.1650 },
-  },
-  {
-    id: 80,
-    title: "Le Grace Mansion",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Mansion-style stay with spacious corridors and airy rooms.",
-    features: ["Air Conditioning", "Wi-Fi", "Garden"],
-    price: "₹3,200 - ₹5,200",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9800, lng: 78.1700 },
-  },
-  {
-    id: 81,
-    title: "Annapoorna Residency",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Vegetarian-friendly residency known for its cleanliness.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹2,200 - ₹3,800",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9850, lng: 78.1750 },
-  },
-  {
-    id: 82,
-    title: "Le Grace Residency",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Modern residency with all essential amenities for a comfortable stay.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,500 - ₹4,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9900, lng: 78.1800 },
-  },
-  {
-    id: 83,
-    title: "Hotel SKR Sivabhagya",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Reliable hotel with friendly staff and good service.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,000 - ₹3,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 9.9950, lng: 78.1850 },
-  },
-  {
-    id: 84,
-    title: "MMS Residency Madurai",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Budget residency close to transport hubs.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹1,500 - ₹2,800",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 10.0000, lng: 78.1900 },
-  },
-  {
-    id: 85,
-    title: "Hotel Kaveri Mahal Madurai",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Hotel with attached marriage hall, suitable for large groups.",
-    features: ["Air Conditioning", "Wi-Fi", "Banquet"],
-    price: "₹2,500 - ₹4,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 10.0050, lng: 78.1950 },
-  },
-  {
-    id: 86,
-    title: "Hotel Shreenithi",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "New hotel with fresh interiors and modern amenities.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,800 - ₹4,500",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 10.0100, lng: 78.2000 },
-  },
-  {
-    id: 87,
-    title: "Hotel Chentoor",
-    location: "Madurai, India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Well-located hotel with easy access to the temple and railway station.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,000 - ₹5,000",
-    image: grandMadurai,
-    images: [grandMadurai1, grandMadurai2, grandMadurai3],
-    collection: "signature",
-    destination: "madurai",
-    coordinates: { lat: 10.0150, lng: 78.2050 },
-  },
-
-  // Trichy
   {
     id: 11,
-    title: "Hotel Blossom",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    title: "Ocean Spray",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Centrally located hotel with comfortable rooms and friendly service.",
-    features: ["Air Conditioning", "Restaurant", "Room Service", "Wi‑Fi"],
-    price: "₹3,800 - ₹6,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8017, lng: 78.6840 },
+      "A sprawling resort set around a man-made lake, offering a tranquil escape.",
+    features: [
+      "Largest Swimming Pool",
+      "Lilaea Island Dining",
+      "Activity Center",
+      "Spa",
+    ],
+    price: "₹8,000 - ₹14,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 188,
   },
   {
     id: 12,
-    title: "Vivid Boutique Hotel",
-    location: "Tiruchirappalli (Trichy), India",
+    title: "Le Dupleix",
+    location: "Pondicherry",
     bedrooms: 2,
-    bathrooms: 2,
     guests: 4,
     description:
-      "Stylish boutique rooms with contemporary design and curated amenities.",
-    features: ["Boutique Decor", "Air Conditioning", "Dining", "Wi‑Fi"],
-    price: "₹4,200 - ₹7,200",
-    image: vividBoutiqueHotel,
-    images: [vividBoutiqueHotel1, vividBoutiqueHotel2, vividBoutiqueHotel3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8258, lng: 78.6853 },
+      "Elegant colonial residence with spacious rooms and understated luxury.",
+    features: ["Courtyard Dining", "Bar", "Heritage Architecture"],
+    price: "₹7,500 - ₹12,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 128,
   },
   {
     id: 13,
-    title: "Hotel Shaan",
-    location: "Tiruchirappalli (Trichy), India",
+    title: "Lagoon Sarovar Premiere Resort",
+    location: "Pondicherry",
     bedrooms: 1,
-    bathrooms: 1,
     guests: 2,
-    description: "Budget-friendly, clean stay for short city visits.",
-    features: ["Air Conditioning", "Room Service", "Wi‑Fi"],
-    price: "₹2,200 - ₹4,200",
-    image: hotelShaan,
-    images: [hotelShaan1, hotelShaan2, hotelShaan3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8178, lng: 78.6838 },
+    description:
+      "A resort nestled along the backwaters, offering a blend of nature and luxury.",
+    features: ["Swimming Pool", "Spa", "Water Sports", "Restaurant"],
+    price: "₹7,000 - ₹12,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 100,
   },
   {
-    id: 49,
-    title: "Hotel Tamilnadu Trichy",
-    location: "Tiruchirappalli (Trichy), India",
+    id: 14,
+    title: "Grand Hotel D'Europe",
+    location: "Pondicherry",
     bedrooms: 1,
-    bathrooms: 1,
     guests: 2,
-    description: "Reliable state-run hotel with spacious grounds and basic amenities.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Parking"],
-    price: "₹2,000 - ₹3,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8050, lng: 78.6850 },
+    description: "Heritage hotel with colonial charm in the White Town.",
+    features: ["Restaurant", "Bar", "Heritage Ambience"],
+    price: "₹4,500 - ₹7,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 122,
   },
   {
-    id: 50,
-    title: "Courtyard by JW Marriott",
-    location: "Tiruchirappalli (Trichy), India",
+    id: 15,
+    title: "Résidence De L'evêché (CGH Earth)",
+    location: "Pondicherry",
     bedrooms: 1,
-    bathrooms: 1,
     guests: 2,
-    description: "Upscale hotel offering modern luxury and exceptional service.",
-    features: ["Air Conditioning", "Wi-Fi", "Pool", "Gym", "Restaurant"],
-    price: "₹6,500 - ₹9,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "premium",
-    destination: "trichy",
-    coordinates: { lat: 10.8100, lng: 78.6900 },
+    description:
+      "A historic villa offering an intimate and luxurious stay in the French Quarter.",
+    features: ["Heritage Rooms", "Personalized Service", "Quiet Location"],
+    price: "₹10,000 - ₹15,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 263,
   },
-  {
-    id: 51,
-    title: "Grand Arccadia",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Contemporary hotel with stylish rooms and banquet facilities.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,500 - ₹5,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8150, lng: 78.6950 },
-  },
-  {
-    id: 52,
-    title: "Hotel Oxina Lygon",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Comfortable stay with a focus on hospitality and convenience.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,000 - ₹5,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8200, lng: 78.7000 },
-  },
-  {
-    id: 53,
-    title: "Plaza Hotel",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Centrally located hotel ideal for business and leisure travelers.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,500 - ₹4,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8250, lng: 78.6800 },
-  },
-  {
-    id: 54,
-    title: "Safa Residency",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Budget-friendly residency with clean rooms and friendly staff.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹1,800 - ₹3,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8300, lng: 78.6850 },
-  },
-  {
-    id: 55,
-    title: "PL.A. Krishna Inn",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Popular hotel known for its good food and comfortable accommodation.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,200 - ₹5,200",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8350, lng: 78.6900 },
-  },
-  {
-    id: 56,
-    title: "Hotel Femina",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Well-established hotel with a range of amenities and shopping arcade.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Shopping"],
-    price: "₹3,500 - ₹6,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8000, lng: 78.6900 },
-  },
-  {
-    id: 57,
-    title: "Vijey Hotels",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Modern hotel providing a pleasant stay with good connectivity.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,800 - ₹4,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8050, lng: 78.6950 },
-  },
-  {
-    id: 58,
-    title: "Grand Stay",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Cozy hotel offering a home-away-from-home experience.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹2,200 - ₹3,800",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8100, lng: 78.7000 },
-  },
-  {
-    id: 59,
-    title: "Surag Residency",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Simple and clean residency for budget-conscious travelers.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹1,500 - ₹2,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8150, lng: 78.7050 },
-  },
-  {
-    id: 60,
-    title: "Sonas Inn",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Comfortable inn with essential amenities and friendly service.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,000 - ₹3,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8200, lng: 78.7100 },
-  },
-  {
-    id: 61,
-    title: "Cholas Castle Inn",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Heritage-style inn with a touch of traditional hospitality.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹3,000 - ₹5,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8250, lng: 78.7150 },
-  },
-  {
-    id: 62,
-    title: "Hotel Royal Sathyam",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Grand hotel with luxurious rooms and fine dining.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant", "Bar"],
-    price: "₹4,000 - ₹6,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8300, lng: 78.7200 },
-  },
-  {
-    id: 63,
-    title: "Prasanna Residency Trichy",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Conveniently located residency with modern facilities.",
-    features: ["Air Conditioning", "Wi-Fi", "Parking"],
-    price: "₹2,500 - ₹4,000",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8350, lng: 78.7250 },
-  },
-  {
-    id: 64,
-    title: "Sai Residency Trichy",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Peaceful residency offering a quiet retreat in the city.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹2,000 - ₹3,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8400, lng: 78.7300 },
-  },
-  {
-    id: 65,
-    title: "Hotel Shankara",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Traditional hotel near major temples with vegetarian dining.",
-    features: ["Air Conditioning", "Wi-Fi", "Restaurant"],
-    price: "₹2,500 - ₹4,200",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8450, lng: 78.7350 },
-  },
-  {
-    id: 66,
-    title: "Hotel Temple Stay",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Ideal for pilgrims, located close to Srirangam temple.",
-    features: ["Air Conditioning", "Wi-Fi"],
-    price: "₹2,000 - ₹3,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8500, lng: 78.7400 },
-  },
-  {
-    id: 67,
-    title: "Anantha Shaiya",
-    location: "Tiruchirappalli (Trichy), India",
-    bedrooms: 1,
-    bathrooms: 1,
-    guests: 2,
-    description: "Comfortable hotel with a focus on guest satisfaction.",
-    features: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    price: "₹2,800 - ₹4,500",
-    image: hotelBlossom,
-    images: [hotelBlossom1, hotelBlossom2, hotelBlossom3],
-    collection: "signature",
-    destination: "trichy",
-    coordinates: { lat: 10.8550, lng: 78.7450 },
-  },
-
-  // Varkala
   {
     id: 16,
-    title: "Haiwa Beach Residency",
-    location: "Varkala, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    title: "Hotel De L'Orient",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
     description:
-      "Cliffside beach stay with airy rooms near Varkala beach and cafes.",
-    features: ["Beach Access", "Air Conditioning", "Breakfast", "Wi‑Fi"],
-    price: "₹3,800 - ₹6,800",
-    image: haiwaBeachResidency,
-    images: [haiwaBeachResidency1, haiwaBeachResidency2, haiwaBeachResidency3],
-    collection: "signature",
-    destination: "varkala",
-    coordinates: { lat: 8.7370, lng: 76.7026 },
+      "A restored 18th-century mansion offering a glimpse into the French colonial era.",
+    features: ["Courtyard Restaurant", "Heritage Decor", "Shop"],
+    price: "₹6,000 - ₹9,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.9,
+    reviewCount: 294,
   },
   {
     id: 17,
-    title: "Tamaara",
-    location: "Varkala, India",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
-    description: "Boutique retreat with tranquil ambiance and lush gardens.",
-    features: ["Garden", "Air Conditioning", "Restaurant", "Wi‑Fi"],
-    price: "₹4,500 - ₹8,500",
-    image: tamaara,
-    images: [tamaara1, tamaara2],
-    collection: "premium",
-    destination: "varkala",
-    coordinates: { lat: 8.7379, lng: 76.7163 },
+    title: "Club Mahindra Resort Puducherry",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A family-friendly resort with direct beach access and numerous activities.",
+    features: [
+      "Swimming Pool",
+      "Activity Center",
+      "Restaurant",
+      "Beach Access",
+    ],
+    price: "₹6,000 - ₹10,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 134,
   },
   {
     id: 18,
-    title: "Sajjoys",
-    location: "Varkala, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description: "Modern rooms, rooftop pool and easy access to Varkala cliff.",
-    features: ["Rooftop Pool", "Restaurant", "Air Conditioning", "Wi‑Fi"],
-    price: "₹4,200 - ₹7,800",
-    image: sajjoys,
-    images: [sajjoys1, sajjoys2, sajjoys3],
-    collection: "signature",
-    destination: "varkala",
-    coordinates: { lat: 8.7333, lng: 76.7167 },
+    title: "Conch Luxury Private Pool Suites",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Exclusive suites with private pools, offering privacy and luxury.",
+    features: [
+      "Private Plunge Pools",
+      "Personalized Service",
+      "In-room Dining",
+    ],
+    price: "₹15,000 - ₹25,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.9,
+    reviewCount: 145,
+  },
+  {
+    id: 19,
+    title: "The Sunway Manor",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A business-class hotel with modern amenities and excellent connectivity.",
+    features: [
+      "Swimming Pool",
+      "Fitness Center",
+      "Multiple Restaurants",
+      "Bar",
+    ],
+    price: "₹5,000 - ₹8,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 236,
+  },
+  {
+    id: 20,
+    title: "La Maison Charu",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A charming guesthouse offering a peaceful stay with a homely vibe.",
+    features: ["Garden", "Terrace", "Yoga Space"],
+    price: "₹4,000 - ₹6,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 118,
   },
 
-  // Kovalam
+  // Premium (Mid-Range)
   {
     id: 21,
-    title: "Swagath Holidays",
-    location: "Kovalam, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description:
-      "Comfortable seaside hotel near Lighthouse Beach with pool and dining.",
-    features: ["Pool", "Restaurant", "Air Conditioning", "Wi‑Fi"],
-    price: "₹4,000 - ₹7,500",
-    image: swagathHolidays,
-    images: [swagathHolidays1, swagathHolidays2, swagathHolidays3],
-    collection: "signature",
-    destination: "kovalam",
-    coordinates: { lat: 8.4007, lng: 76.9781 },
+    title: "Grand Serenaa Hotel & Resorts",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A resort-style hotel with lush gardens and a large pool.",
+    features: ["Swimming Pool", "Spa", "Restaurant", "Banquet Hall"],
+    price: "₹4,000 - ₹6,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 136,
   },
   {
     id: 22,
-    title: "Hotel Rock N Beach",
-    location: "Kovalam, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description: "Beachside stay with airy balconies and ocean vibes.",
-    features: ["Beach Access", "Air Conditioning", "Restaurant", "Wi‑Fi"],
-    price: "₹3,800 - ₹6,800",
-    image: hotelRockNBeach,
-    images: [hotelRockNBeach1, hotelRockNBeach2, hotelRockNBeach3],
-    collection: "signature",
-    destination: "kovalam",
-    coordinates: { lat: 8.3895, lng: 76.9754 },
+    title: "Shenbaga Hotel & Convention Centre",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Contemporary hotel with modern amenities and convention facilities.",
+    features: ["Rooftop Pool", "Restaurant", "Bar", "Gym"],
+    price: "₹5,500 - ₹8,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 88,
   },
   {
     id: 23,
-    title: "Pappukutty Beach Resort",
-    location: "Kovalam, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description: "Classic Kovalam beachfront with simple, cozy rooms and pool.",
-    features: ["Pool", "Beach Access", "Restaurant", "Air Conditioning"],
-    price: "₹3,500 - ₹6,200",
-    image: pappukuttyBeachResort,
-    images: [
-      pappukuttyBeachResort1,
-      pappukuttyBeachResort2,
-      pappukuttyBeachResort3,
-    ],
-    collection: "signature",
-    destination: "kovalam",
-    coordinates: { lat: 8.3829, lng: 76.9797 },
+    title: "Hotel Atithi",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A modern hotel with a rooftop pool and excellent dining options.",
+    features: ["Rooftop Pool", "Restaurant", "Bar", "Gym"],
+    price: "₹4,500 - ₹7,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 127,
   },
-
-  // Kanyakumari
+  {
+    id: 24,
+    title: "Anandha Inn Convention Centre and Suites",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Well-known hotel with convention center and multiple dining options.",
+    features: ["Swimming Pool", "Gym", "Spa", "Multiple Restaurants"],
+    price: "₹4,500 - ₹7,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 74,
+  },
+  {
+    id: 25,
+    title: "Hotel Annamalai International",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Modern hotel with excellent facilities for business and leisure.",
+    features: ["Swimming Pool", "Gym", "Restaurant", "Bar"],
+    price: "₹4,000 - ₹6,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 134,
+  },
   {
     id: 26,
-    title: "The Coral",
-    location: "Kanyakumari, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description:
-      "Modern coastal stay close to the sunset point and Vivekananda Rock.",
-    features: ["Air Conditioning", "Restaurant", "Wi‑Fi", "Parking"],
-    price: "₹3,800 - ₹6,800",
-    image: theCoral,
-    images: [theCoral1, theCoral2, theCoral3],
-    collection: "signature",
-    destination: "kanyakumari",
-    coordinates: { lat: 8.0883, lng: 77.5385 },
+    title: "Le Royal Park",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "Elegant hotel with spacious rooms and a large swimming pool.",
+    features: ["Swimming Pool", "Gym", "Restaurant", "Bar", "Spa"],
+    price: "₹5,000 - ₹8,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 75,
   },
   {
     id: 27,
-    title: "Hotel Singaar",
-    location: "Kanyakumari, India",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    description: "Sea-facing hotel with gardens and casual dining options.",
-    features: [
-      "Sea View (select rooms)",
-      "Restaurant",
-      "Air Conditioning",
-      "Wi‑Fi",
-    ],
-    price: "₹4,200 - ₹7,500",
-    image: hotelSingaar,
-    images: [hotelSingaar1, hotelSingaar2, hotelSingaar3],
-    collection: "signature",
-    destination: "kanyakumari",
-    coordinates: { lat: 8.0900, lng: 77.5400 },
+    title: "Le Supreme Inn",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A comfortable hotel offering good value and convenient location.",
+    features: ["Restaurant", "Banquet Hall", "Wi-Fi"],
+    price: "₹3,500 - ₹5,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 109,
   },
   {
     id: 28,
-    title: "Hotel Ocean Heritage",
-    location: "Kanyakumari, India",
+    title: "Lotus Bay View Hotel",
+    location: "Pondicherry",
     bedrooms: 1,
-    bathrooms: 1,
     guests: 2,
-    description: "Compact rooms near the beach and key attractions.",
-    features: ["Air Conditioning", "Lift", "Room Service", "Wi‑Fi"],
+    description:
+      "Comfortable rooms with easy access to the city center and sea views.",
+    features: ["Sea View Rooms", "Restaurant", "Wi-Fi"],
+    price: "₹2,800 - ₹4,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 102,
+  },
+  {
+    id: 29,
+    title: "La Papillon Maison",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A boutique stay with a cozy atmosphere and personalized service.",
+    features: ["Garden", "Wi-Fi", "Breakfast"],
+    price: "₹3,000 - ₹5,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.2,
+    reviewCount: 108,
+  },
+  {
+    id: 30,
+    title: "Ginger Pondicherry",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A smart, budget-friendly hotel with modern amenities.",
+    features: ["Fitness Center", "Restaurant", "Wi-Fi"],
+    price: "₹3,000 - ₹5,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 95,
+  },
+  {
+    id: 31,
+    title: "Mango Hill La Serene Puducherry",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A serene hotel with French-style architecture and a pool.",
+    features: ["Swimming Pool", "Restaurant", "Garden"],
+    price: "₹4,000 - ₹6,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 102,
+  },
+  {
+    id: 32,
+    title: "Itsy Hotels Red Lotus Heritage",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A heritage-style hotel in the heart of the city.",
+    features: ["Wi-Fi", "Breakfast", "Heritage Decor"],
+    price: "₹2,500 - ₹4,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.5,
+    reviewCount: 78,
+  },
+  {
+    id: 33,
+    title: "White Pearl Residency",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A comfortable residency offering modern rooms and good hospitality.",
+    features: ["Restaurant", "Wi-Fi", "Parking"],
     price: "₹2,500 - ₹4,500",
-    image: hotelOceanHeritage,
-    images: [hotelOceanHeritage1, hotelOceanHeritage2, hotelOceanHeritage3],
-    collection: "signature",
-    destination: "kanyakumari",
-    coordinates: { lat: 8.0790, lng: 77.5439 },
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 121,
+  },
+  {
+    id: 34,
+    title: "Hotel Villa Krish",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A boutique hotel in White Town with a rooftop restaurant.",
+    features: ["Rooftop Restaurant", "Wi-Fi", "Bar"],
+    price: "₹3,500 - ₹6,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 117,
+  },
+  {
+    id: 35,
+    title: "Le Château",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A heritage hotel offering a blend of French and Indian culture.",
+    features: ["Restaurant", "Bar", "Heritage Rooms"],
+    price: "₹4,000 - ₹7,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 85,
+  },
+  {
+    id: 36,
+    title: "The Bull Boutique Hotel",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A stylish boutique hotel with vibrant decor and a lively atmosphere.",
+    features: ["Restaurant", "Bar", "Wi-Fi"],
+    price: "₹3,000 - ₹5,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 77,
+  },
+  {
+    id: 37,
+    title: "The French Villa",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A charming villa offering a quiet and authentic stay.",
+    features: ["Garden", "Wi-Fi", "Breakfast"],
+    price: "₹3,500 - ₹6,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 51,
+  },
+  {
+    id: 38,
+    title: "Hotel Tamizh Park",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A business hotel with comfortable rooms and conference facilities.",
+    features: ["Restaurant", "Bar", "Banquet Hall"],
+    price: "₹3,000 - ₹5,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.5,
+    reviewCount: 50,
+  },
+  {
+    id: 39,
+    title: "Villa Helena",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A heritage guesthouse with a beautiful garden and colonial charm.",
+    features: ["Garden Restaurant", "Heritage Ambience", "Wi-Fi"],
+    price: "₹5,000 - ₹8,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 123,
+  },
+
+  // Budget (Economy)
+  {
+    id: 40,
+    title: "VMB Residency",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A budget-friendly residency with clean rooms and basic amenities.",
+    features: ["Wi-Fi", "Parking", "24-hour Front Desk"],
+    price: "₹1,500 - ₹2,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.0,
+    reviewCount: 84,
+  },
+  {
+    id: 41,
+    title: "Grand Ocean Inn",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "An affordable inn located near the beach.",
+    features: ["Wi-Fi", "Parking", "Near Beach"],
+    price: "₹1,800 - ₹3,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.2,
+    reviewCount: 24,
+  },
+  {
+    id: 42,
+    title: "Sri Krishna Guest House",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A simple guest house offering economical accommodation.",
+    features: ["Wi-Fi", "24-hour Front Desk"],
+    price: "₹1,000 - ₹2,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.1,
+    reviewCount: 71,
+  },
+  {
+    id: 43,
+    title: "Hotel Corbelli",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A centrally located hotel offering good value for money.",
+    features: ["Restaurant", "Bar", "Swimming Pool"],
+    price: "₹1,500 - ₹3,000",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 3.9,
+    reviewCount: 67,
+  },
+  {
+    id: 44,
+    title: "Pleasant Inn",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description: "A comfortable inn with clean rooms and friendly service.",
+    features: ["Wi-Fi", "Parking", "Room Service"],
+    price: "₹1,500 - ₹2,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.0,
+    reviewCount: 82,
+  },
+  {
+    id: 45,
+    title: "Micasa Hostels",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 1,
+    description: "A vibrant hostel perfect for backpackers and solo travelers.",
+    features: ["Dormitory Beds", "Common Area", "Wi-Fi", "Kitchen"],
+    price: "₹800 - ₹1,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.2,
+    reviewCount: 81,
+  },
+  {
+    id: 46,
+    title: "Nomad House",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 1,
+    description:
+      "A social hostel with a relaxed atmosphere and co-working space.",
+    features: ["Co-working Space", "Dormitory Beds", "Wi-Fi", "Events"],
+    price: "₹800 - ₹1,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 4.2,
+    reviewCount: 56,
+  },
+  {
+    id: 47,
+    title: "Park Guest House (Sri Aurobindo Ashram)",
+    location: "Pondicherry",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "A peaceful guest house run by the Ashram, located on the beach.",
+    features: ["Sea View", "Garden", "Meditation Hall", "Vegetarian Food"],
+    price: "₹800 - ₹1,500",
+    image: placeholderImage,
+    images: [],
+    destination: "pondicherry",
+    tier: "Budget",
+    rating: 3.8,
+    reviewCount: 97,
   },
 ];
 
-// Helper function to parse price string and extract min/max
-export const parsePrice = (priceStr?: string): { min: number; max: number } | null => {
-  if (!priceStr) return null;
-  const match = priceStr.match(/₹[\d,]+/g);
-  if (!match || match.length === 0) return null;
-  const prices = match.map(p => parseInt(p.replace(/[₹,]/g, '')));
-  if (prices.length === 1) return { min: prices[0], max: prices[0] };
-  return { min: Math.min(...prices), max: Math.max(...prices) };
-};
+// Helper function to enrich property data with defaults
+function enrichPropertyData(property: Property): Property {
+  // Parse price range if price is a string
+  let priceRange: { min: number; max: number } | undefined;
+  if (property.price && typeof property.price === "string") {
+    const matches = property.price.match(/₹([\d,]+)\s*-\s*₹([\d,]+)/);
+    if (matches) {
+      priceRange = {
+        min: parseInt(matches[1].replace(/,/g, "")),
+        max: parseInt(matches[2].replace(/,/g, "")),
+      };
+    }
+  }
 
-// Enrich properties with default values and parsed prices
-export const allProperties: Property[] = propertiesData.map(property => {
-  const priceRange = parsePrice(property.price);
-  const defaultRating = 4.0 + Math.random() * 1.0; // Random rating between 4.0-5.0
-  const defaultReviewCount = Math.floor(Math.random() * 200) + 50; // 50-250 reviews
-  
-  // Determine amenities based on features
-  const hasWifi = property.features.some(f => f.toLowerCase().includes('wi-fi') || f.toLowerCase().includes('wifi'));
-  const hasPool = property.features.some(f => f.toLowerCase().includes('pool'));
-  const hasRestaurant = property.features.some(f => f.toLowerCase().includes('restaurant') || f.toLowerCase().includes('dining'));
-  const hasSpa = property.features.some(f => f.toLowerCase().includes('spa') || f.toLowerCase().includes('wellness'));
-  const hasBeachAccess = property.features.some(f => f.toLowerCase().includes('beach'));
-  
-  // Determine tier based on price
-  let tier: "Budget" | "Premium" | "Luxury" = "Budget";
-  if (priceRange?.min) {
-    if (priceRange.min > 8000) {
+  // Determine tier based on price if not already set
+  let tier: "Budget" | "Premium" | "Luxury" | undefined = property.tier;
+  if (!tier && priceRange) {
+    if (priceRange.min >= 8000) {
       tier = "Luxury";
     } else if (priceRange.min >= 4000) {
       tier = "Premium";
     }
   }
+
+  // Check features for amenities
+  const hasWifi = property.features.some(
+    (f) => f.toLowerCase().includes("wi-fi") || f.toLowerCase().includes("wifi")
+  );
+  const hasPool = property.features.some((f) =>
+    f.toLowerCase().includes("pool")
+  );
+  const hasRestaurant = property.features.some(
+    (f) =>
+      f.toLowerCase().includes("restaurant") ||
+      f.toLowerCase().includes("dining")
+  );
+  const hasSpa = property.features.some(
+    (f) =>
+      f.toLowerCase().includes("spa") || f.toLowerCase().includes("massage")
+  );
+  const hasBeachAccess = property.features.some((f) =>
+    f.toLowerCase().includes("beach")
+  );
+
+  // Generate default rating and review count based on tier
+  const defaultRating =
+    tier === "Luxury" ? 4.7 : tier === "Premium" ? 4.5 : 4.2;
+  const defaultReviewCount =
+    tier === "Luxury" ? 150 : tier === "Premium" ? 100 : 50;
 
   return {
     ...property,
@@ -1671,10 +953,15 @@ export const allProperties: Property[] = propertiesData.map(property => {
     reviewCount: property.reviewCount ?? defaultReviewCount,
     checkIn: property.checkIn ?? "14:00",
     checkOut: property.checkOut ?? "11:00",
-    cancellationPolicy: property.cancellationPolicy ?? "Free cancellation up to 7 days before check-in",
-    propertyType: property.propertyType ?? (property.collection === "premium" ? "villa" : "hotel"),
+    cancellationPolicy:
+      property.cancellationPolicy ??
+      "Free cancellation up to 7 days before check-in",
+    propertyType: property.propertyType ?? "villa",
     wifi: property.wifi ?? hasWifi ?? true,
-    parking: property.parking ?? property.features.some(f => f.toLowerCase().includes('parking')) ?? false,
+    parking:
+      property.parking ??
+      property.features.some((f) => f.toLowerCase().includes("parking")) ??
+      false,
     pool: property.pool ?? hasPool ?? false,
     restaurant: property.restaurant ?? hasRestaurant ?? false,
     spa: property.spa ?? hasSpa ?? false,
@@ -1682,7 +969,25 @@ export const allProperties: Property[] = propertiesData.map(property => {
     amenities: property.amenities ?? [...property.features],
     tier: property.tier ?? tier,
   };
-});
+}
+
+// Parse price string to get min and max values
+export function parsePrice(
+  price: string | undefined
+): { min: number; max: number } | null {
+  if (!price) return null;
+  const matches = price.match(/₹([\d,]+)\s*-\s*₹([\d,]+)/);
+  if (matches) {
+    return {
+      min: parseInt(matches[1].replace(/,/g, "")),
+      max: parseInt(matches[2].replace(/,/g, "")),
+    };
+  }
+  return null;
+}
+
+// Export enriched properties
+export const allProperties: Property[] = propertiesData.map(enrichPropertyData);
 
 export const getPropertyById = (id: number): Property | undefined => {
   return allProperties.find((property) => property.id === id);

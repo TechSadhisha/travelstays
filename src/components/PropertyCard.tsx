@@ -16,13 +16,13 @@ export const PropertyCard = (property: PropertyCardProps) => {
     title,
     location,
     bedrooms,
-    bathrooms,
+
     guests,
     description,
     features,
     price,
     image,
-    collection,
+
     rating,
     reviewCount,
   } = property;

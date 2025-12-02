@@ -93,7 +93,7 @@ const PropertyDetail = () => {
               to={`/destinations?destination=${property.destination}`}
               className="hover:text-foreground transition-colors truncate max-w-[150px] sm:max-w-none"
             >
-              {destinationName} {property.collection === "premium" ? "Chalets" : "Villas"}
+              {destinationName} Villas
             </Link>
             <ChevronRight className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
             <span className="text-foreground truncate max-w-[150px] sm:max-w-none">
@@ -184,21 +184,13 @@ const PropertyDetail = () => {
                       <span>{property.location}</span>
                     </div>
                   </div>
-                  <Badge
-                    className={
-                      property.collection === "premium"
-                        ? "bg-primary text-primary-foreground self-start sm:self-auto"
-                        : "bg-gold text-primary self-start sm:self-auto"
-                    }
-                  >
-                    {property.collection.toUpperCase()} COLLECTION
-                  </Badge>
+
                 </div>
               </div>
 
               {/* Description */}
               <div className="mb-8 space-y-4 text-muted-foreground leading-relaxed">
-                {(property.fullDescription || property.description)
+                {property.description
                   .split("\n")
                   .map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
@@ -211,8 +203,7 @@ const PropertyDetail = () => {
                   to={`/allvillas?destination=${property.destination}`}
                   className="text-primary hover:underline inline-flex items-center gap-1"
                 >
-                  Go back to view all: {destinationName}{" "}
-                  {property.collection === "premium" ? "Luxury Chalets" : "Luxury Villas"}
+                  Go back to view all: {destinationName} Luxury Villas
                 </Link>
               </div>
 
@@ -304,36 +295,7 @@ const PropertyDetail = () => {
                 </Accordion>
               </div>
 
-              {/* Map Section */}
-              <div className="mb-8">
-                <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden bg-muted border">
-                  {property.coordinates ? (
-                    <>
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        loading="lazy"
-                        allowFullScreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}&hl=en&z=15&output=embed`}
-                        title={`Map showing location of ${property.title}`}
-                      ></iframe>
-                      <a
-                        href={`https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="absolute inset-0 z-10"
-                        aria-label="View on Google Maps"
-                      />
-                    </>
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                      <p>Map location coming soon</p>
-                    </div>
-                  )}
-                </div>
-              </div>
+
 
               {/* Guest Reviews */}
               {property.rating && (

@@ -49,7 +49,7 @@ const destinationMap: Record<string, { name: string; image: string }> = {
 
 const Allvillas = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [collection, setCollection] = useState("all");
+
   const [destination, setDestination] = useState("all");
   const [bedrooms, setBedrooms] = useState("all");
   const [guests, setGuests] = useState("all");
@@ -105,7 +105,7 @@ const Allvillas = () => {
   }, [searchParams]);
 
   const handleClear = () => {
-    setCollection("all");
+
     setDestination("all");
     setBedrooms("all");
     setGuests("all");
@@ -120,8 +120,7 @@ const Allvillas = () => {
   const filteredProperties = useMemo(() => {
     return allProperties.filter((property) => {
       // Basic filters
-      if (collection !== "all" && property.collection !== collection)
-        return false;
+
       if (destination !== "all" && property.destination !== destination)
         return false;
       // if (bedrooms !== "all" && property.bedrooms < parseInt(bedrooms))
@@ -180,7 +179,7 @@ const Allvillas = () => {
       return true;
     });
   }, [
-    collection,
+
     destination,
     bedrooms,
     guests,

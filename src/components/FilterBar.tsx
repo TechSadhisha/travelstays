@@ -8,11 +8,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 interface FilterBarProps {
-  collection: string;
   destination: string;
   bedrooms: string;
   guests: string;
-  onCollectionChange: (value: string) => void;
   onDestinationChange: (value: string) => void;
   onBedroomsChange: (value: string) => void;
   onGuestsChange: (value: string) => void;
@@ -21,11 +19,9 @@ interface FilterBarProps {
 }
 
 export const FilterBar = ({
-  collection,
   destination,
   bedrooms,
   guests,
-  onCollectionChange,
   onDestinationChange,
   onBedroomsChange,
   onGuestsChange,
@@ -34,22 +30,8 @@ export const FilterBar = ({
 }: FilterBarProps) => {
   return (
     <div className="bg-card border-t-4 border-primary p-8 mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        <div>
-          <label className="block text-sm font-bold mb-2 uppercase">
-            All Collection
-          </label>
-          <Select value={collection} onValueChange={onCollectionChange}>
-            <SelectTrigger className="bg-background">
-              <SelectValue placeholder="All Collection" />
-            </SelectTrigger>
-            <SelectContent className="bg-popover z-50">
-              <SelectItem value="all">All Collection</SelectItem>
-              <SelectItem value="premium">Premium Collection</SelectItem>
-              <SelectItem value="signature">Signature Collection</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+
 
         <div>
           <label className="block text-sm font-bold mb-2 uppercase">

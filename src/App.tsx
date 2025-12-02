@@ -17,10 +17,7 @@ import TermsConditions from "./pages/TermsConditions";
 import VillaRentalsFAQ from "./pages/VillaRentalsFAQ";
 import AgentsResources from "./pages/AgentsResources";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import AdminLayout from "./layouts/AdminLayout";
-import Dashboard from "./pages/admin/Dashboard";
-import PropertyList from "./pages/admin/PropertyList";
-import PropertyForm from "./pages/admin/PropertyForm";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -44,13 +41,7 @@ const App = () => (
           <Route path="/agents-resources" element={<AgentsResources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           
-          {/* Admin Routes */}
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="properties" element={<PropertyList />} />
-            <Route path="properties/new" element={<PropertyForm />} />
-            <Route path="properties/:id/edit" element={<PropertyForm />} />
-          </Route>
+
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
