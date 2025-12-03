@@ -8,6 +8,7 @@ import GuestReviews from "@/components/GuestReviews";
 import Destinations from "@/components/Destinations";
 import Magazine from "@/components/Magazine";
 import Footer from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <Magazine />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

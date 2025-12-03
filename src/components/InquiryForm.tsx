@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,6 +15,26 @@ import {
 } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { Property } from "@/data/properties";
+import { API_BASE_URL } from "@/config";
+
+const inquirySchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().min(10, "Phone number must be at least 10 digits"),
+  message: z.string().optional(),
+  numberOfRooms: z.coerce
+    .number()
+    .min(1, "At least 1 room is required")
+    .optional()
+    .nullable(),
+  numberOfGuests: z.coerce
+    .number()
+    .min(1, "At least 1 guest is required")
+    .optional()
+    .nullable(),
+});
+
+type InquiryFormValues = z.infer<typeof inquirySchema>;
 
 interface InquiryFormProps {
   open: boolean;
@@ -33,94 +56,69 @@ export const InquiryForm = ({
   initialRooms,
 }: InquiryFormProps) => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-    numberOfRooms: initialRooms ? initialRooms.toString() : "",
-    numberOfGuests: initialGuests ? initialGuests.toString() : "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<InquiryFormValues>({
+    resolver: zodResolver(inquirySchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      numberOfRooms: initialRooms || undefined,
+      numberOfGuests: initialGuests || undefined,
+    },
+  });
 
-    // Basic validation
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      toast({
-        title: "Validation Error",
-        description: "Please fill in all required fields (Name, Email, Phone).",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Validation Error",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
+  const onSubmit = async (data: InquiryFormValues) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001'}/api/inquiry`, {
-        method: 'POST',
+      const response = await fetch(`${API_BASE_URL}/inquiry`, {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           propertyId: property.id,
           propertyName: property.title,
           propertyLocation: property.location,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          checkIn: checkIn ? checkIn.toISOString().split('T')[0] : null,
-          checkOut: checkOut ? checkOut.toISOString().split('T')[0] : null,
-          numberOfRooms: formData.numberOfRooms ? parseInt(formData.numberOfRooms) : null,
-          numberOfGuests: formData.numberOfGuests ? parseInt(formData.numberOfGuests) : null,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
+          checkIn: checkIn ? checkIn.toISOString().split("T")[0] : null,
+          checkOut: checkOut ? checkOut.toISOString().split("T")[0] : null,
+          numberOfRooms: data.numberOfRooms,
+          numberOfGuests: data.numberOfGuests,
         }),
       });
 
       if (!response.ok) {
         const errData = await response.json();
-        throw new Error(errData.error || 'Failed to submit inquiry');
+        throw new Error(errData.error || "Failed to submit inquiry");
       }
 
       setIsSuccess(true);
-      setFormData({ name: '', email: '', phone: '', message: '', numberOfRooms: '', numberOfGuests: '' });
+      reset();
     } catch (error: any) {
       toast({
-        title: 'Submission Failed',
-        description: error.message || 'Could not connect to the server. Please try again later.',
-        variant: 'destructive',
+        title: "Submission Failed",
+        description:
+          error.message ||
+          "Could not connect to the server. Please try again later.",
+        variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
-  };
-
-  const handleChange = (
-    field: keyof typeof formData,
-    value: string
-  ) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   const handleClose = () => {
     setIsSuccess(false);
     onOpenChange(false);
+    reset();
   };
 
   return (
@@ -143,15 +141,21 @@ export const InquiryForm = ({
               </svg>
             </div>
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-gray-900">Inquiry Sent Successfully!</h2>
+              <h2 className="text-3xl font-bold text-gray-900">
+                Inquiry Sent Successfully!
+              </h2>
               <p className="text-lg text-muted-foreground max-w-md mx-auto">
-                We've received your inquiry for <span className="font-semibold text-foreground">{property.title}</span>.
+                We've received your inquiry for{" "}
+                <span className="font-semibold text-foreground">
+                  {property.title}
+                </span>
+                .
               </p>
               <p className="text-muted-foreground">
                 Our team will review your request and contact you shortly.
               </p>
             </div>
-            <Button 
+            <Button
               onClick={handleClose}
               className="min-w-[200px] bg-green-600 hover:bg-green-700 text-white mt-4"
               size="lg"
@@ -168,7 +172,7 @@ export const InquiryForm = ({
               </DialogDescription>
             </DialogHeader>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div className="bg-muted p-4 rounded-lg mb-4">
                 <h4 className="font-semibold mb-2">Property Details</h4>
                 <div className="grid grid-cols-2 gap-2 text-sm">
@@ -206,11 +210,14 @@ export const InquiryForm = ({
                   </Label>
                   <Input
                     id="name"
-                    required
-                    value={formData.name}
-                    onChange={(e) => handleChange("name", e.target.value)}
+                    {...register("name")}
                     placeholder="John Doe"
                   />
+                  {errors.name && (
+                    <p className="text-sm text-red-500 mt-1">
+                      {errors.name.message}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <Label htmlFor="email">
@@ -219,11 +226,14 @@ export const InquiryForm = ({
                   <Input
                     id="email"
                     type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => handleChange("email", e.target.value)}
+                    {...register("email")}
                     placeholder="john@example.com"
                   />
+                  {errors.email && (
+                    <p className="text-sm text-red-500 mt-1">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -234,11 +244,14 @@ export const InquiryForm = ({
                 <Input
                   id="phone"
                   type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => handleChange("phone", e.target.value)}
+                  {...register("phone")}
                   placeholder="+91 1234567890"
                 />
+                {errors.phone && (
+                  <p className="text-sm text-red-500 mt-1">
+                    {errors.phone.message}
+                  </p>
+                )}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -248,10 +261,14 @@ export const InquiryForm = ({
                     id="numberOfRooms"
                     type="number"
                     min="1"
-                    value={formData.numberOfRooms}
-                    onChange={(e) => handleChange("numberOfRooms", e.target.value)}
+                    {...register("numberOfRooms")}
                     placeholder="e.g., 2"
                   />
+                  {errors.numberOfRooms && (
+                    <p className="text-sm text-red-500 mt-1">
+                      {errors.numberOfRooms.message}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <Label htmlFor="numberOfGuests">Number of Adults</Label>
@@ -259,10 +276,14 @@ export const InquiryForm = ({
                     id="numberOfGuests"
                     type="number"
                     min="1"
-                    value={formData.numberOfGuests}
-                    onChange={(e) => handleChange("numberOfGuests", e.target.value)}
+                    {...register("numberOfGuests")}
                     placeholder="e.g., 4"
                   />
+                  {errors.numberOfGuests && (
+                    <p className="text-sm text-red-500 mt-1">
+                      {errors.numberOfGuests.message}
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -270,19 +291,14 @@ export const InquiryForm = ({
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
-                  value={formData.message}
-                  onChange={(e) => handleChange("message", e.target.value)}
+                  {...register("message")}
                   placeholder="Tell us about your requirements, special requests, or any questions..."
                   rows={5}
                 />
               </div>
 
               <div className="flex gap-3 justify-end pt-4">
-                <Button
-                  type="button"
-                  variant="outline"
-                  onClick={() => onOpenChange(false)}
-                >
+                <Button type="button" variant="outline" onClick={handleClose}>
                   Cancel
                 </Button>
                 <Button type="submit" disabled={isSubmitting}>
@@ -296,4 +312,3 @@ export const InquiryForm = ({
     </Dialog>
   );
 };
-
