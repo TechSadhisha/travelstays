@@ -38,12 +38,15 @@ export const PropertyCard = (property: PropertyCardProps) => {
   };
 
   return (
-    <Card className="overflow-hidden border-border hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group" onClick={handleNavigate}>
+    <Card
+      className="overflow-hidden border-border hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+      onClick={handleNavigate}
+    >
       <div className="flex flex-col md:flex-row">
         {/* Image Section - Left Side */}
         <div className="relative md:w-[45%] flex-shrink-0">
-          <img 
-            src={image} 
+          <img
+            src={image}
             alt={title}
             className="w-full h-64 md:h-full object-cover"
           />
@@ -60,7 +63,9 @@ export const PropertyCard = (property: PropertyCardProps) => {
           <div>
             <div className="flex justify-between items-start mb-3">
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-foreground mb-1">{title}</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-1">
+                  {title}
+                </h3>
                 <div className="flex items-center gap-2 text-muted-foreground italic mb-2">
                   <MapPin className="h-3 w-3" />
                   <span>{location}</span>
@@ -88,19 +93,18 @@ export const PropertyCard = (property: PropertyCardProps) => {
               {price && (
                 <div className="text-right ml-4">
                   <p className="text-sm text-muted-foreground">From</p>
-                  <p className="text-base font-bold text-foreground whitespace-nowrap">{price}</p>
+                  <p className="text-base font-bold text-foreground whitespace-nowrap">
+                    {price}
+                  </p>
                   <p className="text-sm text-muted-foreground">/night</p>
                 </div>
               )}
             </div>
-            
-            {/* <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3 text-sm">
-              <span><strong>Rooms:</strong> {bedrooms}</span>
-              <span><strong>Adults:</strong> {guests}</span>
-            </div> */}
-            
-            <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{description}</p>
-            
+
+            <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
+              {description}
+            </p>
+
             <div className="mb-4">
               <p className="text-sm line-clamp-2">
                 <strong>Features:</strong> {features.slice(0, 4).join(", ")}
@@ -108,14 +112,18 @@ export const PropertyCard = (property: PropertyCardProps) => {
               </p>
             </div>
           </div>
-          
+
           <div className="flex justify-between items-center pt-4 border-t">
-            <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
-            </div>
+            <div
+              className="flex items-center gap-2"
+              onClick={(e) => e.stopPropagation()}
+            ></div>
             {!price ? (
-              <Button variant="outline" size="sm" onClick={handleNavigate}>Request for Quote</Button>
+              <Button variant="outline" size="sm" onClick={handleNavigate}>
+                Request for Quote
+              </Button>
             ) : (
-              <Button 
+              <Button
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
                 onClick={handleNavigate}
               >
