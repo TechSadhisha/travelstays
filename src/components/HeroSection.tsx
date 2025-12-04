@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 const heroImage =
-  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415598/travel_stays_assets/bg.webp";
+  "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=2940&auto=format&fit=crop";
 import { SearchBar } from "@/components/SearchBar";
 
 const HeroSection = () => {
