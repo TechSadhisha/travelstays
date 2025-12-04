@@ -244,7 +244,7 @@ const Allvillas = () => {
 
   // Default background image (fallback)
   const defaultBackgroundImage =
-    'url("https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&q=80")';
+    'url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2940&auto=format&fit=crop")';
 
   return (
     <div className="min-h-screen flex flex-col">

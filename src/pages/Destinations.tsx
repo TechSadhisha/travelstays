@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { LazyImage } from "@/components/LazyImage";
 const heroImage =
-  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415606/travel_stays_assets/destinations-hero.webp";
+  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2940&auto=format&fit=crop";
 const pondicherry =
   "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
 const madurai =

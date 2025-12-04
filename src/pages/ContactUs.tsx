@@ -36,14 +36,13 @@ const ContactUs = () => {
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[55vh] md:h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-hidden">
           {/* Ocean background with blur effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0] via-[#20B2AA] to-[#008B8B]">
-            {/* Additional layers for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#008B8B]/50 to-transparent"></div>
-            <div className="absolute inset-0 backdrop-blur-[2px] bg-white/5"></div>
-            {/* Wave effects */}
-            <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-white/30 via-white/15 to-transparent"></div>
-            <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-white/20 to-transparent"></div>
-            <div className="absolute bottom-0 w-full h-1/6 bg-gradient-to-t from-white/10 to-transparent"></div>
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url("https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop")`,
+            }}
+          >
+            <div className="absolute inset-0 bg-black/40"></div>
           </div>
           <div className="relative z-10 text-center text-white px-4 sm:px-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-3 md:mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
@@ -61,10 +60,15 @@ const ContactUs = () => {
             {/* Introduction Text */}
             <div className="mb-8 md:mb-12">
               <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed mb-4">
-                For questions and other inquiries regarding our products and services, please complete the form below and submit. One of our villa specialists or team members will attend to your query shortly. For any urgent requests, please call us at{" "}
-                <a href="tel:+91 9087776509" className="text-primary hover:underline font-medium">
+                For questions and other inquiries regarding our products and
+                services, please complete the form below and submit. One of our
+                villa specialists or team members will attend to your query
+                shortly. For any urgent requests, please call us at{" "}
+                <a
+                  href="tel:+91 9087776509"
+                  className="text-primary hover:underline font-medium"
+                >
                   +91 9087776509
-
                 </a>
                 .
               </p>
@@ -82,86 +86,96 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Form */}
-              {/* Contact Form */}
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Name */}
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-sm sm:text-base">Name</Label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={(e) => handleChange("name", e.target.value)}
-                    className="w-full"
-                  />
-                </div>
+            {/* Contact Form */}
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Name */}
+              <div className="space-y-2">
+                <Label htmlFor="name" className="text-sm sm:text-base">
+                  Name
+                </Label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={(e) => handleChange("name", e.target.value)}
+                  className="w-full"
+                />
+              </div>
 
-                {/* Email */}
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm sm:text-base">Email *</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter Email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => handleChange("email", e.target.value)}
-                    className="w-full"
-                  />
-                </div>
+              {/* Email */}
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-sm sm:text-base">
+                  Email *
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="Enter Email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  className="w-full"
+                />
+              </div>
 
-                {/* Phone */}
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-sm sm:text-base">Phone *</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="95852 30000"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => handleChange("phone", e.target.value)}
-                    className="w-full"
-                  />
-                </div>
+              {/* Phone */}
+              <div className="space-y-2">
+                <Label htmlFor="phone" className="text-sm sm:text-base">
+                  Phone *
+                </Label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder="95852 30000"
+                  required
+                  value={formData.phone}
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  className="w-full"
+                />
+              </div>
 
-                {/* City */}
-                <div className="space-y-2">
-                  <Label htmlFor="city" className="text-sm sm:text-base">City</Label>
-                  <Input
-                    id="city"
-                    type="text"
-                    placeholder="Your City"
-                    value={formData.city}
-                    onChange={(e) => handleChange("city", e.target.value)}
-                    className="w-full"
-                  />
-                </div>
+              {/* City */}
+              <div className="space-y-2">
+                <Label htmlFor="city" className="text-sm sm:text-base">
+                  City
+                </Label>
+                <Input
+                  id="city"
+                  type="text"
+                  placeholder="Your City"
+                  value={formData.city}
+                  onChange={(e) => handleChange("city", e.target.value)}
+                  className="w-full"
+                />
+              </div>
 
-                {/* Message */}
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm sm:text-base">Message</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Type your message or additional comments here..."
-                    rows={6}
-                    value={formData.message}
-                    onChange={(e) => handleChange("message", e.target.value)}
-                    className="w-full resize-none min-h-[120px]"
-                  />
-                </div>
+              {/* Message */}
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-sm sm:text-base">
+                  Message
+                </Label>
+                <Textarea
+                  id="message"
+                  placeholder="Type your message or additional comments here..."
+                  rows={6}
+                  value={formData.message}
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  className="w-full resize-none min-h-[120px]"
+                />
+              </div>
 
-                {/* Submit Button */}
-                <div className="pt-4">
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full sm:w-auto min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base"
-                  >
-                    SUBMIT
-                  </Button>
-                </div>
-              </form>
+              {/* Submit Button */}
+              <div className="pt-4">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full sm:w-auto min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base"
+                >
+                  SUBMIT
+                </Button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
@@ -172,4 +186,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
