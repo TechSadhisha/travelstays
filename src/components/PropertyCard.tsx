@@ -1,9 +1,32 @@
 import { LazyImage } from "./LazyImage";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Star, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Property } from "@/data/properties";
 
-// ... (imports)
+interface PropertyCardProps extends Property {
+  className?: string;
+}
 
 export const PropertyCard = (property: PropertyCardProps) => {
-  // ... (hooks and destructuring)
+  const navigate = useNavigate();
+  const {
+    id,
+    title,
+    location,
+    rating,
+    reviewCount,
+    price,
+    image,
+    description,
+    features,
+  } = property;
+
+  const handleNavigate = () => {
+    navigate(`/property/${id}`);
+  };
 
   return (
     <Card
