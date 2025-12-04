@@ -1,41 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Checkbox } from "@/components/ui/checkbox";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Star, MapPin } from "lucide-react";
-import { Property } from "@/data/properties";
+import { LazyImage } from "./LazyImage";
 
-interface PropertyCardProps extends Property {}
+// ... (imports)
 
 export const PropertyCard = (property: PropertyCardProps) => {
-  const navigate = useNavigate();
-  const locationState = useLocation();
-  const {
-    id,
-    title,
-    location,
-    bedrooms,
-
-    guests,
-    description,
-    features,
-    price,
-    image,
-
-    rating,
-    reviewCount,
-  } = property;
-
-  const handleNavigate = (e: React.MouseEvent) => {
-    // Prevent navigation if user is selecting text
-    const selection = window.getSelection();
-    if (selection && selection.toString().length > 0) {
-      return;
-    }
-    e.stopPropagation();
-    navigate(`/property/${id}${locationState.search}`);
-  };
+  // ... (hooks and destructuring)
 
   return (
     <Card
@@ -45,10 +13,10 @@ export const PropertyCard = (property: PropertyCardProps) => {
       <div className="flex flex-col md:flex-row">
         {/* Image Section - Left Side */}
         <div className="relative md:w-[45%] flex-shrink-0">
-          <img
+          <LazyImage
             src={image}
             alt={title}
-            className="w-full h-64 md:h-full object-cover"
+            className="w-full h-64 md:h-full"
           />
           {rating && (
             <Badge className="absolute top-4 right-4 bg-background/90 text-foreground flex items-center gap-1">

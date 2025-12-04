@@ -12,12 +12,18 @@ import { X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SlidersHorizontal } from "lucide-react";
-const pondicherryImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
-const maduraiImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
-const trichyImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
-const varkalaImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
-const kovalamImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
-const kanyakumariImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
+const pondicherryImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const maduraiImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const trichyImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const varkalaImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const kovalamImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
+const kanyakumariImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
 
 // Destination mapping for dynamic hero section
 const destinationMap: Record<string, { name: string; image: string }> = {
@@ -74,7 +80,7 @@ const Allvillas = () => {
     if (destinationParam) {
       setDestination(destinationParam);
     }
-    
+
     // Map rooms param to bedrooms filter
     if (roomsParam) {
       setBedrooms(roomsParam);
@@ -84,7 +90,8 @@ const Allvillas = () => {
 
     // Map adults + children to guests filter
     if (adultsParam || childrenParam) {
-      const totalGuests = (parseInt(adultsParam || "0") + parseInt(childrenParam || "0"));
+      const totalGuests =
+        parseInt(adultsParam || "0") + parseInt(childrenParam || "0");
       if (totalGuests > 0) setGuests(totalGuests.toString());
     } else if (searchParams.get("guests")) {
       setGuests(searchParams.get("guests")!);
@@ -97,7 +104,11 @@ const Allvillas = () => {
     // Scroll to top on initial mount if query parameters are present
     if (
       isInitialMount.current &&
-      (destinationParam || bedroomsParam || searchParam || adultsParam || roomsParam)
+      (destinationParam ||
+        bedroomsParam ||
+        searchParam ||
+        adultsParam ||
+        roomsParam)
     ) {
       window.scrollTo(0, 0);
       isInitialMount.current = false;
@@ -105,7 +116,6 @@ const Allvillas = () => {
   }, [searchParams]);
 
   const handleClear = () => {
-
     setDestination("all");
     setBedrooms("all");
     setGuests("all");
@@ -173,16 +183,16 @@ const Allvillas = () => {
 
       // Tier
       if (selectedTiers.length > 0) {
-        if (!property.tier || !selectedTiers.includes(property.tier)) return false;
+        if (!property.tier || !selectedTiers.includes(property.tier))
+          return false;
       }
 
       return true;
     });
   }, [
-
     destination,
-    bedrooms,
-    guests,
+    // bedrooms,
+    // guests,
     searchQuery,
     priceRange,
     selectedAmenities,
@@ -196,14 +206,16 @@ const Allvillas = () => {
       switch (sortBy) {
         case "popular":
           return (b.rating ?? 0) - (a.rating ?? 0);
-        case "price-high":
+        case "price-high": {
           const priceA = a.priceMin ?? parsePrice(a.price)?.min ?? 0;
           const priceB = b.priceMin ?? parsePrice(b.price)?.min ?? 0;
           return priceB - priceA;
-        case "price-low":
+        }
+        case "price-low": {
           const priceALow = a.priceMin ?? parsePrice(a.price)?.min ?? 0;
           const priceBLow = b.priceMin ?? parsePrice(b.price)?.min ?? 0;
           return priceALow - priceBLow;
+        }
         case "rating":
           return (b.rating ?? 0) - (a.rating ?? 0);
         default:
@@ -295,7 +307,7 @@ const Allvillas = () => {
             }}
             onSearch={({ location, date, guests }) => {
               const params = new URLSearchParams(searchParams);
-              
+
               // Update search query
               if (location) {
                 params.set("search", location);
@@ -308,7 +320,7 @@ const Allvillas = () => {
               // Update dates
               if (date?.from) params.set("from", date.from.toISOString());
               else params.delete("from");
-              
+
               if (date?.to) params.set("to", date.to.toISOString());
               else params.delete("to");
 
@@ -494,13 +506,19 @@ const Allvillas = () => {
                     <SlidersHorizontal className="h-4 w-4" />
                     Filters
                     {activeFiltersCount > 0 && (
-                      <Badge variant="secondary" className="ml-1 px-1.5 py-0.5 h-5 min-w-[1.25rem]">
+                      <Badge
+                        variant="secondary"
+                        className="ml-1 px-1.5 py-0.5 h-5 min-w-[1.25rem]"
+                      >
                         {activeFiltersCount}
                       </Badge>
                     )}
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto">
+                <SheetContent
+                  side="left"
+                  className="w-[300px] sm:w-[400px] overflow-y-auto"
+                >
                   <div className="mt-6">
                     <FilterSidebar
                       priceRange={priceRange}

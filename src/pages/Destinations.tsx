@@ -4,13 +4,21 @@ import TopBar from "@/components/TopBar";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-const heroImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415606/travel_stays_assets/destinations-hero.webp";
-const pondicherry = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
-const madurai = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
-const trichy = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
-const varkala = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
-const kovalam = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
-const kanyakumari = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
+import { LazyImage } from "@/components/LazyImage";
+const heroImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415606/travel_stays_assets/destinations-hero.webp";
+const pondicherry =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415602/travel_stays_assets/dest-pondicherry.webp";
+const madurai =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415601/travel_stays_assets/dest-madurai.webp";
+const trichy =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415604/travel_stays_assets/dest-trichy.webp";
+const varkala =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415605/travel_stays_assets/dest-varkala.webp";
+const kovalam =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415600/travel_stays_assets/dest-kovalam.webp";
+const kanyakumari =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415599/travel_stays_assets/dest-kanyakumari.webp";
 
 interface DestinationInfo {
   name: string;
@@ -26,7 +34,7 @@ interface DestinationInfo {
 
 const Destinations = () => {
   const navigate = useNavigate();
-  
+
   const destinations: DestinationInfo[] = useMemo(
     () => [
       {
@@ -311,14 +319,14 @@ const Destinations = () => {
     <div className="min-h-screen">
       <TopBar />
       <Navigation />
-      
+
       <main>
         {/* Hero Section */}
         <section className="relative h-[400px] md:h-[500px] flex items-center justify-center">
-          <img 
-            src={heroImage} 
+          <LazyImage
+            src={heroImage}
             alt="Luxury travel destinations"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full"
           />
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative z-10 text-center text-white">
@@ -350,15 +358,15 @@ const Destinations = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {destinations.map((dest) => (
-                <div 
+                <div
                   key={dest.slug}
                   onClick={() => handleDestinationClick(dest.slug)}
                   className="relative overflow-hidden rounded-lg aspect-video group cursor-pointer"
                 >
-                  <img 
-                    src={dest.image} 
+                  <LazyImage
+                    src={dest.image}
                     alt={`${dest.name} luxury villas and chalets`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                     <h3 className="text-white text-3xl md:text-4xl font-light tracking-wide drop-shadow-lg">
@@ -382,8 +390,8 @@ const Destinations = () => {
                 will be happy to assist in finding the perfect villa according
                 to your needs.
               </p>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="bg-transparent text-primary-foreground border-2 border-primary-foreground hover:bg-primary-foreground hover:text-primary whitespace-nowrap px-8"
               >
                 CONTACT US NOW
@@ -404,13 +412,13 @@ const Destinations = () => {
                 key={dest.slug}
                 className={index === destinations.length - 1 ? "" : "mb-20"}
               >
-              <div className="relative h-48 md:h-64 mb-8 rounded-lg overflow-hidden">
-                  <img
+                <div className="relative h-48 md:h-64 mb-8 rounded-lg overflow-hidden">
+                  <LazyImage
                     src={dest.image}
                     alt={dest.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full"
                   />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="text-center px-4">
                       <h3 className="text-white text-4xl md:text-6xl font-bold tracking-wider drop-shadow-lg uppercase">
                         {dest.name}
@@ -419,10 +427,10 @@ const Destinations = () => {
                         {dest.description}
                       </p>
                     </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {dest.facts.map((fact, factIndex) => (
                     <div
                       key={factIndex}
@@ -430,20 +438,20 @@ const Destinations = () => {
                     >
                       <div className="text-3xl md:text-4xl flex-shrink-0">
                         {fact.icon}
-              </div>
-                    <div>
+                      </div>
+                      <div>
                         <h4 className="font-semibold mb-2 text-sm md:text-base">
                           {fact.title}
                         </h4>
                         <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                           {fact.description}
                         </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>

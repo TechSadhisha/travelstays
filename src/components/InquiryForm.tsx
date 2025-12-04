@@ -104,12 +104,15 @@ export const InquiryForm = ({
 
       setIsSuccess(true);
       reset();
-    } catch (error: any) {
+    } catch (error: unknown) {
+      let errorMessage =
+        "Could not connect to the server. Please try again later.";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
       toast({
         title: "Submission Failed",
-        description:
-          error.message ||
-          "Could not connect to the server. Please try again later.",
+        description: errorMessage,
         variant: "destructive",
       });
     }

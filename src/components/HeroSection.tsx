@@ -1,11 +1,20 @@
 import { useNavigate } from "react-router-dom";
-const heroImage = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415598/travel_stays_assets/bg.webp";
+const heroImage =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415598/travel_stays_assets/bg.webp";
 import { SearchBar } from "@/components/SearchBar";
 
 const HeroSection = () => {
   const navigate = useNavigate();
 
-  const handleSearch = ({ location, date, guests }: any) => {
+  const handleSearch = ({
+    location,
+    date,
+    guests,
+  }: {
+    location: string;
+    date?: { from?: Date; to?: Date };
+    guests: { adults: number; children: number; rooms: number };
+  }) => {
     const params = new URLSearchParams();
     if (location.trim()) params.set("search", location.trim());
     if (date?.from) params.set("from", date.from.toISOString());
@@ -27,7 +36,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 w-full max-w-6xl">
-    {/* Search Bar Container */}
+        {/* Search Bar Container */}
         <SearchBar onSearch={handleSearch} />
       </div>
     </section>

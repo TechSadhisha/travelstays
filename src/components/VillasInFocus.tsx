@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { allProperties } from "@/data/properties";
+import { LazyImage } from "@/components/LazyImage";
 
 const FEATURED_IDS = [1, 2, 3, 6, 16, 21, 26];
 
@@ -88,11 +89,11 @@ const VillasInFocus = () => {
               onClick={() => navigate(`/property/${villa.id}`)}
             >
               <div className="relative overflow-hidden rounded-lg mb-4 aspect-[4/3]">
-                <img
+                <LazyImage
                   src={villa.image}
                   alt={villa.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                /> 
+                  className="w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
 
               <h3 className="text-xl sm:text-2xl font-light mb-2">
@@ -116,23 +117,21 @@ const VillasInFocus = () => {
           ))}
         </div>
 
-       {/* Pagination Dots */}
-       {featuredVillas.length > visibleCount && (
-         <div className="flex justify-center gap-2">
-           {Array.from({ length: featuredVillas.length }).map((_, index) => (
-             <button
-               key={index}
-               onClick={() => setCurrentIndex(index)}
-               className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
-                 currentIndex === index
-                   ? "bg-primary"
-                   : "bg-muted"
-               }`}
-               aria-label={`Go to slide ${index + 1}`}
-             />
-           ))}
-         </div>
-       )}
+        {/* Pagination Dots */}
+        {featuredVillas.length > visibleCount && (
+          <div className="flex justify-center gap-2">
+            {Array.from({ length: featuredVillas.length }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
+                  currentIndex === index ? "bg-primary" : "bg-muted"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

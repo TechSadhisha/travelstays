@@ -1,7 +1,8 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-const logo = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
+const logo =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
 
 const Footer = () => {
   return (
@@ -46,13 +47,15 @@ const Footer = () => {
       <div className="py-12 sm:py-14 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
-
-
             {/* Logo & Contact */}
             <div>
               <div className="mb-6">
                 <div className="w-12 h-12 mb-2">
-                  <img src={logo} alt="Travel Stays" className="w-full h-full object-contain" />
+                  <img
+                    src={logo}
+                    alt="Travel Stays"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="text-xs tracking-[0.2em] mb-1">TRAVEL</div>
                 <div className="text-sm tracking-[0.3em]">STAYS</div>
@@ -71,7 +74,9 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-2">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span className="break-words">travelstays.world@gmail.com</span>
+                  <span className="break-words">
+                    travelstays.world@gmail.com
+                  </span>
                 </div>
               </div>
             </div>
@@ -83,28 +88,51 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-xs sm:text-sm text-primary-foreground/80">
                 <li>
-                  <a href="/owners-managers" className="hover:text-accent transition-colors">
+                  <a
+                    href="/owners-managers"
+                    className="hover:text-accent transition-colors"
+                  >
                     Owners & Managers
                   </a>
                 </li>
                 <li>
-                  <a href="/terms-conditions" className="hover:text-accent transition-colors">
+                  <a
+                    href="/terms-conditions"
+                    className="hover:text-accent transition-colors"
+                  >
                     Terms & Conditions
                   </a>
                 </li>
                 <li>
-                  <a href="/villa-rentals-faq" className="hover:text-accent transition-colors">
+                  <a
+                    href="/villa-rentals-faq"
+                    className="hover:text-accent transition-colors"
+                  >
                     Villa Rentals FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="/agents-resources" className="hover:text-accent transition-colors">
+                  <a
+                    href="/agents-resources"
+                    className="hover:text-accent transition-colors"
+                  >
                     Agents Resources
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy-policy" className="hover:text-accent transition-colors">
+                  <a
+                    href="/privacy-policy"
+                    className="hover:text-accent transition-colors"
+                  >
                     Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sitemap"
+                    className="hover:text-accent transition-colors"
+                  >
+                    Sitemap
                   </a>
                 </li>
               </ul>

@@ -1,7 +1,11 @@
 import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -26,12 +30,15 @@ import Footer from "@/components/Footer";
 import { InquiryForm } from "@/components/InquiryForm";
 import { getPropertyById } from "@/data/properties";
 import { cn } from "@/lib/utils";
+import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
+import { LazyImage } from "@/components/LazyImage";
 
 const PropertyDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
   const property = id ? getPropertyById(parseInt(id)) : undefined;
-  
+
   // Initialize state from URL params
   const [checkIn, setCheckIn] = useState<Date | undefined>(
     searchParams.get("from") ? new Date(searchParams.get("from")!) : undefined
@@ -39,10 +46,12 @@ const PropertyDetail = () => {
   const [checkOut, setCheckOut] = useState<Date | undefined>(
     searchParams.get("to") ? new Date(searchParams.get("to")!) : undefined
   );
-  
+
   const adults = parseInt(searchParams.get("adults") || "0");
   const initialGuests = adults > 0 ? adults : property?.guests;
-  const initialRooms = searchParams.get("rooms") ? parseInt(searchParams.get("rooms")!) : property?.bedrooms;
+  const initialRooms = searchParams.get("rooms")
+    ? parseInt(searchParams.get("rooms")!)
+    : property?.bedrooms;
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [inquiryOpen, setInquiryOpen] = useState(false);
@@ -67,13 +76,49 @@ const PropertyDetail = () => {
 
   const images = property.images || [property.image];
   const destinationName =
-    property.destination.charAt(0).toUpperCase() + property.destination.slice(1);
+    property.destination.charAt(0).toUpperCase() +
+    property.destination.slice(1);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SEO
+        title={property.title}
+        description={property.description.substring(0, 160)}
+        image={images[0]}
+        url={`https://travelstays.world/property/${property.id}`}
+        type="article"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VacationRental",
+            name: property.title,
+            description: property.description,
+            image: images,
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: property.location,
+              addressCountry: property.destination,
+            },
+            numberOfRooms: property.bedrooms,
+            occupancy: {
+              "@type": "QuantitativeValue",
+              value: property.guests,
+            },
+            aggregateRating: property.rating
+              ? {
+                  "@type": "AggregateRating",
+                  ratingValue: property.rating,
+                  reviewCount: property.reviewCount,
+                }
+              : undefined,
+          })}
+        </script>
+      </Helmet>
       <TopBar />
       <Navigation />
-      
+
       <div className="flex-1">
         {/* Breadcrumbs */}
         <div className="container mx-auto px-4 py-3 md:py-4 max-w-7xl">
@@ -109,10 +154,10 @@ const PropertyDetail = () => {
               {/* Hero Image Gallery */}
               <div className="relative mb-8">
                 <div className="relative w-full h-[250px] md:h-[450px] rounded-lg overflow-hidden bg-muted">
-                  <img
+                  <LazyImage
                     src={images[currentImageIndex]}
                     alt={property.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full"
                   />
                   {images.length > 1 && (
                     <>
@@ -146,7 +191,7 @@ const PropertyDetail = () => {
                     </>
                   )}
                 </div>
-                
+
                 {/* Thumbnail Gallery */}
                 {images.length > 1 && (
                   <div className="flex gap-2 mt-4 overflow-x-auto pb-2 scrollbar-hide">
@@ -161,10 +206,10 @@ const PropertyDetail = () => {
                             : "border-transparent opacity-60 hover:opacity-100"
                         )}
                       >
-                        <img
+                        <LazyImage
                           src={img}
                           alt={`${property.title} ${index + 1}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full"
                         />
                       </button>
                     ))}
@@ -184,17 +229,14 @@ const PropertyDetail = () => {
                       <span>{property.location}</span>
                     </div>
                   </div>
-
                 </div>
               </div>
 
               {/* Description */}
               <div className="mb-8 space-y-4 text-muted-foreground leading-relaxed">
-                {property.description
-                  .split("\n")
-                  .map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
+                {property.description.split("\n").map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
               </div>
 
               {/* Back Link */}
@@ -217,8 +259,13 @@ const PropertyDetail = () => {
                     <AccordionContent>
                       <div className="space-y-4">
                         {property.bedroomsDetails?.map((bedroom, index) => (
-                          <div key={index} className="border-b pb-4 last:border-0">
-                            <h4 className="font-semibold mb-1">{bedroom.room}</h4>
+                          <div
+                            key={index}
+                            className="border-b pb-4 last:border-0"
+                          >
+                            <h4 className="font-semibold mb-1">
+                              {bedroom.room}
+                            </h4>
                             <p className="text-muted-foreground mb-1">
                               {bedroom.beds}
                             </p>
@@ -295,8 +342,6 @@ const PropertyDetail = () => {
                 </Accordion>
               </div>
 
-
-
               {/* Guest Reviews */}
               {property.rating && (
                 <div className="mb-8">
@@ -321,8 +366,6 @@ const PropertyDetail = () => {
                       ({property.reviewCount ?? 0} reviews)
                     </span>
                   </div>
-                
-                
                 </div>
               )}
             </div>
@@ -332,7 +375,9 @@ const PropertyDetail = () => {
               <div className="bg-background border rounded-lg overflow-hidden">
                 {/* Request for Quote Header */}
                 <div className="bg-foreground text-background px-4 sm:px-6 py-3 sm:py-4">
-                  <h2 className="text-lg sm:text-xl font-bold">Request for Quote</h2>
+                  <h2 className="text-lg sm:text-xl font-bold">
+                    Request for Quote
+                  </h2>
                 </div>
 
                 {/* Property Details */}
@@ -343,11 +388,15 @@ const PropertyDetail = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Rooms:</span>
-                    <span className="font-medium">{initialRooms || property.bedrooms}</span>
+                    <span className="font-medium">
+                      {initialRooms || property.bedrooms}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Adults:</span>
-                    <span className="font-medium">{adults || property.guests}</span>
+                    <span className="font-medium">
+                      {adults || property.guests}
+                    </span>
                   </div>
                 </div>
 
@@ -457,4 +506,3 @@ const PropertyDetail = () => {
 };
 
 export default PropertyDetail;
-

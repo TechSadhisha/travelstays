@@ -10,9 +10,30 @@ import Magazine from "@/components/Magazine";
 import Footer from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
+import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
+
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Travel Stays - Luxury Villas & Chalets"
+        description="Discover the finest collection of luxury villas and chalets in Phuket, Bali, Koh Samui, Niseko, Megève, and Courchevel. Personalized 5-star vacation experiences."
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "name": "TravelStays World",
+              "url": "https://travelstays.world",
+              "description": "Hotel recommendations across India including luxury, premium and budget hotels.",
+              "logo": "https://travelstays.world/logo.png"
+            }
+          `}
+        </script>
+      </Helmet>
       <TopBar />
       <Navigation />
       <main>
