@@ -51,6 +51,10 @@ const destinationMap: Record<string, { name: string; image: string }> = {
     name: "Kanyakumari",
     image: kanyakumariImage,
   },
+  salem: {
+    name: "Salem",
+    image: "/assets/Salem/Luxury/Radisson%20Salem/radisson-salem.jpg",
+  },
 };
 
 const Allvillas = () => {
@@ -311,7 +315,9 @@ const Allvillas = () => {
               // Update search query
               if (location) {
                 params.set("search", location);
+                params.delete("destination"); // Clear destination when searching
                 setSearchQuery(location);
+                setDestination("all"); // Reset destination state
               } else {
                 params.delete("search");
                 setSearchQuery("");
@@ -547,7 +553,11 @@ const Allvillas = () => {
                 <>
                   <div className="space-y-8">
                     {displayedProperties.map((property) => (
-                      <PropertyCard key={property.id} {...property} />
+                      <PropertyCard
+                        key={property.id}
+                        {...property}
+                        searchParams={searchParams.toString()}
+                      />
                     ))}
                   </div>
 

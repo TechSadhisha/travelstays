@@ -8,7 +8,6 @@ import GuestReviews from "@/components/GuestReviews";
 import Destinations from "@/components/Destinations";
 import Magazine from "@/components/Magazine";
 import Footer from "@/components/Footer";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 import { SEO } from "@/components/SEO";
 import { Helmet } from "react-helmet-async";
@@ -46,7 +45,6 @@ const Index = () => {
         <Magazine />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 };

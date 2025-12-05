@@ -38,19 +38,19 @@ const AboutUs = () => {
         <section className="py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
-              Thank you for choosing The Luxury Signature as your guide to
-              finding the best luxury private villa rentals and holiday homes in
-              Asia and Europe. We are proud and excited to welcome you to our
-              incredible villas and chalets. Our highly skilled team is
-              dedicated to our customers and our business and will be glad to
-              take every measure possible to assist and accommodate.
+              Thank you for choosing Travel Stays as your guide to finding the
+              best luxury private villa rentals and holiday homes in Asia and
+              Europe. We are proud and excited to welcome you to our incredible
+              villas and chalets. Our highly skilled team is dedicated to our
+              customers and our business and will be glad to take every measure
+              possible to assist and accommodate.
             </p>
             <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed">
-              The Luxury Signature is keenly aware of the needs and wants of
-              villa renters, as well as villa owners and every dynamic of the
-              villa rental business. Everyone in our team is uniquely equipped
-              to deal with every aspect of the process, and our fantastic staff
-              is always willing to go the extra mile to get the most out of your
+              Travel Stays is keenly aware of the needs and wants of villa
+              renters, as well as villa owners and every dynamic of the villa
+              rental business. Everyone in our team is uniquely equipped to deal
+              with every aspect of the process, and our fantastic staff is
+              always willing to go the extra mile to get the most out of your
               experience. We are invested in the notion that efficient,
               consistent, ethical, and quality performance will build lasting
               relationships between our guests, villa owners and every member of
@@ -68,9 +68,9 @@ const AboutUs = () => {
                   OUR MISSION
                 </h2>
                 <p className="text-sm sm:text-base text-foreground/90 mb-4 sm:mb-6 leading-relaxed">
-                  At The Luxury Signature, our mission is to bring delight,
-                  lasting memories, and a sense of elevated lifestyle to every
-                  guest through exceptional, personalized villa experiences.
+                  At Travel Stays, our mission is to bring delight, lasting
+                  memories, and a sense of elevated lifestyle to every guest
+                  through exceptional, personalized villa experiences.
                 </p>
                 <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                   Through a steadfast commitment to integrity, customer service,
@@ -86,15 +86,15 @@ const AboutUs = () => {
                   OUR VISION
                 </h2>
                 <p className="text-sm sm:text-base text-foreground/90 mb-4 sm:mb-6 leading-relaxed">
-                  For The Luxury Signature to become the benchmark and
-                  embodiment of true luxury in the global villa rental market.
+                  For Travel Stays to become the benchmark and embodiment of
+                  true luxury in the global villa rental market.
                 </p>
                 <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                   We envision a world where discerning travelers seek more than
                   just accommodation — they seek meaning, connection, and
                   unforgettable moments. By curating only the most exceptional
                   private villas and delivering service rooted in integrity,
-                  passion, and excellence, The Luxury Signature aims to become
+                  passion, and excellence, Travel Stays aims to become
                   synonymous with refined living and bespoke experiences.
                 </p>
               </div>
@@ -110,22 +110,21 @@ const AboutUs = () => {
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-foreground/90 leading-relaxed mb-6 sm:mb-8">
               A full-service luxury villa rental company with the highest form
-              of standards, The Luxury Signature provides every discerning
-              traveler with a first-class selection of luxury villas and
-              vacation homes to rent. Never compromising quality, each villa is
-              an incredible experience in opulence, comfort, and privacy, with
-              modern facilities and a highly capable in-house staff with a
-              majority featuring world-class chefs and dedicated concierge
-              available to attend to every needs and desire.
+              of standards, Travel Stays provides every discerning traveler with
+              a first-class selection of luxury villas and vacation homes to
+              rent. Never compromising quality, each villa is an incredible
+              experience in opulence, comfort, and privacy, with modern
+              facilities and a highly capable in-house staff with a majority
+              featuring world-class chefs and dedicated concierge available to
+              attend to every needs and desire.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-foreground/90 leading-relaxed">
-              Our portfolio of luxury villas represents The Luxury Signature's
-              unyielding dedication to excellence. From hundreds of possible
-              selections in each location, only the best villas are chosen to
-              present to our elite clientele – the finest in villa design,
-              features & amenities, location, staffing, as well as service and
-              experience it offers. Every villa is unique in architecture,
-              design,
+              Our portfolio of luxury villas represents Travel Stays' unyielding
+              dedication to excellence. From hundreds of possible selections in
+              each location, only the best villas are chosen to present to our
+              elite clientele – the finest in villa design, features &
+              amenities, location, staffing, as well as service and experience
+              it offers. Every villa is unique in architecture, design,
             </p>
           </div>
         </section>
@@ -137,7 +136,7 @@ const AboutUs = () => {
               <iframe
                 className="w-full h-full rounded-lg shadow-2xl"
                 src="https://www.youtube.com/embed/35npVaFGHMY"
-                title="The Luxury Signature - Live the Extraordinary"
+                title="Travel Stays - Live the Extraordinary"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -161,8 +160,8 @@ const AboutUs = () => {
                     Best Direct Rates Guarantee
                   </h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    The Luxury Signature acts as the Direct Representative of
-                    most villas listed in our portfolio. We offer the best rates
+                    Travel Stays acts as the Direct Representative of most
+                    villas listed in our portfolio. We offer the best rates
                     available for all direct bookings. Our villa owners
                     entrusted to us all transactions including contracts and
                     rates negotiation, availability, and the terms & conditions
@@ -253,9 +252,9 @@ const AboutUs = () => {
             <p className="text-sm sm:text-base text-foreground/90 mb-8 sm:mb-10 md:mb-12 leading-relaxed">
               We understand the needs of a luxury traveler. Our commitment to
               making every customer travel experience all it can be, truly makes
-              The Luxury Signature experience stand out from the rest. Never
-              waste time or money after finding your accommodations to be less
-              than suitable, or your vacation poorly planned. We understand how
+              Travel Stays experience stand out from the rest. Never waste time
+              or money after finding your accommodations to be less than
+              suitable, or your vacation poorly planned. We understand how
               precious your time is, and we take every possible measure to
               realize your vacation goals and dreams.
             </p>

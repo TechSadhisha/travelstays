@@ -148,7 +148,7 @@ const MagazinePage = () => {
                         {article.title}
                       </h2>
                       <p className="text-sm text-muted-foreground mb-2">
-                        By: The Luxury Signature
+                        By: Travel Stays
                       </p>
                       <p className="text-xs tracking-wider text-muted-foreground mb-4">
                         {article.category}

@@ -8,6 +8,7 @@ import { Property } from "@/data/properties";
 
 interface PropertyCardProps extends Property {
   className?: string;
+  searchParams?: string;
 }
 
 export const PropertyCard = (property: PropertyCardProps) => {
@@ -22,10 +23,12 @@ export const PropertyCard = (property: PropertyCardProps) => {
     image,
     description,
     features,
+    searchParams,
   } = property;
 
   const handleNavigate = () => {
-    navigate(`/property/${id}`);
+    const queryString = searchParams ? `?${searchParams}` : "";
+    navigate(`/property/${id}${queryString}`);
   };
 
   return (

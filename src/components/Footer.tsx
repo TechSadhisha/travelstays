@@ -145,32 +145,58 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-xs sm:text-sm text-primary-foreground/80">
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=pondicherry"
+                    className="hover:text-accent transition-colors"
+                  >
                     Pondicherry Luxury Villas
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=madurai"
+                    className="hover:text-accent transition-colors"
+                  >
                     Madurai Luxury Villas
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=trichy"
+                    className="hover:text-accent transition-colors"
+                  >
                     Trichy Luxury Villas
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=salem"
+                    className="hover:text-accent transition-colors"
+                  >
+                    Salem Luxury Villas
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/allvillas?destination=varkala"
+                    className="hover:text-accent transition-colors"
+                  >
                     Varkala Luxury Villas
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=kovalam"
+                    className="hover:text-accent transition-colors"
+                  >
                     Kovalam Luxury Villas
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-colors">
+                  <a
+                    href="/allvillas?destination=kanyakumari"
+                    className="hover:text-accent transition-colors"
+                  >
                     Kanyakumari Luxury Villas
                   </a>
                 </li>
