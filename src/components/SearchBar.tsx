@@ -108,7 +108,7 @@ export const SearchBar = ({
   const filteredResults = useMemo(() => {
     if (!searchQuery.trim()) {
       return {
-        destinations: popularDestinations.slice(0, 10),
+        destinations: popularDestinations.slice(0, 3),
         properties: [],
       };
     }
@@ -121,7 +121,7 @@ export const SearchBar = ({
           dest.name.toLowerCase().includes(query) ||
           dest.display.toLowerCase().includes(query)
       )
-      .slice(0, 10);
+      .slice(0, 3);
 
     const filteredProperties = allProperties
       .filter(
