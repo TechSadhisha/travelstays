@@ -39,6 +39,7 @@ const popularDestinations = [
   { name: "Kanyakumari", value: "kanyakumari", display: "Kanyakumari, India" },
   { name: "Salem", value: "salem", display: "Salem, India" },
   { name: "Munnar", value: "munnar", display: "Munnar, India" },
+  { name: "Chennai", value: "chennai", display: "Chennai, India" },
   {
     name: "Thiruvananthapuram",
     value: "thiruvananthapuram",
