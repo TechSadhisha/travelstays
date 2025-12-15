@@ -74,7 +74,7 @@ const Navigation = () => {
             </div>
             <div className="text-center">
               <div className="text-[9px] sm:text-[10px] tracking-[0.2em] mb-0.5 font-bold">
-                TRAVEL STAYS
+                HOTEL STAYS
               </div>
             </div>
           </Link>
