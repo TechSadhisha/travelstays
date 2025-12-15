@@ -14,7 +14,7 @@ const Map = () => {
     <div className="min-h-screen flex flex-col">
       <TopBar />
       <Navigation />
-      
+
       {/* Map Section */}
       <div className="flex-1 relative min-h-[calc(100vh-200px)]">
         <iframe
@@ -23,7 +23,7 @@ const Map = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Luxury Villas Map"
+          title="Luxury Stays Map"
         />
 
         {/* Filters Section - Fixed at bottom */}
@@ -41,9 +41,9 @@ const Map = () => {
                   </SelectTrigger>
                   <SelectContent className="bg-background z-50">
                     <SelectItem value="all">All Collection</SelectItem>
-                    <SelectItem value="beach">Beach Villas</SelectItem>
+                    <SelectItem value="beach">Beach Stays</SelectItem>
                     <SelectItem value="mountain">Mountain Chalets</SelectItem>
-                    <SelectItem value="island">Island Villas</SelectItem>
+                    <SelectItem value="island">Island Stays</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

@@ -6,19 +6,19 @@ const FeaturesSection = () => {
       icon: Crown,
       title: "FINEST COLLECTION",
       description:
-        "The highest standard in luxury villa rentals, our select portfolio represents Travel Stays' unyielding dedication to excellence. From hundreds of possible selections in each location, only the best villas are chosen to present to our elite clientele.",
+        "The highest standard in luxury stay rentals, our select portfolio represents Travel Stays' unyielding dedication to excellence. From hundreds of possible selections in each location, only the best stays are chosen to present to our elite clientele.",
     },
     {
       icon: Utensils,
       title: "PERSONALISED EXPERIENCE",
       description:
-        "Everyone's ideal vacation is different. To account for that, we don't just sell the same prepackaged experience. We go to great lengths to offer dedicated concierge service, a trained expert who can customize your villa vacation experience.",
+        "Everyone's ideal vacation is different. To account for that, we don't just sell the same prepackaged experience. We go to great lengths to offer dedicated concierge service, a trained expert who can customize your stay experience.",
     },
     {
       icon: Users,
       title: "5-STAR AMENITIES",
       description:
-        "Starting from 4 bedrooms and up, featuring luxurious amenities and facilities such as a private pool, gym, spa, cinema, entertainment areas, tennis court, and much more. Let our villa specialist help find your dream holiday home.",
+        "Starting from 4 bedrooms and up, featuring luxurious amenities and facilities such as a private pool, gym, spa, cinema, entertainment areas, tennis court, and much more. Let our specialist help find your dream holiday home.",
     },
   ];
 

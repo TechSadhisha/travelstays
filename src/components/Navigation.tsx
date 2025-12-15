@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-const logo = "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
+const logo =
+  "https://res.cloudinary.com/drauz5jps/image/upload/v1764415609/travel_stays_assets/logo_final.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
     { to: "/destinations", label: "DESTINATION" },
-    { to: "/allvillas", label: "ALL VILLAS" },
-    { to: "/map", label: "MAP" },
+    { to: "/allstays", label: "ALL STAYS" },
     { to: "/about", label: "ABOUT US" },
     { to: "/magazine", label: "MAGAZINE" },
     { to: "/contact-us", label: "CONTACT US" },
@@ -30,16 +30,10 @@ const Navigation = () => {
               DESTINATION
             </Link>
             <Link
-              to="/allvillas"
+              to="/allstays"
               className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
             >
-              ALL VILLAS
-            </Link>
-            <Link
-              to="/map"
-              className="hover:text-muted-foreground transition-colors text-xs sm:text-sm tracking-wider font-medium"
-            >
-              MAP
+              ALL STAYS
             </Link>
           </div>
 
@@ -69,18 +63,19 @@ const Navigation = () => {
             </Sheet>
           </div>
 
-
-
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center mx-auto lg:mx-0">
             <div className="w-10 h-10 sm:w-12 sm:h-12 mb-1">
-              <img src={logo} alt="Travel Stays" className="w-full h-full object-contain" />
+              <img
+                src={logo}
+                alt="Travel Stays"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-center">
               <div className="text-[9px] sm:text-[10px] tracking-[0.2em] mb-0.5 font-bold">
                 TRAVEL STAYS
               </div>
-
             </div>
           </Link>
 
@@ -107,7 +102,6 @@ const Navigation = () => {
                 CONTACT US
               </Link>
             </div>
-
           </div>
 
           {/* Spacer for mobile to balance logo */}

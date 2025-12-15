@@ -9,7 +9,7 @@ const Sitemap = () => {
   const mainPages = [
     { name: "Home", path: "/" },
     { name: "Destinations", path: "/destinations" },
-    { name: "All Villas", path: "/allvillas" },
+    { name: "All Stays", path: "/allstays" },
     { name: "About Us", path: "/about" },
     { name: "Magazine", path: "/magazine" },
     { name: "Contact Us", path: "/contact-us" },
@@ -19,7 +19,7 @@ const Sitemap = () => {
   const legalPages = [
     { name: "Owners & Managers", path: "/owners-managers" },
     { name: "Terms & Conditions", path: "/terms-conditions" },
-    { name: "Villa Rentals FAQ", path: "/villa-rentals-faq" },
+    { name: "Stay Rentals FAQ", path: "/villa-rentals-faq" },
     { name: "Agents Resources", path: "/agents-resources" },
     { name: "Privacy Policy", path: "/privacy-policy" },
   ];
@@ -96,7 +96,7 @@ const Sitemap = () => {
                     to={`/destinations?destination=${dest.slug}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {dest.name} Villas
+                    {dest.name} Stays
                   </Link>
                 </li>
               ))}

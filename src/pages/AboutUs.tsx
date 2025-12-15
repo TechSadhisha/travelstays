@@ -39,21 +39,21 @@ const AboutUs = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
               Thank you for choosing Travel Stays as your guide to finding the
-              best luxury private villa rentals and holiday homes in Asia and
+              best luxury private stay rentals and holiday homes in Asia and
               Europe. We are proud and excited to welcome you to our incredible
-              villas and chalets. Our highly skilled team is dedicated to our
+              stays and chalets. Our highly skilled team is dedicated to our
               customers and our business and will be glad to take every measure
               possible to assist and accommodate.
             </p>
             <p className="text-foreground/90 text-sm sm:text-base md:text-lg leading-relaxed">
-              Travel Stays is keenly aware of the needs and wants of villa
-              renters, as well as villa owners and every dynamic of the villa
+              Travel Stays is keenly aware of the needs and wants of stay
+              renters, as well as stay owners and every dynamic of the stay
               rental business. Everyone in our team is uniquely equipped to deal
               with every aspect of the process, and our fantastic staff is
               always willing to go the extra mile to get the most out of your
               experience. We are invested in the notion that efficient,
               consistent, ethical, and quality performance will build lasting
-              relationships between our guests, villa owners and every member of
+              relationships between our guests, stay owners and every member of
               our team and network.
             </p>
           </div>
@@ -70,7 +70,7 @@ const AboutUs = () => {
                 <p className="text-sm sm:text-base text-foreground/90 mb-4 sm:mb-6 leading-relaxed">
                   At Travel Stays, our mission is to bring delight, lasting
                   memories, and a sense of elevated lifestyle to every guest
-                  through exceptional, personalized villa experiences.
+                  through exceptional, personalized stay experiences.
                 </p>
                 <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                   Through a steadfast commitment to integrity, customer service,
@@ -87,13 +87,13 @@ const AboutUs = () => {
                 </h2>
                 <p className="text-sm sm:text-base text-foreground/90 mb-4 sm:mb-6 leading-relaxed">
                   For Travel Stays to become the benchmark and embodiment of
-                  true luxury in the global villa rental market.
+                  true luxury in the global stay rental market.
                 </p>
                 <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                   We envision a world where discerning travelers seek more than
                   just accommodation — they seek meaning, connection, and
                   unforgettable moments. By curating only the most exceptional
-                  private villas and delivering service rooted in integrity,
+                  private stays and delivering service rooted in integrity,
                   passion, and excellence, Travel Stays aims to become
                   synonymous with refined living and bespoke experiences.
                 </p>
@@ -106,25 +106,25 @@ const AboutUs = () => {
         <section className="py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-6 sm:mb-8 tracking-wide">
-              FINEST VILLA RENTAL COLLECTION
+              FINEST STAY RENTAL COLLECTION
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-foreground/90 leading-relaxed mb-6 sm:mb-8">
-              A full-service luxury villa rental company with the highest form
-              of standards, Travel Stays provides every discerning traveler with
-              a first-class selection of luxury villas and vacation homes to
-              rent. Never compromising quality, each villa is an incredible
-              experience in opulence, comfort, and privacy, with modern
-              facilities and a highly capable in-house staff with a majority
-              featuring world-class chefs and dedicated concierge available to
-              attend to every needs and desire.
+              A full-service luxury stay rental company with the highest form of
+              standards, Travel Stays provides every discerning traveler with a
+              first-class selection of luxury stays and vacation homes to rent.
+              Never compromising quality, each stay is an incredible experience
+              in opulence, comfort, and privacy, with modern facilities and a
+              highly capable in-house staff with a majority featuring
+              world-class chefs and dedicated concierge available to attend to
+              every needs and desire.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-foreground/90 leading-relaxed">
-              Our portfolio of luxury villas represents Travel Stays' unyielding
+              Our portfolio of luxury stays represents Travel Stays' unyielding
               dedication to excellence. From hundreds of possible selections in
-              each location, only the best villas are chosen to present to our
-              elite clientele – the finest in villa design, features &
-              amenities, location, staffing, as well as service and experience
-              it offers. Every villa is unique in architecture, design,
+              each location, only the best stays are chosen to present to our
+              elite clientele – the finest in stay design, features & amenities,
+              location, staffing, as well as service and experience it offers.
+              Every stay is unique in architecture, design,
             </p>
           </div>
         </section>
@@ -160,12 +160,11 @@ const AboutUs = () => {
                     Best Direct Rates Guarantee
                   </h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    Travel Stays acts as the Direct Representative of most
-                    villas listed in our portfolio. We offer the best rates
-                    available for all direct bookings. Our villa owners
-                    entrusted to us all transactions including contracts and
-                    rates negotiation, availability, and the terms & conditions
-                    of the villa.
+                    Travel Stays acts as the Direct Representative of most stays
+                    listed in our portfolio. We offer the best rates available
+                    for all direct bookings. Our stay owners entrusted to us all
+                    transactions including contracts and rates negotiation,
+                    availability, and the terms & conditions of the stay.
                   </p>
                 </div>
               </div>
@@ -208,7 +207,7 @@ const AboutUs = () => {
                     the best show in town, or a private yoga and pilates
                     session, no request is too big or too small for our
                     dedicated, personalized concierge service which is included
-                    in every villa.
+                    in every stay.
                   </p>
                 </div>
               </div>
@@ -227,7 +226,7 @@ const AboutUs = () => {
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
                     We take great pride in our customer service. If you want to
                     make a reservation, or just have some questions, our
-                    dedicated Villa Specialists, and Luxury Travel Experts are
+                    dedicated Stay Specialists, and Luxury Travel Experts are
                     available 24/7 to respond swiftly and ensure you receive the
                     assistance you need.
                   </p>
@@ -288,12 +287,12 @@ const AboutUs = () => {
 
               <div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
-                  We Personally and Thoroughly Inspect Each Villa We List
+                  We Personally and Thoroughly Inspect Each Stay We List
                 </h3>
                 <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                  Every single villa featured on our website has been personally
+                  Every single stay featured on our website has been personally
                   inspected and carefully hand-picked with an exacting detail to
-                  attention. If for any reason, a villa does not meet the
+                  attention. If for any reason, a stay does not meet the
                   standards of our experts, you will never see us advertising
                   it! Rest assured that what you see is what you get.
                 </p>
@@ -307,11 +306,11 @@ const AboutUs = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 max-w-6xl mx-auto">
               <p className="text-sm sm:text-base md:text-lg text-center md:text-left">
-                We have inspected every detail of each villa listed on our
+                We have inspected every detail of each stay listed on our
                 website and the services they offer to make sure they meet our
-                exacting standards. Contact us and one of our villa specialists
-                will be happy to assist in finding the perfect villa according
-                to your needs.
+                exacting standards. Contact us and one of our stay specialists
+                will be happy to assist in finding the perfect stay according to
+                your needs.
               </p>
               <Button
                 variant="outline"

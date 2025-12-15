@@ -23,7 +23,7 @@ const HeroSection = () => {
     params.set("children", guests.children.toString());
     params.set("rooms", guests.rooms.toString());
 
-    navigate(`/allvillas?${params.toString()}`);
+    navigate(`/allstays?${params.toString()}`);
   };
 
   return (

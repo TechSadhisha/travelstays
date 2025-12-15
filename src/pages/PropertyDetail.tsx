@@ -66,8 +66,8 @@ const PropertyDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Property Not Found</h1>
-          <Link to="/allvillas" className="text-primary hover:underline">
-            Return to All Villas
+          <Link to="/allstays" className="text-primary hover:underline">
+            Return to All Stays
           </Link>
         </div>
       </div>
@@ -138,7 +138,7 @@ const PropertyDetail = () => {
               to={`/destinations?destination=${property.destination}`}
               className="hover:text-foreground transition-colors truncate max-w-[150px] sm:max-w-none"
             >
-              {destinationName} Villas
+              {destinationName} Stays
             </Link>
             <ChevronRight className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
             <span className="text-foreground truncate max-w-[150px] sm:max-w-none">
@@ -242,10 +242,10 @@ const PropertyDetail = () => {
               {/* Back Link */}
               <div className="mb-8">
                 <Link
-                  to={`/allvillas?destination=${property.destination}`}
+                  to={`/allstays?destination=${property.destination}`}
                   className="text-primary hover:underline inline-flex items-center gap-1"
                 >
-                  Go back to view all: {destinationName} Luxury Villas
+                  Go back to view all: {destinationName} Luxury Stays
                 </Link>
               </div>
 

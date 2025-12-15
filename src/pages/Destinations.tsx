@@ -312,7 +312,7 @@ const Destinations = () => {
   );
 
   const handleDestinationClick = (slug: string) => {
-    navigate(`/allvillas?destination=${slug}`);
+    navigate(`/allstays?destination=${slug}`);
   };
 
   return (
@@ -347,7 +347,7 @@ const Destinations = () => {
               From heritage quarters to sun-kissed coasts, every property in our
               portfolio has been personally inspected for service, style, and
               authenticity. Not sure which city suits your travel plans? Speak
-              with our villa specialists and we’ll tailor suggestions to your
+              with our stay specialists and we’ll tailor suggestions to your
               dates, group size, and preferred experiences.
             </p>
           </div>
@@ -365,7 +365,7 @@ const Destinations = () => {
                 >
                   <LazyImage
                     src={dest.image}
-                    alt={`${dest.name} luxury villas and chalets`}
+                    alt={`${dest.name} luxury stays and chalets`}
                     className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
@@ -384,11 +384,11 @@ const Destinations = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <p className="text-primary-foreground text-sm md:text-base max-w-3xl">
-                We have inspected every detail of each villa listed on our
+                We have inspected every detail of each stay listed on our
                 website and the services they offer to make sure they meet our
-                exacting standards. Contact us and one of our villa specialists
-                will be happy to assist in finding the perfect villa according
-                to your needs.
+                exacting standards. Contact us and one of our stay specialists
+                will be happy to assist in finding the perfect stay according to
+                your needs.
               </p>
               <Button
                 variant="outline"

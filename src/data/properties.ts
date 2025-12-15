@@ -35,7 +35,7 @@ export interface Property {
   checkIn?: string; // Check-in time (e.g., "14:00")
   checkOut?: string; // Check-out time (e.g., "11:00")
   cancellationPolicy?: string; // e.g., "Free cancellation up to 7 days"
-  propertyType?: "hotel" | "villa" | "resort" | "boutique";
+  propertyType?: "hotel" | "stay" | "resort" | "boutique";
   wifi?: boolean;
   parking?: boolean;
   pool?: boolean;
@@ -228,7 +228,7 @@ const propertiesData: Property[] = [
     bedrooms: 1,
     guests: 2,
     description:
-      "A beachfront resort offering luxurious villas and chalets with world-class amenities.",
+      "A beachfront resort offering luxurious stays and chalets with world-class amenities.",
     features: [
       "Saltwater Pool",
       "Spa",
@@ -286,17 +286,17 @@ const propertiesData: Property[] = [
     bedrooms: 3,
     guests: 6,
     description:
-      "Warm boutique villa blending Tamil charm and modern comfort near Promenade Beach.",
+      "Warm boutique stay blending Tamil charm and modern comfort near Promenade Beach.",
     features: ["Restaurant", "Bar", "Courtyard", "Shop"],
     price: "₹6,500 - ₹10,500",
     image:
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747240/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/2020-10-23_1.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747240/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/2020-10-23_1.webp",
     images: [
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747240/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/2020-10-23_1.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747241/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/2020-10-23_2.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747242/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/2020-10-23_3.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747243/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/2020-10-23.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747244/travel_stays_assets/Puducherry/Luxury/Villa%20Shanti/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747240/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/2020-10-23_1.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747241/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/2020-10-23_2.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747242/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/2020-10-23_3.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747243/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/2020-10-23.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1764747244/travel_stays_assets/Puducherry/Luxury/Stay%20Shanti/unnamed.webp",
     ],
     destination: "pondicherry",
     tier: "Luxury",
@@ -434,7 +434,7 @@ const propertiesData: Property[] = [
     bedrooms: 1,
     guests: 2,
     description:
-      "A historic villa offering an intimate and luxurious stay in the French Quarter.",
+      "A historic stay offering an intimate and luxurious stay in the French Quarter.",
     features: ["Heritage Rooms", "Personalized Service", "Quiet Location"],
     price: "₹10,000 - ₹15,000",
     image:
@@ -565,7 +565,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 20,
-    title: "Coralstone Villa Travels Stays",
+    title: "Coralstone Stay Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -876,7 +876,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 34,
-    title: "Villa Coraline Travels Stays",
+    title: "Stay Coraline Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -950,7 +950,7 @@ const propertiesData: Property[] = [
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
-    description: "A charming villa offering a quiet and authentic stay.",
+    description: "A charming stay offering a quiet and authentic stay.",
     features: ["Garden", "Wi-Fi", "Breakfast"],
     price: "₹3,500 - ₹6,000",
     image:
@@ -2327,7 +2327,7 @@ const propertiesData: Property[] = [
     bedrooms: 1,
     guests: 2,
     description: "A resort where history meets modern luxury.",
-    features: ["Temple Tank Pool", "Heritage Villas", "Spa"],
+    features: ["Temple Tank Pool", "Heritage Stays", "Spa"],
     price: "₹8,000 - ₹14,000",
     image:
       "https://res.cloudinary.com/drauz5jps/image/upload/v1764936484/travel_stays_assets/Madurai/luxuary/heritage%20madurai/12.webp",
@@ -2876,7 +2876,7 @@ const propertiesData: Property[] = [
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535634/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/clafonti%20varkala%20premium%205.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535635/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/WhatsApp%20Image%202020-11-17%20at%2013.31.36.jpg",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765535636/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/royal-villa-superior.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765535636/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/royal-stay-superior.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535636/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/clafonti%20varkala%20premium%202.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535637/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/q7.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535638/travel_stays_assets/varkala/luxuary%20hotels/clafouti%20varkala/2022-01-03.webp",
@@ -2987,7 +2987,7 @@ const propertiesData: Property[] = [
     bedrooms: 1,
     guests: 2,
     description: "Serene lakeside retreat for a peaceful getaway.",
-    features: ["Lake View", "Garden", "Private Villa"],
+    features: ["Lake View", "Garden", "Private Stay"],
     price: "₹5,500 - ₹9,000",
     image:
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765535624/travel_stays_assets/varkala/luxuary%20hotels/still%20waters%20alaya%20stays/still%20waters%20varlaka%20luxuary%204.jpg",
@@ -4738,11 +4738,11 @@ const propertiesData: Property[] = [
   },
   {
     id: 67,
-    title: "ayur villa  kovalam",
+    title: "ayur stay  kovalam",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
-    description: "Experience valid stay at ayur villa  kovalam in Kovalam.",
+    description: "Experience valid stay at ayur stay  kovalam in Kovalam.",
     features: ["Wi-Fi", "Parking", "Air Conditioning"],
     price: "₹8,000 - ₹15,000",
     image:
@@ -6074,69 +6074,8 @@ const propertiesData: Property[] = [
     rating: 4.5,
     reviewCount: 94,
   },
-  {
-    id: 212,
-    title: "Accord Chrome",
-    location: "Chennai",
-    bedrooms: 1,
-    guests: 2,
-    description:
-      "Premium comfort and style at Accord Chrome, located centrally in Chennai.",
-    features: [
-      "Wi-Fi",
-      "Air Conditioning",
-      "Restaurant",
-      "Housekeeping",
-      "Restaurant",
-      "Conference Room",
-    ],
-    price: "₹4,500 - ₹8,000",
-    image:
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626762/travel_stays_assets/Chennai/Premium/Accord_Chrome/Shot_13_Restuarant2_.webp",
-    images: [
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626762/travel_stays_assets/Chennai/Premium/Accord_Chrome/Shot_13_Restuarant2_.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626763/travel_stays_assets/Chennai/Premium/Accord_Chrome/unnamed_1.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626764/travel_stays_assets/Chennai/Premium/Accord_Chrome/unnamed_2.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626765/travel_stays_assets/Chennai/Premium/Accord_Chrome/unnamed_3.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626766/travel_stays_assets/Chennai/Premium/Accord_Chrome/unnamed.webp",
-    ],
-    destination: "chennai",
-    tier: "Premium",
-    rating: 4.5,
-    reviewCount: 97,
-  },
-  {
-    id: 213,
-    title: "Accord Metropolitan",
-    location: "Chennai",
-    bedrooms: 1,
-    guests: 2,
-    description:
-      "Premium comfort and style at Accord Metropolitan, located centrally in Chennai.",
-    features: [
-      "Wi-Fi",
-      "Air Conditioning",
-      "Restaurant",
-      "Housekeeping",
-      "Restaurant",
-      "Conference Room",
-    ],
-    price: "₹4,500 - ₹8,000",
-    image:
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626768/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_15_brickoven3_.webp",
-    images: [
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626768/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_15_brickoven3_.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626769/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_26_studio_apartment2_.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626770/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_29_Superior_.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626771/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_35_exterior1_corrected.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626773/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/Shot_7_Gym_.webp",
-      "https://res.cloudinary.com/drauz5jps/image/upload/v1765626774/travel_stays_assets/Chennai/Premium/Accord_Metropolitan/unnamed.webp",
-    ],
-    destination: "chennai",
-    tier: "Premium",
-    rating: 4.5,
-    reviewCount: 137,
-  },
+
+
   {
     id: 214,
     title: "Feathers A Radha Hotel",
@@ -6459,7 +6398,7 @@ function enrichPropertyData(property: Property): Property {
     cancellationPolicy:
       property.cancellationPolicy ??
       "Free cancellation up to 7 days before check-in",
-    propertyType: property.propertyType ?? "villa",
+    propertyType: property.propertyType ?? "stay",
     wifi: property.wifi ?? hasWifi ?? true,
     parking:
       property.parking ??

@@ -93,8 +93,8 @@ const MagazinePage = () => {
     "Culture & Tradition",
     "Food & Travel",
     "Travel Guide & Inspiration",
-    "Villa Owners Guide",
-    "Villa Rentals Guide",
+    "Stay Owners Guide",
+    "Stay Rentals Guide",
   ];
 
   return (
@@ -196,7 +196,7 @@ const MagazinePage = () => {
                         CURATED HERITAGE COLLECTION
                       </p>
                       <h3 className="text-2xl font-bold text-center mb-4">
-                        Boutique Villas
+                        Boutique Stays
                         <br />
                         Across South India
                       </h3>
@@ -224,12 +224,12 @@ const MagazinePage = () => {
                     BOOKING?
                   </h3>
                   <p className="text-xs tracking-wider mb-2">
-                    OUR VILLA SPECIALISTS
+                    OUR STAY SPECIALISTS
                   </p>
                   <p className="text-xs tracking-wider mb-6">
                     CAN HELP FIND THE PERFECT
                     <br />
-                    VILLA FOR YOU
+                    STAY FOR YOU
                   </p>
                   <Button
                     variant="outline"

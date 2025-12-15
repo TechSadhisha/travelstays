@@ -71,6 +71,7 @@ const Footer = () => {
                 <div className="flex gap-2">
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
                   <span>+91 9087776509</span>
+                  <span>+91 9585554509</span>
                 </div>
                 <div className="flex gap-2">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -138,66 +139,58 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Villas by Destination */}
+            {/* Stays by Destination */}
             <div>
               <h3 className="font-semibold mb-3 sm:mb-4 tracking-wide text-sm sm:text-base">
-                VILLAS BY DESTINATION
+                STAYS BY DESTINATION
               </h3>
               <ul className="space-y-2 text-xs sm:text-sm text-primary-foreground/80">
                 <li>
                   <a
-                    href="/allvillas?destination=pondicherry"
+                    href="/allstays?destination=chennai"
                     className="hover:text-accent transition-colors"
                   >
-                    Pondicherry Luxury Villas
+                    Chennai
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/allvillas?destination=madurai"
+                    href="/allstays?destination=pondicherry"
                     className="hover:text-accent transition-colors"
                   >
-                    Madurai Luxury Villas
+                    Puducherry
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/allvillas?destination=trichy"
+                    href="/allstays?destination=madurai"
                     className="hover:text-accent transition-colors"
                   >
-                    Trichy Luxury Villas
+                    Madurai
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/allvillas?destination=salem"
+                    href="/allstays?destination=kochi"
                     className="hover:text-accent transition-colors"
                   >
-                    Salem Luxury Villas
+                    Kochi
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/allvillas?destination=varkala"
+                    href="/allstays?destination=thiruvananthapuram"
                     className="hover:text-accent transition-colors"
                   >
-                    Varkala Luxury Villas
+                    Trivandrum (Thiruvananthapuram)
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/allvillas?destination=kovalam"
+                    href="/allstays?destination=munnar"
                     className="hover:text-accent transition-colors"
                   >
-                    Kovalam Luxury Villas
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/allvillas?destination=kanyakumari"
-                    className="hover:text-accent transition-colors"
-                  >
-                    Kanyakumari Luxury Villas
+                    Munnar
                   </a>
                 </li>
               </ul>

@@ -18,13 +18,12 @@ const Destinations = () => {
   // Map destination names to their filter values
   const getDestinationValue = (name: string): string => {
     const mapping: { [key: string]: string } = {
-      Pondicherry: "pondicherry",
-      Madurai: "madurai",
-      Trichy: "trichy",
-      Varkala: "varkala",
-      Kovalam: "kovalam",
-      Kanyakumari: "kanyakumari",
       Chennai: "chennai",
+      Puducherry: "pondicherry",
+      Madurai: "madurai",
+      Kochi: "kochi",
+      "Trivandrum (Thiruvananthapuram)": "thiruvananthapuram",
+      Munnar: "munnar",
     };
     return mapping[name] || "";
   };
@@ -32,21 +31,32 @@ const Destinations = () => {
   const handleDestinationClick = (name: string) => {
     const destinationValue = getDestinationValue(name);
     if (destinationValue) {
-      navigate(`/allvillas?destination=${destinationValue}`);
+      navigate(`/allstays?destination=${destinationValue}`);
     }
   };
 
   const destinations = [
-    { name: "Pondicherry", image: pondicherry },
-    { name: "Madurai", image: madurai },
-    { name: "Trichy", image: trichy },
-    { name: "Varkala", image: varkala },
-    { name: "Kovalam", image: kovalam },
-    { name: "Kanyakumari", image: kanyakumari },
     {
       name: "Chennai",
       image:
         "https://res.cloudinary.com/drauz5jps/image/upload/v1765626726/travel_stays_assets/Chennai/Luxury/ITC_Grand_Chola/628286164.jpg",
+    },
+    { name: "Puducherry", image: pondicherry },
+    { name: "Madurai", image: madurai },
+    {
+      name: "Kochi",
+      image:
+        "https://res.cloudinary.com/drauz5jps/image/upload/v1765535190/travel_stays_assets/Kochi/Luxury/Taj%20Gateway/2025-05-02%20%281%29.webp",
+    },
+    {
+      name: "Trivandrum (Thiruvananthapuram)",
+      image:
+        "https://res.cloudinary.com/drauz5jps/image/upload/v1765535499/travel_stays_assets/Thiruvananthapuram/Luxury/Dimora%20Thiruvananthapuram/98623887.jpg",
+    },
+    {
+      name: "Munnar",
+      image:
+        "https://res.cloudinary.com/drauz5jps/image/upload/v1765535361/travel_stays_assets/munnar/budget%20munnar/Hotel%20Prasanth%20Paradise/2024-05-21.webp",
     },
   ];
 

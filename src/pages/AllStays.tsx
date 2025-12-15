@@ -57,7 +57,7 @@ const destinationMap: Record<string, { name: string; image: string }> = {
   },
 };
 
-const Allvillas = () => {
+const AllStays = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [destination, setDestination] = useState("all");
@@ -270,13 +270,13 @@ const Allvillas = () => {
           <div className="relative z-10 text-white px-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               {currentDestination
-                ? `${currentDestination.name} Hotels & Villas`
-                : "All Hotels & Villas"}
+                ? `${currentDestination.name} Hotels & Stays`
+                : "All Hotels & Stays"}
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
               {currentDestination
-                ? `Finest Collection Of Holiday Villas And Hotels In ${currentDestination.name}`
-                : "Finest Collection Of Holiday Villas And Hotels Across India"}
+                ? `Finest Collection Of Holiday Stays And Hotels In ${currentDestination.name}`
+                : "Finest Collection Of Holiday Stays And Hotels Across India"}
             </p>
           </div>
         </section>
@@ -284,7 +284,7 @@ const Allvillas = () => {
         {/* Description Section */}
         {/* <section className="container mx-auto px-4 py-12 max-w-6xl">
           <p className="text-foreground leading-relaxed">
-            Browse our curated selection of luxury hotels and villas across
+            Browse our curated selection of luxury hotels and stays across
             India using our <em>Advanced Filtering System</em>. Search
             properties by destination, amenities, price range, and ratings to
             find your perfect stay. Every property in our portfolio has been
@@ -594,4 +594,4 @@ const Allvillas = () => {
   );
 };
 
-export default Allvillas;
+export default AllStays;

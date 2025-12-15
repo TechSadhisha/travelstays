@@ -2,7 +2,7 @@ import TopBar from "@/components/TopBar";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import VillasInFocus from "@/components/VillasInFocus";
+import StaysInFocus from "@/components/StaysInFocus";
 import FeaturedIn from "@/components/FeaturedIn";
 import GuestReviews from "@/components/GuestReviews";
 import Destinations from "@/components/Destinations";
@@ -38,7 +38,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <FeaturesSection />
-        <VillasInFocus />
+        <StaysInFocus />
         <FeaturedIn />
         <GuestReviews />
         <Destinations />

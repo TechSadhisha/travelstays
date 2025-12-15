@@ -9,7 +9,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 // Lazy load pages
 const Index = lazy(() => import("./pages/Index"));
-const Allvillas = lazy(() => import("./pages/Allvillas"));
+const AllStays = lazy(() => import("./pages/AllStays"));
 const Destinations = lazy(() => import("./pages/Destinations"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
@@ -50,7 +50,7 @@ const App = () => (
             <Route path="/magazine" element={<MagazinePage />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/map" element={<Map />} />
-            <Route path="/allvillas" element={<Allvillas />} />
+            <Route path="/allstays" element={<AllStays />} />
             <Route path="/property/:id" element={<PropertyDetail />} />
             <Route path="/owners-managers" element={<OwnersManagers />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />

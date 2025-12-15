@@ -7,7 +7,7 @@ const TopBar = () => {
         <span className="tracking-wide hidden sm:inline">
           Luxury Travel Stays
         </span>
-        <span className="tracking-wide sm:hidden">Luxury Villas & Chalets</span>
+        <span className="tracking-wide sm:hidden">Luxury Stays & Chalets</span>
         <div className="flex gap-2 sm:gap-4">
           <a
             href="tel:+919087776509"

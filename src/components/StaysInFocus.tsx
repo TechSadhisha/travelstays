@@ -7,9 +7,9 @@ import { LazyImage } from "@/components/LazyImage";
 
 const FEATURED_IDS = [1, 2, 3, 6, 16, 21, 26];
 
-const VillasInFocus = () => {
+const StaysInFocus = () => {
   const navigate = useNavigate();
-  const featuredVillas = useMemo(
+  const featuredStays = useMemo(
     () =>
       FEATURED_IDS.map((id) =>
         allProperties.find((property) => property.id === id)
@@ -45,28 +45,28 @@ const VillasInFocus = () => {
   }, []);
 
   useEffect(() => {
-    if (featuredVillas.length <= visibleCount) return;
+    if (featuredStays.length <= visibleCount) return;
 
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % featuredVillas.length);
+      setCurrentIndex((prev) => (prev + 1) % featuredStays.length);
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [featuredVillas.length, visibleCount]);
+  }, [featuredStays.length, visibleCount]);
 
   useEffect(() => {
-    if (featuredVillas.length === 0) return;
-    setCurrentIndex((prev) => prev % featuredVillas.length);
-  }, [featuredVillas.length]);
+    if (featuredStays.length === 0) return;
+    setCurrentIndex((prev) => prev % featuredStays.length);
+  }, [featuredStays.length]);
 
-  if (featuredVillas.length === 0) {
+  if (featuredStays.length === 0) {
     return null;
   }
 
-  const slidesToShow = Math.min(visibleCount, featuredVillas.length);
-  const renderedVillas = Array.from({ length: slidesToShow }, (_, offset) => {
-    const index = (currentIndex + offset) % featuredVillas.length;
-    return featuredVillas[index];
+  const slidesToShow = Math.min(visibleCount, featuredStays.length);
+  const renderedStays = Array.from({ length: slidesToShow }, (_, offset) => {
+    const index = (currentIndex + offset) % featuredStays.length;
+    return featuredStays[index];
   });
 
   return (
@@ -74,40 +74,40 @@ const VillasInFocus = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4 tracking-wide">
-            VILLAS IN FOCUS
+            STAYS IN FOCUS
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
-            A preview of some of our best villa collection
+            A preview of some of our best stay collection
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
-          {renderedVillas.map((villa) => (
+          {renderedStays.map((stay) => (
             <div
-              key={villa.id}
+              key={stay.id}
               className="group cursor-pointer"
-              onClick={() => navigate(`/property/${villa.id}`)}
+              onClick={() => navigate(`/property/${stay.id}`)}
             >
               <div className="relative overflow-hidden rounded-lg mb-4 aspect-[4/3]">
                 <LazyImage
-                  src={villa.image}
-                  alt={villa.title}
+                  src={stay.image}
+                  alt={stay.title}
                   className="w-full h-full transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               <h3 className="text-xl sm:text-2xl font-light mb-2">
-                {villa.title}
+                {stay.title}
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground italic mb-4">
-                {villa.location}
+                {stay.location}
               </p>
               <Button
                 variant="link"
                 className="p-0 h-auto text-sm sm:text-base font-medium group/btn"
                 onClick={(e) => {
                   e.stopPropagation();
-                  navigate(`/property/${villa.id}`);
+                  navigate(`/property/${stay.id}`);
                 }}
               >
                 VIEW DETAILS
@@ -118,9 +118,9 @@ const VillasInFocus = () => {
         </div>
 
         {/* Pagination Dots */}
-        {featuredVillas.length > visibleCount && (
+        {featuredStays.length > visibleCount && (
           <div className="flex justify-center gap-2">
-            {Array.from({ length: featuredVillas.length }).map((_, index) => (
+            {Array.from({ length: featuredStays.length }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
@@ -137,4 +137,4 @@ const VillasInFocus = () => {
   );
 };
 
-export default VillasInFocus;
+export default StaysInFocus;
