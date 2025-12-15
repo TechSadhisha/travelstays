@@ -47,7 +47,7 @@ export interface Property {
 const propertiesData: Property[] = [
   {
     id: 1,
-    title: "Accord Puducherry",
+    title: "Coral Crest Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -78,7 +78,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 2,
-    title: "The Residency Towers",
+    title: "Silver Summit Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -109,7 +109,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 3,
-    title: "La Villa",
+    title: "Azure Haven Travels Stays",
     location: "Pondicherry",
     bedrooms: 2,
     guests: 4,
@@ -139,7 +139,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 4,
-    title: "Le Pondy Beach Resort",
+    title: "Seabreeze Cove Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -169,7 +169,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 5,
-    title: "Palais de Mahe (CGH Earth)",
+    title: "Heritage Court Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -199,7 +199,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 6,
-    title: "Maison Perumal (CGH Earth)",
+    title: "Palmstone Heritage Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -256,7 +256,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 8,
-    title: "The Promenade",
+    title: "Shoreline Edge Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -281,7 +281,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 9,
-    title: "Villa Shanthi",
+    title: "Serenity Grove Travels Stays",
     location: "Pondicherry",
     bedrooms: 3,
     guests: 6,
@@ -305,7 +305,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 10,
-    title: "Hotel Aura By Woco Stays",
+    title: "Mooncrest Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -329,7 +329,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 11,
-    title: "Ocean Spray",
+    title: "Aqua Bloom Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -358,7 +358,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 12,
-    title: "Le Dupleix",
+    title: "Vintage Manor Travels Stays",
     location: "Pondicherry",
     bedrooms: 2,
     guests: 4,
@@ -382,7 +382,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 13,
-    title: "Lagoon Sarovar Premiere Resort",
+    title: "Lakeside Pearl Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -406,7 +406,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 14,
-    title: "Grand Hotel D'Europe",
+    title: "Imperial Crown Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -429,7 +429,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 15,
-    title: "Résidence De L'evêché (CGH Earth)",
+    title: "Cathedral Court Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -453,7 +453,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 16,
-    title: "Hotel De L'Orient",
+    title: "Colonial Haven Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -477,7 +477,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 17,
-    title: "Club Mahindra Resort Puducherry",
+    title: "JoyVista Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -507,7 +507,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 18,
-    title: "Conch Luxury Private Pool Suites",
+    title: "Shellstone Luxe Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -536,7 +536,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 19,
-    title: "The Sunway Manor",
+    title: "Sunny Ridge Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -565,7 +565,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 20,
-    title: "La Maison Charu",
+    title: "Coralstone Villa Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -589,7 +589,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 21,
-    title: "Grand Serenaa Hotel & Resorts",
+    title: "Tranquil Heights Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -612,7 +612,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 22,
-    title: "Shenbaga Hotel & Convention Centre",
+    title: "Golden Orchid Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -637,7 +637,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 23,
-    title: "Hotel Atithi",
+    title: "Urban Leaf Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -662,7 +662,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 24,
-    title: "Anandha Inn Convention Centre and Suites",
+    title: "Harmony Plaza Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -686,7 +686,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 25,
-    title: "Hotel Annamalai International",
+    title: "Regalia Vista Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -710,7 +710,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 26,
-    title: "Le Royal Park",
+    title: "Royal Crestline Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -734,7 +734,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 28,
-    title: "Lotus Bay View Hotel",
+    title: "Bayfront Lotus Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -758,7 +758,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 29,
-    title: "La Papillon Maison",
+    title: "Butterfly Breeze Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -782,7 +782,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 30,
-    title: "Ginger Pondicherry",
+    title: "SpiceRoute Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -806,7 +806,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 31,
-    title: "Mango Hill La Serene Puducherry",
+    title: "Hilltop Serene Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -829,7 +829,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 32,
-    title: "Itsy Hotels Red Lotus Heritage",
+    title: "Ruby Lotus Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -852,7 +852,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 33,
-    title: "White Pearl Residency",
+    title: "Ivory Pearl Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -876,7 +876,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 34,
-    title: "Hotel Villa Krish",
+    title: "Villa Coraline Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -899,7 +899,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 35,
-    title: "Le Château",
+    title: "Castleview Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -923,7 +923,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 36,
-    title: "The Bull Boutique Hotel",
+    title: "Oxford Boutique Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -946,7 +946,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 37,
-    title: "The French Villa",
+    title: "Parisian Court Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -969,7 +969,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 38,
-    title: "Hotel Tamizh Park",
+    title: "MetroGreen Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -994,7 +994,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 39,
-    title: "Villa Helena",
+    title: "Helena Springs Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -1019,7 +1019,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 44,
-    title: "Pleasant Inn",
+    title: "Comfort Crest Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -6536,7 +6536,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 278,
-    title: "Dazzling Resort Travels Stays",
+    title: "Drifting Wharf Travels Stays",
     location: "Coimbatore",
     bedrooms: 1,
     guests: 2,
