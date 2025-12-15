@@ -565,11 +565,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 20,
-<<<<<<< HEAD
     title: "La Maison Charu",
-=======
-    title: "Coralstone Villa Travels Stays",
->>>>>>> 04b0dff (initial commit)
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -880,11 +876,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 34,
-<<<<<<< HEAD
     title: "Hotel Villa Krish",
-=======
-    title: "Villa Coraline Travels Stays",
->>>>>>> 04b0dff (initial commit)
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -6340,7 +6332,8 @@ const propertiesData: Property[] = [
     description: "Budget-friendly stay with modern amenities in Coimbatore.",
     features: ["Wi-Fi", "Parking", "24-hour Front Desk"],
     price: "₹1,500 - ₹2,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799454/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799454/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799454/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800238/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed_1_.webp",
@@ -6361,7 +6354,8 @@ const propertiesData: Property[] = [
       "Comfortable rooms and excellent service for budget travelers.",
     features: ["Restaurant", "Wi-Fi", "Room Service"],
     price: "₹1,800 - ₹3,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800242/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/hotel_raamus.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800242/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/hotel_raamus.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800242/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/hotel_raamus.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800241/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/double_luxury.jpg",
@@ -6402,7 +6396,8 @@ const propertiesData: Property[] = [
     description: "Affordable accommodation with essential amenities.",
     features: ["Room Service", "Wi-Fi", "Laundry"],
     price: "₹1,400 - ₹2,200",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800248/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed_1_.webp",
@@ -6422,7 +6417,8 @@ const propertiesData: Property[] = [
     description: "Conveniently located budget hotel with clean rooms.",
     features: ["Near Bus Stand", "Wi-Fi", "Vegetarian Restaurant"],
     price: "₹1,500 - ₹2,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800267/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/hotel_city_tower.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800267/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/hotel_city_tower.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800267/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/hotel_city_tower.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799471/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/unnamed.webp",
@@ -6442,7 +6438,8 @@ const propertiesData: Property[] = [
     description: "Modern budget hotel suitable for business and leisure.",
     features: ["Wi-Fi", "Conference Hall", "Restaurant"],
     price: "₹2,000 - ₹3,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800271/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800271/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800271/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800270/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17_1_.webp",
@@ -6462,7 +6459,8 @@ const propertiesData: Property[] = [
     description: "Stylish inn offering a comfortable stay in the city.",
     features: ["Wi-Fi", "Cafe", "Parking"],
     price: "₹2,200 - ₹3,800",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799479/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799479/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799479/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800277/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed_1_.webp",
@@ -6482,7 +6480,8 @@ const propertiesData: Property[] = [
     description: "Cozy rooms and friendly hospitality near major attractions.",
     features: ["Travel Desk", "Wi-Fi", "Room Service"],
     price: "₹1,800 - ₹2,800",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799484/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799484/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799484/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800279/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed_1_.webp",
@@ -6523,7 +6522,8 @@ const propertiesData: Property[] = [
     description: "Simple and clean residency for a peaceful stay.",
     features: ["Wi-Fi", "Hot Water", "Parking"],
     price: "₹1,500 - ₹2,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800288/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800288/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800288/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800287/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28_1_.webp",
@@ -6544,7 +6544,8 @@ const propertiesData: Property[] = [
       "Luxury resort offering a tranquil escape with top-notch amenities.",
     features: ["Swimming Pool", "Spa", "Multi-cuisine Restaurant"],
     price: "₹7,000 - ₹12,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800294/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800294/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800294/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800293/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26_1_.webp",
@@ -6564,7 +6565,8 @@ const propertiesData: Property[] = [
     description: "World-class luxury hotel with extensive event spaces.",
     features: ["Swimming Pool", "Gym", "Ballroom", "Fine Dining"],
     price: "₹8,000 - ₹15,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800301/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800301/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800301/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800298/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed_1_.webp",
@@ -6585,7 +6587,8 @@ const propertiesData: Property[] = [
       "Exclusive riverside villas offering privacy and nature views.",
     features: ["Private Pool", "Riverside View", "Butler Service"],
     price: "₹12,000 - ₹20,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800309/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/images.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800309/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/images.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800309/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/images.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800310/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/maayaa_riverside_villa_by_kpm_tripenta_attappadi_pic_35.jpg",
@@ -6606,7 +6609,8 @@ const propertiesData: Property[] = [
       "Contemporary luxury hotel with sleek design and premium services.",
     features: ["Rooftop Bar", "Infinity Pool", "Spa"],
     price: "₹6,500 - ₹10,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800311/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_06_30.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800311/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_06_30.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800311/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_06_30.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800314/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_07_02.webp",
@@ -6626,7 +6630,8 @@ const propertiesData: Property[] = [
     description: "Elegant hotel perfect for business and leisure travelers.",
     features: ["Business Center", "Gym", "Restaurant", "Lounge"],
     price: "₹7,500 - ₹11,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800319/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800319/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800319/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800316/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01_1_.webp",
@@ -6646,7 +6651,8 @@ const propertiesData: Property[] = [
     description: "A resort amidst nature offering a unique jungle experience.",
     features: ["Nature Walks", "Outdoor Pool", "Adventure Activities"],
     price: "₹6,000 - ₹9,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800325/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800325/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800325/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800321/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16_1_.webp",
@@ -6666,7 +6672,8 @@ const propertiesData: Property[] = [
     description: "Iconic hotel known for its hospitality and grand interiors.",
     features: ["Fine Dining", "Spa", "Swimming Pool", "Club Lounge"],
     price: "₹8,000 - ₹14,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800329/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/01Ext.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800329/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/01Ext.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800329/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/01Ext.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800335/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/2025_05_15.webp",
@@ -6686,7 +6693,8 @@ const propertiesData: Property[] = [
     description: "Premium suites offering a home-away-from-home experience.",
     features: ["Kitchenette", "Gym", "Wi-Fi", "Laundry"],
     price: "₹7,000 - ₹12,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799535/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799535/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799535/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799532/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/Deluxe_Room.webp",
@@ -6706,7 +6714,8 @@ const propertiesData: Property[] = [
     description: "Premium hotel with excellent amenities and service.",
     features: ["Restaurant", "Bar", "Gym", "Wi-Fi"],
     price: "₹4,000 - ₹6,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799541/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/unnamed.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799541/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/unnamed.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799541/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/unnamed.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799539/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/6970298.jpg",
@@ -6726,7 +6735,8 @@ const propertiesData: Property[] = [
     description: "Business hotel offering comfort and convenience.",
     features: ["Business Center", "Restaurant", "Wi-Fi"],
     price: "₹3,500 - ₹5,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800350/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/hotel_cag_pride.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800350/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/hotel_cag_pride.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800350/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/hotel_cag_pride.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799543/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/guest_room.webp",
@@ -6746,7 +6756,8 @@ const propertiesData: Property[] = [
     description: "Stylish hotel with modern rooms and a vibrant atmosphere.",
     features: ["Rooftop Restaurant", "Bar", "Wi-Fi"],
     price: "₹4,500 - ₹7,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799551/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/78689381.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799551/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/78689381.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799551/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/78689381.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799552/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/bedroom.jpg",
@@ -6766,7 +6777,8 @@ const propertiesData: Property[] = [
     description: "Comfortable residency with a range of leisure facilities.",
     features: ["Swimming Pool", "Garden", "Restaurant"],
     price: "₹3,800 - ₹5,800",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800357/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_22.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800357/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_22.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800357/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_22.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800358/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_23.webp",
@@ -6786,7 +6798,8 @@ const propertiesData: Property[] = [
     description: "Refreshing stay with signature upbeat service.",
     features: ["Gym", "Restaurant", "Wi-Fi", "Business Center"],
     price: "₹4,200 - ₹6,500",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800367/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29.webp",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800367/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29.webp",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765800367/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29.webp",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799558/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/161565680.jpg",
@@ -6806,7 +6819,8 @@ const propertiesData: Property[] = [
     description: "Modern hotel designed for the contemporary traveler.",
     features: ["Smart Rooms", "Wi-Fi", "Cafe"],
     price: "₹3,500 - ₹5,000",
-    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799568/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/97861894.jpg",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799568/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/97861894.jpg",
     images: [
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799568/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/97861894.jpg",
       "https://res.cloudinary.com/drauz5jps/image/upload/v1765799566/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/691978932.jpg",
