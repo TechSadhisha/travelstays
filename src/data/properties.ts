@@ -223,7 +223,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 7,
-    title: "Blue Lagoon Travels Stays",
+    title: "Drifting Wharf Travels Stays",
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -565,7 +565,11 @@ const propertiesData: Property[] = [
   },
   {
     id: 20,
+<<<<<<< HEAD
     title: "La Maison Charu",
+=======
+    title: "Coralstone Villa Travels Stays",
+>>>>>>> 04b0dff (initial commit)
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -876,7 +880,11 @@ const propertiesData: Property[] = [
   },
   {
     id: 34,
+<<<<<<< HEAD
     title: "Hotel Villa Krish",
+=======
+    title: "Villa Coraline Travels Stays",
+>>>>>>> 04b0dff (initial commit)
     location: "Pondicherry",
     bedrooms: 1,
     guests: 2,
@@ -1041,7 +1049,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 45,
-    title: "Am Grandd",
+    title: "Voyaging Retreat Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1063,7 +1071,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 46,
-    title: "Hotel Deepam",
+    title: "Living Marble Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1085,7 +1093,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 47,
-    title: "Hotel Rhythm Grand Suite",
+    title: "Astral Harbor Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1108,7 +1116,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 48,
-    title: "Hotel Sathyam",
+    title: "Seeking Amethysts Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1129,7 +1137,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 49,
-    title: "Hotel Temple Stay",
+    title: "Regal Night Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1152,7 +1160,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 50,
-    title: "JB Residency",
+    title: "Tropical Foot Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1174,7 +1182,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 51,
-    title: "Shri Sai Baba Homestay (Eb Colony)",
+    title: "Dreamy Spring Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1196,7 +1204,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 52,
-    title: "VIJEY HOTELS",
+    title: "Living Zircons Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1218,7 +1226,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 53,
-    title: "Femina Hotel Tiruchirappalli",
+    title: "Deciding Pumice Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1241,7 +1249,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 54,
-    title: "Gajapriya",
+    title: "Playing Wing Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1263,7 +1271,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 55,
-    title: "Grande Inn",
+    title: "Writing Oasis Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1286,7 +1294,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 56,
-    title: "Hotel Blossoms",
+    title: "Ancient Ray Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1308,7 +1316,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 57,
-    title: "Hotel Pearl International",
+    title: "Waking Shore Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1330,7 +1338,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 58,
-    title: "Hotel River View",
+    title: "Royal Land Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1352,7 +1360,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 59,
-    title: "Hotel Shaans",
+    title: "Eternal Pier Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1374,7 +1382,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 60,
-    title: "Manjhi Residency",
+    title: "Dancing Winter Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1396,7 +1404,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 61,
-    title: "Park Avenue Business Hotel, Trichy",
+    title: "Ethereal Solstice Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1419,7 +1427,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 62,
-    title: "Ramyas Hotels",
+    title: "Infinite Wave Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1441,7 +1449,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 63,
-    title: "Red Fox by Lemon Tree",
+    title: "Diving Bay Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1463,7 +1471,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 64,
-    title: "Chidambara Vilas, Trichy",
+    title: "Speaking Rubies Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1491,7 +1499,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 65,
-    title: "Courtyard by Marriott Tiruchirappalli",
+    title: "Sleeping Darkness Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1519,7 +1527,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 66,
-    title: "Grand Gardenia, Trichy",
+    title: "Sleeping Leg Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1541,7 +1549,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 67,
-    title: "Hotel Tamilnadu Trichy Unit II",
+    title: "Pondering Bay Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1563,7 +1571,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 68,
-    title: "Sangam Hotel Tiruchirappalli",
+    title: "Sleeping Earth Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1585,7 +1593,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 69,
-    title: "SRM Hotel Trichy",
+    title: "Stellar Zircons Travels Stays",
     location: "Trichy",
     bedrooms: 1,
     guests: 2,
@@ -1608,7 +1616,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 70,
-    title: "AMR Evergreen Hotel",
+    title: "Pristine Gorge Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1631,7 +1639,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 71,
-    title: "Gala Vista",
+    title: "Dancing Bay Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1654,7 +1662,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 72,
-    title: "Hotel O Maruthi",
+    title: "Loving Camelot Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1677,7 +1685,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 73,
-    title: "Hotel Pearls",
+    title: "Wandering Emeralds Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1700,7 +1708,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 74,
-    title: "Hotel Salem Castle",
+    title: "Feeling El Dorado Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1723,7 +1731,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 75,
-    title: "Hotel Salem Regency",
+    title: "Starlight Utopia Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1746,7 +1754,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 76,
-    title: "Hotel Shrie Shaanth",
+    title: "Diving Paradise Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1769,7 +1777,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 77,
-    title: "Hotel Vaigai Residency",
+    title: "Resting Twilight Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1792,7 +1800,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 78,
-    title: "JMJ Comfort",
+    title: "Cosmic Spirit Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1815,7 +1823,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 79,
-    title: "Raj Residency Salem",
+    title: "Infinite Quartz Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1838,7 +1846,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 80,
-    title: "Grand Palace Hotel & Spa",
+    title: "Silver Hand Travels Stays",
     location: "Yercaud",
     bedrooms: 1,
     guests: 2,
@@ -1862,7 +1870,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 81,
-    title: "Mango Hill Yercaud",
+    title: "Knowing El Dorado Travels Stays",
     location: "Yercaud",
     bedrooms: 1,
     guests: 2,
@@ -1886,7 +1894,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 82,
-    title: "Radisson Salem",
+    title: "Luminous Riviera Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -1909,7 +1917,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 83,
-    title: "Sterling Yercaud",
+    title: "Running Pasture Travels Stays",
     location: "Yercaud",
     bedrooms: 1,
     guests: 2,
@@ -1932,7 +1940,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 84,
-    title: "The Brook Resorts & Spa",
+    title: "Twilight Feather Travels Stays",
     location: "Yercaud",
     bedrooms: 1,
     guests: 2,
@@ -1955,7 +1963,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 85,
-    title: "Yercaud Yellow Lake Resort & Spa",
+    title: "Writing Rubies Travels Stays",
     location: "Yercaud",
     bedrooms: 1,
     guests: 2,
@@ -1978,7 +1986,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 86,
-    title: "CJ Pallazzio, Salem",
+    title: "Oceanic Mind Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2002,7 +2010,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 87,
-    title: "Grand Estancia",
+    title: "Dancing Autumn Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2025,7 +2033,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 88,
-    title: "Hotel Cenneys Gateway",
+    title: "Timeless Brain Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2048,7 +2056,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 89,
-    title: "Hotel Karpagam International",
+    title: "Sapphire Pasture Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2071,7 +2079,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 90,
-    title: "MM Resorts",
+    title: "Playing Amethysts Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2094,7 +2102,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 91,
-    title: "ZIBE Salem By GRT Hotels",
+    title: "Lost Ravine Travels Stays",
     location: "Salem",
     bedrooms: 1,
     guests: 2,
@@ -2117,7 +2125,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 92,
-    title: "Golden Park",
+    title: "Writing Jades Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2140,7 +2148,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 93,
-    title: "Hotel Avea",
+    title: "Praying El Dorado Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2163,7 +2171,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 94,
-    title: "Hotel Jaya Shakthi",
+    title: "Vibrant Pearls Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2186,7 +2194,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 95,
-    title: "Hotel Lake View",
+    title: "Infinite Atlantis Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2209,7 +2217,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 96,
-    title: "Hotel Prem Nivas",
+    title: "Fabled Ravine Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2230,7 +2238,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 97,
-    title: "Hotel Vijay",
+    title: "Voyaging Day Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2253,7 +2261,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 98,
-    title: "Temple City Dreams",
+    title: "Stellar Mouth Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2276,7 +2284,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 99,
-    title: "Fortune Pandiyan",
+    title: "Pristine Equinox Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2299,7 +2307,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 100,
-    title: "Gateway Hotel",
+    title: "Lunar Ground Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2322,7 +2330,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 101,
-    title: "Heritage Madurai",
+    title: "Thriving Abyss Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2345,7 +2353,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 102,
-    title: "JC Residency",
+    title: "Modern Spring Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2368,7 +2376,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 103,
-    title: "Madurai Grand",
+    title: "Glowing Nerve Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2391,7 +2399,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 104,
-    title: "Poppys",
+    title: "Marine Port Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2414,7 +2422,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 105,
-    title: "Thangam Grand",
+    title: "Creating Basalt Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2436,7 +2444,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 106,
-    title: "Grand Sabarees",
+    title: "Ethereal Topazes Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2458,7 +2466,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 107,
-    title: "Hotel Lotus",
+    title: "Knowing Heart Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2481,7 +2489,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 108,
-    title: "Hotel Moskava",
+    title: "Tasting Dawn Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2502,7 +2510,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 109,
-    title: "Hotel Padmam",
+    title: "Pondering Chasm Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2525,7 +2533,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 110,
-    title: "Hotel President",
+    title: "Growing Energy Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2546,7 +2554,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 111,
-    title: "Madurai Residency",
+    title: "Ancient Emeralds Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2569,7 +2577,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 112,
-    title: "Regency Madurai",
+    title: "Peaceful Ray Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2592,7 +2600,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 113,
-    title: "Virsaa",
+    title: "Celestial Earth Travels Stays",
     location: "Madurai",
     bedrooms: 1,
     guests: 2,
@@ -2613,7 +2621,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 114,
-    title: "Dahlia",
+    title: "Sunny Elysium Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2637,7 +2645,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 115,
-    title: "Eirlys",
+    title: "Traveling Molecule Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2661,7 +2669,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 116,
-    title: "Jicky's Nest",
+    title: "Thriving Olympus Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2684,7 +2692,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 117,
-    title: "Bouganvilla",
+    title: "Harmonious Olympus Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2707,7 +2715,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 118,
-    title: "Cliff County Varkala",
+    title: "Discovering Heart Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2728,7 +2736,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 119,
-    title: "Kappil Meadows",
+    title: "Building Arcadia Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2750,7 +2758,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 120,
-    title: "Lillypad Varkala",
+    title: "Imperial Marina Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2773,7 +2781,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 121,
-    title: "Thanal Varkala",
+    title: "Enchanted Fur Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2795,7 +2803,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 122,
-    title: "Thodiyil Varkala",
+    title: "Creating Chasm Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2818,7 +2826,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 123,
-    title: "Zen Zone Varkala",
+    title: "Finding Blood Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2840,7 +2848,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 124,
-    title: "B'Canti",
+    title: "Grand Eclipse Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2864,7 +2872,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 125,
-    title: "Clafouti Varkala",
+    title: "Discovering Granite Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2888,7 +2896,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 126,
-    title: "Fragrant Nature",
+    title: "Fabled Claw Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2911,7 +2919,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 127,
-    title: "Hindustan Beach Retreat",
+    title: "Seeing Earth Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2934,7 +2942,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 128,
-    title: "Marine Pride Varkala",
+    title: "Swimming Sanctuary Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2958,7 +2966,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 129,
-    title: "Sajjoys",
+    title: "Pondering Dunes Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -2982,7 +2990,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 130,
-    title: "Still Waters Alaya Stays",
+    title: "Majestic Blood Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3006,7 +3014,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 131,
-    title: "Sun View Beach Resort",
+    title: "Oceanic Leg Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3029,7 +3037,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 132,
-    title: "Vakkom Palazzo",
+    title: "Finding Hand Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3053,7 +3061,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 133,
-    title: "Vishram Village",
+    title: "Harmonious Cliffs Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3078,7 +3086,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 134,
-    title: "Sanctum Spring Beach",
+    title: "Living Riviera Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3101,7 +3109,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 135,
-    title: "Akil Beach Resort",
+    title: "Opulent Soil Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3124,7 +3132,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 136,
-    title: "Coconut Cove Varkala",
+    title: "Harmonious Wave Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3147,7 +3155,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 137,
-    title: "Ellixir Cliff Varkala",
+    title: "Blissful Coast Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3170,7 +3178,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 138,
-    title: "Satta Beach Hotel",
+    title: "Carving Wing Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3193,7 +3201,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 139,
-    title: "Skylar Sea View",
+    title: "Oceanic Land Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3217,7 +3225,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 140,
-    title: "Tachees Heritage",
+    title: "Royal Wave Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3240,7 +3248,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 141,
-    title: "Tamara Varkala",
+    title: "Seeking Horn Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3264,7 +3272,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 142,
-    title: "Urban Cliff",
+    title: "Dancing Feather Travels Stays",
     location: "Varkala",
     bedrooms: 1,
     guests: 2,
@@ -3287,7 +3295,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 143,
-    title: "Hotel Prasanth Paradise",
+    title: "Touching Foot Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3310,7 +3318,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 144,
-    title: "Camp Munnar Holidays Inn",
+    title: "Living Earth Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3333,7 +3341,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 145,
-    title: "Olive Brook",
+    title: "Caring Tail Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3356,7 +3364,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 146,
-    title: "Spring Dale Resorts",
+    title: "Coastal Pebbles Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3380,7 +3388,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 147,
-    title: "Tu Casa Resort",
+    title: "Enchanted Zion Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3403,7 +3411,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 148,
-    title: "Casa Montana",
+    title: "Hoping Zion Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3426,7 +3434,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 149,
-    title: "Pine Tree Munnar",
+    title: "Lost Bay Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3449,7 +3457,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 150,
-    title: "Munnar Inn",
+    title: "Sunny Day Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3471,7 +3479,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 151,
-    title: "Hotel Emerald Inn",
+    title: "Reflecting Chasm Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3494,7 +3502,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 152,
-    title: "Amber Dale",
+    title: "Marine Cliffs Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3518,7 +3526,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 153,
-    title: "Blanket Hotel & Spa",
+    title: "Whispering Arcadia Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3541,7 +3549,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 154,
-    title: "Chandy's Windy Woods",
+    title: "Wandering Body Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3565,7 +3573,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 155,
-    title: "Fragrant Nature Munnar",
+    title: "Resting Brain Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3589,7 +3597,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 156,
-    title: "Hotel White House",
+    title: "Making Port Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3612,7 +3620,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 157,
-    title: "Prakkat Nature Hotel",
+    title: "Pondering Marina Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3636,7 +3644,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 158,
-    title: "Rivulet Resort",
+    title: "Drawing Flesh Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3659,7 +3667,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 159,
-    title: "Scenic Munnar",
+    title: "Sleeping Dunes Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3683,7 +3691,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 160,
-    title: "The Silver Tips",
+    title: "Judging Quay Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3707,7 +3715,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 161,
-    title: "The Grand Cliff",
+    title: "Mystic Marina Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3730,7 +3738,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 162,
-    title: "The Valle Munnar",
+    title: "Calm Nose Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3754,7 +3762,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 163,
-    title: "Cloud Valley",
+    title: "Sharing Nirvana Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3777,7 +3785,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 164,
-    title: "Deshadan Mountain Resort",
+    title: "Shimmering Jades Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3801,7 +3809,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 165,
-    title: "Eden Woods",
+    title: "Gentle Nirvana Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3824,7 +3832,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 166,
-    title: "Falling Waters",
+    title: "Flourishing Fin Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3848,7 +3856,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 167,
-    title: "Galaxy International",
+    title: "Azure Riviera Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3871,7 +3879,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 168,
-    title: "Grand Plaza",
+    title: "Understanding Asgard Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3894,7 +3902,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 169,
-    title: "Tea County",
+    title: "Royal Cliffs Travels Stays",
     location: "Munnar",
     bedrooms: 1,
     guests: 2,
@@ -3917,7 +3925,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 31,
-    title: "Taj Gateway",
+    title: "Sharing Meadow Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -3940,7 +3948,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 32,
-    title: "Le Meridien Kochi",
+    title: "Seeking Nose Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -3963,7 +3971,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 33,
-    title: "Kochi Marriott Hotel",
+    title: "Understanding Summer Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -3986,7 +3994,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 34,
-    title: "Radisson Blu Hotel",
+    title: "Secret Heart Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4009,7 +4017,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 35,
-    title: "Bolgatty Palace & Island Resort",
+    title: "Lost Horn Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4032,7 +4040,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 36,
-    title: "Crowne Plaza Kochi",
+    title: "Marine Quay Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4055,7 +4063,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 37,
-    title: "Grand Hyatt Kochi Bolgatty",
+    title: "Carving Shangri-La Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4079,7 +4087,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 38,
-    title: "Hotel Imperial Regency",
+    title: "Regal Nose Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4101,7 +4109,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 39,
-    title: "Ginger Hotel",
+    title: "Azure Horn Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4123,7 +4131,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 40,
-    title: "Hotel Park Residency",
+    title: "Harmonious Canyon Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4146,7 +4154,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 41,
-    title: "ibis Kochi City Centre",
+    title: "Peaceful Spirit Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4168,7 +4176,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 42,
-    title: "Hotel Crown Suites",
+    title: "Ethereal Coast Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4191,7 +4199,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 43,
-    title: "The Reach Hotel",
+    title: "Making El Dorado Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4212,7 +4220,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 44,
-    title: "Hotel Bharat",
+    title: "Ethereal Earth Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4234,7 +4242,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 45,
-    title: "Hotel Trios",
+    title: "Painting Shangri-La Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4256,7 +4264,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 46,
-    title: "Janatha Homestay",
+    title: "Molding Foot Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4279,7 +4287,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 47,
-    title: "Fort Kochi Beach Inn",
+    title: "Thinking Fur Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4302,7 +4310,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 48,
-    title: "Hotel Aiswarya",
+    title: "Legendary Flesh Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4325,7 +4333,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 49,
-    title: "The Neighbourhood",
+    title: "Radiant Gorge Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4348,7 +4356,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 50,
-    title: "Millennium Continental Hotel",
+    title: "Understanding Sapphires Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4370,7 +4378,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 51,
-    title: "Green Woods Bethlehem",
+    title: "Praying Gorge Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4391,7 +4399,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 52,
-    title: "Roses Inn",
+    title: "Smelling Shangri-La Travels Stays",
     location: "Kochi",
     bedrooms: 1,
     guests: 2,
@@ -4414,7 +4422,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 53,
-    title: "Hotel Opalo Kailas",
+    title: "Roaming Abyss Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4437,7 +4445,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 54,
-    title: "sea star beach resort kovalam",
+    title: "Dawn Lagoon Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4460,7 +4468,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 55,
-    title: "kovalam beach house  kovalam",
+    title: "Feeling Light Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4484,7 +4492,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 56,
-    title: "byke heritage puja kovalam",
+    title: "Sharing Sandstone Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4508,7 +4516,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 57,
-    title: "hotel sea view palace",
+    title: "Majestic Fang Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4531,7 +4539,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 58,
-    title: "park international",
+    title: "Tasting Beam Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4553,7 +4561,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 59,
-    title: "hotel moon light kovalam",
+    title: "Thriving Shells Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4575,7 +4583,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 60,
-    title: "hawah beach hotel kovalam",
+    title: "Growing Emeralds Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4598,7 +4606,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 61,
-    title: "sri mookambika beach resort",
+    title: "Exploring Granite Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4621,7 +4629,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 62,
-    title: "over the hill kovalam",
+    title: "Walking Shangri-La Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4646,7 +4654,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 63,
-    title: "Adishakthi leisure",
+    title: "Molding Valhalla Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4669,7 +4677,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 64,
-    title: "uday samudra  kovalam",
+    title: "Pristine Day Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4692,7 +4700,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 65,
-    title: "hotel niramaya kovalam",
+    title: "Contemplating Diamonds Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4715,7 +4723,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 66,
-    title: "raviz kovalam",
+    title: "Shimmering Meadow Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4738,7 +4746,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 67,
-    title: "ayur stay  kovalam",
+    title: "Wishing Molecule Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4761,7 +4769,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 68,
-    title: "rock holm kovalam",
+    title: "Shaping Matter Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4784,7 +4792,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 69,
-    title: "getaway beach resort kovalam",
+    title: "Hearing Nose Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4807,7 +4815,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 70,
-    title: "gokulam turtle on the beach",
+    title: "Untouched Foot Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4831,7 +4839,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 71,
-    title: "sagara kovalam",
+    title: "Stellar Gorge Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4853,7 +4861,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 72,
-    title: "jasmine palace kovalam",
+    title: "Secret Meadow Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4876,7 +4884,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 73,
-    title: "kovalam beach hotel",
+    title: "Contemplating Light Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4899,7 +4907,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 74,
-    title: "ocean bay kovalam",
+    title: "Pristine Utopia Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4921,7 +4929,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 75,
-    title: "hotel sea rock kovalam",
+    title: "Dawn Dust Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4943,7 +4951,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 76,
-    title: "stay well kovalam",
+    title: "Sensing Ravine Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4965,7 +4973,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 77,
-    title: "unwind hotels kovalam",
+    title: "Serene Ground Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -4987,7 +4995,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 78,
-    title: "mollys beach kovalam",
+    title: "Sensing Zion Travels Stays",
     location: "Kovalam",
     bedrooms: 1,
     guests: 2,
@@ -5012,7 +5020,7 @@ const propertiesData: Property[] = [
 
   {
     id: 170,
-    title: "Dimora Thiruvananthapuram",
+    title: "Praying Wave Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5036,7 +5044,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 171,
-    title: "Hyatt Regency Trivandrum",
+    title: "Sleeping Heart Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5060,7 +5068,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 172,
-    title: "Vivanta Thiruvananthapuram",
+    title: "Building Body Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5084,7 +5092,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 173,
-    title: "Gokulam Grand",
+    title: "Meditating Cove Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5108,7 +5116,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 174,
-    title: "O by Tamara, Trivandrum",
+    title: "Luminous Coast Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5132,7 +5140,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 175,
-    title: "Hycinth Hotels",
+    title: "Traveling Arm Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5156,7 +5164,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 176,
-    title: "Mascot Hotel",
+    title: "Sunny Plain Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5179,7 +5187,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 177,
-    title: "Hilton Garden Inn Trivandrum",
+    title: "Grand Molecule Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5203,7 +5211,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 178,
-    title: "Hotel Saj Luciya",
+    title: "Writing Cliffs Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5227,7 +5235,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 179,
-    title: "Classic Sarovar Portico",
+    title: "Starlight Spring Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5250,7 +5258,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 180,
-    title: "Keys Select by Lemon Tree Hotels",
+    title: "Tropical Shells Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5274,7 +5282,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 181,
-    title: "Ambara Suites",
+    title: "Flourishing Jewels Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5298,7 +5306,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 182,
-    title: "Ginger Trivandrum",
+    title: "Shaping Time Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5321,7 +5329,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 183,
-    title: "Hotel Town Tower",
+    title: "Glowing Horn Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5343,7 +5351,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 184,
-    title: "The Residency Tower",
+    title: "Infinite Beak Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5367,7 +5375,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 185,
-    title: "The South Park",
+    title: "Silent Limestone Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5391,7 +5399,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 186,
-    title: "Central Residency",
+    title: "Resting Field Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5415,7 +5423,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 187,
-    title: "Hotel Venkateswara",
+    title: "Contemplating Olympus Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5440,7 +5448,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 188,
-    title: "Hotel Ariya Nivas",
+    title: "Untouched Sandstone Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5463,7 +5471,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 189,
-    title: "Hotel Highland",
+    title: "Carving Zircons Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5486,7 +5494,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 190,
-    title: "teekay Palace",
+    title: "Silver Pumice Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5509,7 +5517,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 191,
-    title: "Hotel Thamburu International",
+    title: "Painting Void Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5532,7 +5540,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 192,
-    title: "Hotel Indrapuri",
+    title: "Cosmic Fin Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5555,7 +5563,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 193,
-    title: "Hotel Prasanth",
+    title: "Sharing Pasture Travels Stays",
     location: "Thiruvananthapuram",
     bedrooms: 1,
     guests: 2,
@@ -5578,7 +5586,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 194,
-    title: "Bell Central",
+    title: "Casting Spring Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5601,7 +5609,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 195,
-    title: "Chariot Hotel",
+    title: "Cosmic Opals Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5623,7 +5631,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 196,
-    title: "FabExpress B Zone",
+    title: "Contemplating Jetty Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5647,7 +5655,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 197,
-    title: "Floressa Randa",
+    title: "Shimmering Muscle Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5670,7 +5678,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 198,
-    title: "Hablis – A Business Hotel",
+    title: "Ancient Dock Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5695,7 +5703,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 199,
-    title: "Hotel Royal Plaza",
+    title: "Making Canyon Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5719,7 +5727,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 200,
-    title: "Ponnis Grand Inn",
+    title: "Meditating Wing Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5743,7 +5751,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 201,
-    title: "Supreme Stay",
+    title: "Working Bone Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5765,7 +5773,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 202,
-    title: "V7 Hotel",
+    title: "Praying Dale Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5788,7 +5796,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 203,
-    title: "Vestin Park",
+    title: "Horizon Eclipse Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5811,7 +5819,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 204,
-    title: "Hyatt Regency Chennai",
+    title: "Roaming Matter Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5844,7 +5852,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 205,
-    title: "ITC Grand Chola",
+    title: "Casting Amethysts Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5877,7 +5885,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 206,
-    title: "Le Royal Meridien Chennai",
+    title: "Silent Chasm Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5910,7 +5918,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 207,
-    title: "Novotel Chennai OMR",
+    title: "Drifting Eclipse Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5943,7 +5951,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 208,
-    title: "Park Hyatt Chennai",
+    title: "Thinking Crystals Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -5977,7 +5985,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 209,
-    title: "Taj Coromandel",
+    title: "Gentle Time Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6010,7 +6018,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 210,
-    title: "The Leela Palace Chennai",
+    title: "Exotic Valhalla Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6043,7 +6051,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 211,
-    title: "The Westin Chennai Velachery",
+    title: "Ancient Mind Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6077,7 +6085,7 @@ const propertiesData: Property[] = [
 
   {
     id: 214,
-    title: "Feathers A Radha Hotel",
+    title: "Dreaming Dale Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6108,7 +6116,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 215,
-    title: "Grand Chennai by GRT Hotels",
+    title: "Twilight Pebbles Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6139,7 +6147,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 216,
-    title: "Holiday Inn Express",
+    title: "Astral Chasm Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6170,7 +6178,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 217,
-    title: "Radisson Blu Hotel & Suites GRT Chennai",
+    title: "Wishing Harbor Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6201,7 +6209,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 218,
-    title: "Taj Wellington Mews",
+    title: "Untouched Olympus Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6232,7 +6240,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 219,
-    title: "The Madras Grand - Hotel Egmore",
+    title: "Radiant Glen Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6263,7 +6271,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 220,
-    title: "The Savera Hotel",
+    title: "Emerald Mouth Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6294,7 +6302,7 @@ const propertiesData: Property[] = [
   },
   {
     id: 221,
-    title: "ibis Chennai City Centre",
+    title: "Resting Atom Travels Stays",
     location: "Chennai",
     bedrooms: 1,
     guests: 2,
@@ -6322,6 +6330,513 @@ const propertiesData: Property[] = [
     tier: "Premium",
     rating: 4.5,
     reviewCount: 121,
+  },
+  {
+    id: 268,
+    title: "Coastal Vision Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Budget-friendly stay with modern amenities in Coimbatore.",
+    features: ["Wi-Fi", "Parking", "24-hour Front Desk"],
+    price: "₹1,500 - ₹2,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799454/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799454/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800238/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800239/travel_stays_assets/Coimbatore/Budget/Coastal_Grand/unnamed_2_.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.8,
+    reviewCount: 45,
+  },
+  {
+    id: 269,
+    title: "Rising Spirit Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Comfortable rooms and excellent service for budget travelers.",
+    features: ["Restaurant", "Wi-Fi", "Room Service"],
+    price: "₹1,800 - ₹3,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800242/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/hotel_raamus.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800242/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/hotel_raamus.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800241/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/double_luxury.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800243/travel_stays_assets/Coimbatore/Budget/HOTEL_RAAMUS/sree_subbu_restaurant.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.9,
+    reviewCount: 52,
+  },
+  {
+    id: 270,
+    title: "Grand Horizon Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "A pleasant stay with spacious rooms and good connectivity.",
+    features: ["Wi-Fi", "Parking", "Travel Assistance"],
+    price: "₹1,600 - ₹2,600",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800245/travel_stays_assets/Coimbatore/Budget/Hotel_Grand_Palace/hotel_grand_palace_coimbatore_pic_19.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800245/travel_stays_assets/Coimbatore/Budget/Hotel_Grand_Palace/hotel_grand_palace_coimbatore_pic_19.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800246/travel_stays_assets/Coimbatore/Budget/Hotel_Grand_Palace/hotel_grand_palace_coimbatore_pic_30.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799461/travel_stays_assets/Coimbatore/Budget/Hotel_Grand_Palace/745689248.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.7,
+    reviewCount: 38,
+  },
+  {
+    id: 271,
+    title: "Hidden Gem Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Affordable accommodation with essential amenities.",
+    features: ["Room Service", "Wi-Fi", "Laundry"],
+    price: "₹1,400 - ₹2,200",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800248/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799467/travel_stays_assets/Coimbatore/Budget/Hotel_SPR_Inn/unnamed.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.6,
+    reviewCount: 30,
+  },
+  {
+    id: 272,
+    title: "Vital Tower Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Conveniently located budget hotel with clean rooms.",
+    features: ["Near Bus Stand", "Wi-Fi", "Vegetarian Restaurant"],
+    price: "₹1,500 - ₹2,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800267/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/hotel_city_tower.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800267/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/hotel_city_tower.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799471/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800266/travel_stays_assets/Coimbatore/Budget/Hotel_Vetri_Tower/2024_09_27.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.9,
+    reviewCount: 60,
+  },
+  {
+    id: 273,
+    title: "Quiet Plaza Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Modern budget hotel suitable for business and leisure.",
+    features: ["Wi-Fi", "Conference Hall", "Restaurant"],
+    price: "₹2,000 - ₹3,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800271/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800271/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800270/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/2025_10_17_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799474/travel_stays_assets/Coimbatore/Budget/Kayal_Plaza/41b475c00f7746b8d04ca3d87837f48e.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 4.0,
+    reviewCount: 45,
+  },
+  {
+    id: 274,
+    title: "Metro Leaf Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Stylish inn offering a comfortable stay in the city.",
+    features: ["Wi-Fi", "Cafe", "Parking"],
+    price: "₹2,200 - ₹3,800",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799479/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799479/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800277/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/unnamed_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799477/travel_stays_assets/Coimbatore/Budget/Metro_Park_Inn/7e31a76c23858ac8f9fb6bacc3ae0648.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 4.1,
+    reviewCount: 72,
+  },
+  {
+    id: 275,
+    title: "Park Shade Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Cozy rooms and friendly hospitality near major attractions.",
+    features: ["Travel Desk", "Wi-Fi", "Room Service"],
+    price: "₹1,800 - ₹2,800",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799484/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799484/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800279/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800280/travel_stays_assets/Coimbatore/Budget/Park_Inn/unnamed_2_.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.8,
+    reviewCount: 40,
+  },
+  {
+    id: 276,
+    title: "Royal Grand Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Grand stay experience at an affordable price.",
+    features: ["Restaurant", "Banquet Hall", "Wi-Fi"],
+    price: "₹2,500 - ₹4,000",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800285/travel_stays_assets/Coimbatore/Budget/Ranis_Grand_Hotel/ranis_grand_coimbatore_pic_1.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800285/travel_stays_assets/Coimbatore/Budget/Ranis_Grand_Hotel/ranis_grand_coimbatore_pic_1.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800286/travel_stays_assets/Coimbatore/Budget/Ranis_Grand_Hotel/ranis_grand_coimbatore_pic_12.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799487/travel_stays_assets/Coimbatore/Budget/Ranis_Grand_Hotel/images.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 4.0,
+    reviewCount: 55,
+  },
+  {
+    id: 277,
+    title: "Sacred Residency Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Simple and clean residency for a peaceful stay.",
+    features: ["Wi-Fi", "Hot Water", "Parking"],
+    price: "₹1,500 - ₹2,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800288/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800288/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800287/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/2024_05_28_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799494/travel_stays_assets/Coimbatore/Budget/SRI_KAMADHENU_RESIDENCY/Double_Room_1.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Budget",
+    rating: 3.9,
+    reviewCount: 32,
+  },
+  {
+    id: 278,
+    title: "Dazzling Resort Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Luxury resort offering a tranquil escape with top-notch amenities.",
+    features: ["Swimming Pool", "Spa", "Multi-cuisine Restaurant"],
+    price: "₹7,000 - ₹12,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800294/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800294/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800293/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2024_04_26_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800292/travel_stays_assets/Coimbatore/Luxury/Darza_Luxury_Resorts/2022_08_21.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 120,
+  },
+  {
+    id: 279,
+    title: "Meridian Peak Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "World-class luxury hotel with extensive event spaces.",
+    features: ["Swimming Pool", "Gym", "Ballroom", "Fine Dining"],
+    price: "₹8,000 - ₹15,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800301/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800301/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800298/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/unnamed_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800296/travel_stays_assets/Coimbatore/Luxury/Le_M_ridien_Coimbatore/2024_11_01.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 250,
+  },
+  {
+    id: 280,
+    title: "Mystic Riverside Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 2,
+    guests: 4,
+    description:
+      "Exclusive riverside villas offering privacy and nature views.",
+    features: ["Private Pool", "Riverside View", "Butler Service"],
+    price: "₹12,000 - ₹20,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800309/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/images.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800309/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/images.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800310/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/maayaa_riverside_villa_by_kpm_tripenta_attappadi_pic_35.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800305/travel_stays_assets/Coimbatore/Luxury/Maayaa_Riverside_Villas_Suites/caption.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.9,
+    reviewCount: 85,
+  },
+  {
+    id: 281,
+    title: "Marvel Hotel Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description:
+      "Contemporary luxury hotel with sleek design and premium services.",
+    features: ["Rooftop Bar", "Infinity Pool", "Spa"],
+    price: "₹6,500 - ₹10,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800311/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_06_30.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800311/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_06_30.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800314/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_07_02.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800315/travel_stays_assets/Coimbatore/Luxury/Merlis_Hotel_Coimbatore/2025_09_09.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.6,
+    reviewCount: 90,
+  },
+  {
+    id: 282,
+    title: "Opulent Tamara Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Elegant hotel perfect for business and leisure travelers.",
+    features: ["Business Center", "Gym", "Restaurant", "Lounge"],
+    price: "₹7,500 - ₹11,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800319/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800319/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800316/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_01_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800320/travel_stays_assets/Coimbatore/Luxury/O_By_Tamara/2023_11_28.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 110,
+  },
+  {
+    id: 283,
+    title: "Jungle Serenity Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "A resort amidst nature offering a unique jungle experience.",
+    features: ["Nature Walks", "Outdoor Pool", "Adventure Activities"],
+    price: "₹6,000 - ₹9,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800325/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800325/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800321/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/2020_11_16_1_.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800327/travel_stays_assets/Coimbatore/Luxury/SRJungle_Resort/SR_Jungle_Resort_The_King_of_Jungle_SR_Jungle_Resorts_Ultimate_Corporate_Retreat_64bcca8fb41f5.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.5,
+    reviewCount: 130,
+  },
+  {
+    id: 284,
+    title: "Residency Heights Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Iconic hotel known for its hospitality and grand interiors.",
+    features: ["Fine Dining", "Spa", "Swimming Pool", "Club Lounge"],
+    price: "₹8,000 - ₹14,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800329/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/01Ext.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800329/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/01Ext.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800335/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/2025_05_15.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800330/travel_stays_assets/Coimbatore/Luxury/The_Residency_Towers_/2025_05_15_1_.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.8,
+    reviewCount: 300,
+  },
+  {
+    id: 285,
+    title: "Welcome Suites Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Premium suites offering a home-away-from-home experience.",
+    features: ["Kitchenette", "Gym", "Wi-Fi", "Laundry"],
+    price: "₹7,000 - ₹12,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799535/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799535/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799532/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/Deluxe_Room.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799533/travel_stays_assets/Coimbatore/Luxury/WelcomHotel_Premium_Suites/Presidential_bedroom.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Luxury",
+    rating: 4.7,
+    reviewCount: 95,
+  },
+  {
+    id: 286,
+    title: "Golden Park Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Premium hotel with excellent amenities and service.",
+    features: ["Restaurant", "Bar", "Gym", "Wi-Fi"],
+    price: "₹4,000 - ₹6,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799541/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/unnamed.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799541/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/unnamed.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799539/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/6970298.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799540/travel_stays_assets/Coimbatore/Premium/Gokulam_Park/caption.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 88,
+  },
+  {
+    id: 287,
+    title: "Pride Haven Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Business hotel offering comfort and convenience.",
+    features: ["Business Center", "Restaurant", "Wi-Fi"],
+    price: "₹3,500 - ₹5,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800350/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/hotel_cag_pride.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800350/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/hotel_cag_pride.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799543/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/guest_room.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799546/travel_stays_assets/Coimbatore/Premium/Hotel_CAG_Pride/unnamed.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 75,
+  },
+  {
+    id: 288,
+    title: "Grand Kiscol Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Stylish hotel with modern rooms and a vibrant atmosphere.",
+    features: ["Rooftop Restaurant", "Bar", "Wi-Fi"],
+    price: "₹4,500 - ₹7,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799551/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/78689381.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799551/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/78689381.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799552/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/bedroom.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799549/travel_stays_assets/Coimbatore/Premium/Hotel_Kiscol_Grands/67996089.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.5,
+    reviewCount: 92,
+  },
+  {
+    id: 289,
+    title: "Joyful Residency Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Comfortable residency with a range of leisure facilities.",
+    features: ["Swimming Pool", "Garden", "Restaurant"],
+    price: "₹3,800 - ₹5,800",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800357/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_22.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800357/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_22.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800358/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_05_23.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800359/travel_stays_assets/Coimbatore/Premium/Jenneys_Residency/2025_11_20.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.4,
+    reviewCount: 65,
+  },
+  {
+    id: 290,
+    title: "Citrus Grove Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Refreshing stay with signature upbeat service.",
+    features: ["Gym", "Restaurant", "Wi-Fi", "Business Center"],
+    price: "₹4,200 - ₹6,500",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765800367/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29.webp",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800367/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799558/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/161565680.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800361/travel_stays_assets/Coimbatore/Premium/Lemon_Tree_Hotel/2025_10_29_1_.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.5,
+    reviewCount: 115,
+  },
+  {
+    id: 291,
+    title: "Modern Inn Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Modern hotel designed for the contemporary traveler.",
+    features: ["Smart Rooms", "Wi-Fi", "Cafe"],
+    price: "₹3,500 - ₹5,000",
+    image: "https://res.cloudinary.com/drauz5jps/image/upload/v1765799568/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/97861894.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799568/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/97861894.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799566/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/691978932.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765799564/travel_stays_assets/Coimbatore/Premium/M_Inn_Hotels/216513921.jpg",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.3,
+    reviewCount: 50,
+  },
+  {
+    id: 292,
+    title: "Zoned Park Travels Stays",
+    location: "Coimbatore",
+    bedrooms: 1,
+    guests: 2,
+    description: "Social-catalyst hotel with a buzzing atmosphere.",
+    features: ["Social Hub", "Bar", "Gaming Area", "Restaurant"],
+    price: "₹5,000 - ₹8,000",
+    image:
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800378/travel_stays_assets/Coimbatore/Premium/Zone_by_The_Park_Hotel_/zone_by_the_park_coimbatore.jpg",
+    images: [
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800378/travel_stays_assets/Coimbatore/Premium/Zone_by_The_Park_Hotel_/zone_by_the_park_coimbatore.jpg",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800376/travel_stays_assets/Coimbatore/Premium/Zone_by_The_Park_Hotel_/Zone_Room_new.webp",
+      "https://res.cloudinary.com/drauz5jps/image/upload/v1765800373/travel_stays_assets/Coimbatore/Premium/Zone_by_The_Park_Hotel_/42117408.webp",
+    ],
+    destination: "coimbatore",
+    tier: "Premium",
+    rating: 4.6,
+    reviewCount: 105,
   },
 ];
 

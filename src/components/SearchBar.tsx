@@ -45,6 +45,7 @@ const popularDestinations = [
     value: "thiruvananthapuram",
     display: "Thiruvananthapuram, India",
   },
+  { name: "Coimbatore", value: "coimbatore", display: "Coimbatore, India" },
 ];
 
 export interface SearchBarProps {
